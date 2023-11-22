@@ -1,4 +1,4 @@
-﻿namespace ColorBlindPicker.Models;
+﻿namespace ColorBlindPicker.InfrastructureLayer.Models;
 
 public class HslModel
 {
