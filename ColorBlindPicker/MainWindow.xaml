@@ -1,12 +1,59 @@
 ﻿<Window x:Class="ColorBlindPicker.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:ColorBlindPicker"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        WindowStyle="None" ResizeMode="NoResize" Loaded="Window_Loaded"
+        Title="Color Blind Picker" Height="100" Width="350">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Border x:Name="Quadrato" Grid.Column="0" Margin="5" Grid.RowSpan="2"/>
+
+
+        <Grid Grid.Column="1" Margin="5" Grid.RowSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition Height="1.2*"/>
+            </Grid.RowDefinitions>
+
+
+            <StackPanel VerticalAlignment="Center">
+                <TextBlock x:Name="TxtColor" Text="colore:"/>
+            </StackPanel>
+
+            <StackPanel VerticalAlignment="Center" Grid.Row="1" Orientation="Horizontal">
+                <TextBlock Text="hex:"/>
+                <TextBlock x:Name="TxtRGB"/>
+                <TextBlock Text="  R:"/>
+                <TextBlock Text="100"/>
+                <TextBlock Text="  G:"/>
+                <TextBlock Text="100"/>
+                <TextBlock Text="  B:"/>
+                <TextBlock Text="100"/>
+
+            </StackPanel>
+
+            <StackPanel VerticalAlignment="Center" Grid.Row="2" Orientation="Horizontal">
+                <TextBlock Text="HLS  |  H:"/>
+                <TextBlock x:Name="txtHSL_H"/>
+                <TextBlock Text="  L:"/>
+                <TextBlock x:Name="txtHSL_S"/>
+                <TextBlock Text="  S:"/>
+                <TextBlock x:Name="txtHSL_L"/>
+            </StackPanel>
+
+            <Button Grid.Row="3" Margin="0 5 0 0" Content="Seleziona il colore" VerticalContentAlignment="Center" Click="BtnSelectColor_Click"/>
+        </Grid>
+
+
 
     </Grid>
 </Window>
