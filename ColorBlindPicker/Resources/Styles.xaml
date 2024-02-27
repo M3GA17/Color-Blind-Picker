@@ -49,5 +49,21 @@
             </Setter.Value>
         </Setter>
     </Style>
+    <Style x:Key="IconSquareToggleButton" TargetType="{x:Type ToggleButton}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ToggleButton}">
+                    <Border x:Name="br" CornerRadius="5 5 15 5">
+                        <Image x:Name="img" Margin="4" Source="{Binding YourImageProperty}" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="br" Property="Background" Value="Gray" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 
 </ResourceDictionary>

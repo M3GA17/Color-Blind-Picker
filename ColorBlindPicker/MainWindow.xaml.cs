@@ -6,6 +6,7 @@ using System.Windows;
 using System.Windows.Threading;
 using Drawing = System.Drawing;
 using Media = System.Windows.Media;
+using System.Windows.Interop;
 
 
 namespace ColorBlindPicker;
@@ -80,9 +81,12 @@ public partial class MainWindow : Window
     {
 
     }
-
     private void DragMove(object sender, System.Windows.Input.MouseButtonEventArgs e)
     {
         DragMove();
+    }
+
+    private void bntColorPicker_Click(object sender, RoutedEventArgs e)
+    {
     }
 }

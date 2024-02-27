@@ -8,6 +8,8 @@ namespace ColorBlindPicker.ApplicationLayer.ViewModel;
 public class MainWindowViewModel : BaseViewModel
 {
     private bool alwaysOnTop;
+    private bool viewHistory;
+    private bool pickColor;
 
     public bool AlwaysOnTop
     {
@@ -18,4 +20,22 @@ public class MainWindowViewModel : BaseViewModel
             OnPropertyChanged(nameof(AlwaysOnTop)); 
         }
     }
+    public bool PickColor
+    {
+        get { return pickColor; }
+        set
+        {
+            pickColor = value;
+            OnPropertyChanged(nameof(PickColor));
+        }
+    }
+    public bool ViewHistory
+    {
+        get { return viewHistory; }
+        set 
+        {
+            viewHistory = value; 
+            OnPropertyChanged(nameof(ViewHistory)); 
+        }
+    }   
 }
