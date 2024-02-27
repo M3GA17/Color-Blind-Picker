@@ -1,5 +1,5 @@
 ﻿using ColorBlindPicker.BusinessLayer.Extension;
-using ColorBlindPicker.InfrastructureLayer.Models;
+using ColorBlindPicker.ApplicationLayer.Models;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows;
@@ -79,5 +79,10 @@ public partial class MainWindow : Window
     private void BtnSelectColor_Click(object sender, RoutedEventArgs e)
     {
 
+    }
+
+    private void DragMove(object sender, System.Windows.Input.MouseButtonEventArgs e)
+    {
+        DragMove();
     }
 }

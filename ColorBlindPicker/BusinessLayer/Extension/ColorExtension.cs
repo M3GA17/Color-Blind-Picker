@@ -1,4 +1,4 @@
-﻿using ColorBlindPicker.InfrastructureLayer.Models;
+﻿using ColorBlindPicker.ApplicationLayer.Models;
 using Media = System.Windows.Media;
 
 
