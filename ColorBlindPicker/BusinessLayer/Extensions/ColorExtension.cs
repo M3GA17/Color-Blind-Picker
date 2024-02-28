@@ -1,8 +1,8 @@
 ﻿using ColorBlindPicker.ApplicationLayer.Models;
-using Media = System.Windows.Media;
+using System.Drawing;
 
 
-namespace ColorBlindPicker.BusinessLayer.Extension;
+namespace ColorBlindPicker.BusinessLayer.Extensions;
 
 public static class ColorExtension
 {
@@ -38,7 +38,7 @@ public static class ColorExtension
         {"Bianco", 1}
     };
 
-    public static HslModel ConvertToHsl(this Media.Color color)
+    public static HslModel ConvertToHsl(this Color color)
     {
         HslModel colorHsl = new();
 
@@ -125,5 +125,8 @@ public static class ColorExtension
         return closestSymbolicName;
     }
 
-
+    public static System.Windows.Media.SolidColorBrush ConvertToSolidColorBrush(this Color color)
+    {
+        return new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromArgb(color.A, color.R, color.G, color.B));
+    }
 }

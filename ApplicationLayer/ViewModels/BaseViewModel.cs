@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ColorBlindPicker.ApplicationLayer.ViewModel;
+namespace ColorBlindPicker.ApplicationLayer.ViewModels;
 public class BaseViewModel : INotifyPropertyChanged
 {
     public event PropertyChangedEventHandler? PropertyChanged;

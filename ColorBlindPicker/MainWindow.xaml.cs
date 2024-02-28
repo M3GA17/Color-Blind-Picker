@@ -1,13 +1,10 @@
-﻿using ColorBlindPicker.BusinessLayer.Extension;
-using ColorBlindPicker.ApplicationLayer.Models;
+﻿using ColorBlindPicker.ApplicationLayer.ViewModels;
+using ColorBlindPicker.BusinessLayer.Extensions;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Threading;
 using Drawing = System.Drawing;
-using Media = System.Windows.Media;
-using System.Windows.Interop;
-
 
 namespace ColorBlindPicker;
 
@@ -26,6 +23,8 @@ public partial class MainWindow : Window
     {
         Interval = new TimeSpan(50)
     };
+
+    MainWindowViewModel viewModel;
     public MainWindow()
     {
         InitializeComponent();
@@ -33,6 +32,8 @@ public partial class MainWindow : Window
     }
     private void Window_Loaded(object sender, RoutedEventArgs e)
     {
+        viewModel = (MainWindowViewModel)DataContext;
+
         //set window on right site
         double screenWidth = SystemParameters.PrimaryScreenWidth;
 
@@ -48,20 +49,10 @@ public partial class MainWindow : Window
     {
         Drawing.Point mousePoint = new();
         GetCursorPos(ref mousePoint);
-        Drawing.Color color = GetColorAt(mousePoint);
-        Media.Color wpfColor = Media.Color.FromRgb(color.R, color.G, color.B);
-        HslModel hsl = wpfColor.ConvertToHsl();
-
-        TxtColor.Text = hsl.FindColorDescription();
-        TxtRGB.Text = color.Name.Remove(0, 2); //remove first ff from string
-
-        txtHSL_H.Text = hsl.Hue.ToString();
-        txtHSL_S.Text = hsl.Saturation.ToString();
-        txtHSL_L.Text = hsl.Lightness.ToString();
-
-        Quadrato.Background = new Media.SolidColorBrush(Media.Color.FromArgb(color.A, color.R, color.G, color.B));
+        viewModel.Color = GetColorAt(mousePoint);
+        viewModel.HslColor = viewModel.Color.ConvertToHsl();
+        Quadrato.Background = viewModel.Color.ConvertToSolidColorBrush();
     }
-
     public Color GetColorAt(Drawing.Point location)
     {
         using (Graphics gdest = Graphics.FromImage(screenPixel))
@@ -77,16 +68,8 @@ public partial class MainWindow : Window
         return screenPixel.GetPixel(0, 0);
     }
 
-    private void BtnSelectColor_Click(object sender, RoutedEventArgs e)
-    {
-
-    }
     private void DragMove(object sender, System.Windows.Input.MouseButtonEventArgs e)
     {
         DragMove();
-    }
-
-    private void bntColorPicker_Click(object sender, RoutedEventArgs e)
-    {
     }
 }
