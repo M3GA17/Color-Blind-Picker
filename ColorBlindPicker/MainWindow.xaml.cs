@@ -1,5 +1,4 @@
 ﻿using ColorBlindPicker.ApplicationLayer.ViewModels;
-using ColorBlindPicker.BusinessLayer.Extensions;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows;
@@ -49,9 +48,7 @@ public partial class MainWindow : Window
     {
         Drawing.Point mousePoint = new();
         GetCursorPos(ref mousePoint);
-        viewModel.Color = GetColorAt(mousePoint);
-        viewModel.HslColor = viewModel.Color.ConvertToHsl();
-        Quadrato.Background = viewModel.Color.ConvertToSolidColorBrush();
+        viewModel.ColorModel.Color = GetColorAt(mousePoint);
     }
     public Color GetColorAt(Drawing.Point location)
     {

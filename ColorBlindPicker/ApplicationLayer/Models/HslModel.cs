@@ -1,5 +1,4 @@
 ﻿using ColorBlindPicker.ApplicationLayer.ViewModels;
-using ColorBlindPicker.BusinessLayer.Extensions;
 
 namespace ColorBlindPicker.ApplicationLayer.Models;
 
@@ -15,7 +14,6 @@ public class HslModel : BaseViewModel
             {
                 hue = value;
                 OnPropertyChanged(nameof(Hue));
-                OnPropertyChanged(nameof(ColorDescription));
             }
         }
     }
@@ -30,7 +28,6 @@ public class HslModel : BaseViewModel
             {
                 saturation = value;
                 OnPropertyChanged(nameof(Saturation));
-                OnPropertyChanged(nameof(ColorDescription));
             }
         }
     }
@@ -45,14 +42,7 @@ public class HslModel : BaseViewModel
             {
                 lightness = value;
                 OnPropertyChanged(nameof(Lightness));
-                OnPropertyChanged(nameof(ColorDescription));
             }
         }
     }
-
-    public string ColorDescription
-    {
-        get { return this.FindColorDescription(); }
-    }
-
 }
