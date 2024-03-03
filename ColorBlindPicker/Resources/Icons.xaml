@@ -1,6 +1,28 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
+    <DrawingImage x:Key="CrossIcon">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing>
+                    <GeometryDrawing.Pen>
+                        <Pen Brush="#FFFF4136" Thickness="16"/>
+                    </GeometryDrawing.Pen>
+                    <GeometryDrawing.Geometry>
+                        <LineGeometry StartPoint="28,28" EndPoint="100,100" />
+                    </GeometryDrawing.Geometry>
+                </GeometryDrawing>
+                <GeometryDrawing>
+                    <GeometryDrawing.Pen>
+                        <Pen Brush="#FFFF4136" Thickness="16"/>
+                    </GeometryDrawing.Pen>
+                    <GeometryDrawing.Geometry>
+                        <LineGeometry StartPoint="100,28" EndPoint="28,100" />
+                    </GeometryDrawing.Geometry>
+                </GeometryDrawing>
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
     <DrawingImage x:Key="PinIconFill">
         <DrawingImage.Drawing>
             <GeometryDrawing Brush="#FFFFFF" Geometry="F1 M16,16z M0,0z M4.146,0.146A0.5,0.5,0,0,1,4.5,0L11.5,0A0.5,0.5,0,0,1,12,0.5C12,1.18 11.658,1.674 11.354,1.979 11.228,2.104 11.104,2.203 11,2.277L11,6.708 11.078,6.756C11.281,6.883 11.554,7.07 11.829,7.311 12.36,7.775 13,8.527 13,9.5A0.5,0.5,0,0,1,12.5,10L8.5,10 8.5,14.5C8.5,14.776 8.276,16 8,16 7.724,16 7.5,14.776 7.5,14.5L7.5,10 3.5,10A0.5,0.5,0,0,1,3,9.5C3,8.527,3.64,7.775,4.17,7.311A6,6,0,0,1,5,6.708L5,2.277A3,3,0,0,1,4.646,1.979C4.342,1.674,4,1.179,4,0.5A0.5,0.5,0,0,1,4.146,0.146" />
@@ -19,6 +41,20 @@
         <DrawingImage.Drawing>
             <DrawingGroup>
                 <GeometryDrawing Brush="#FFFFFF" Geometry="F1 M16,16z M0,0z M13.354,0.646A1.207,1.207,0,0,0,11.646,0.646L8.5,3.793 7.854,3.146A0.5,0.5,0,1,0,7.146,3.854L8.293,5 1.146,12.146A0.5,0.5,0,0,0,1,12.5L1,14.293 0.146,15.146A0.5,0.5,0,1,0,0.854,15.853L1.707,15 3.5,15A0.5,0.5,0,0,0,3.854,14.854L11,7.707 12.146,8.854A0.5,0.5,0,0,0,12.854,8.146L12.207,7.5 15.354,4.354A1.207,1.207,0,0,0,15.354,2.646z M2,12.707L9,5.707 10.293,7 3.293,14 2,14z" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="CopyIcon">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="#FFFFFF" Geometry="F0 M16,16z M0,0z M10,1.5A0.5,0.5,0,0,0,9.5,1L6.5,1A0.5,0.5,0,0,0,6,1.5L6,2.5A0.5,0.5,0,0,0,6.5,3L9.5,3A0.5,0.5,0,0,0,10,2.5z M5,1.5A1.5,1.5,0,0,1,6.5,0L9.5,0A1.5,1.5,0,0,1,11,1.5L11,2.5A1.5,1.5,0,0,1,9.5,4L6.5,4A1.5,1.5,0,0,1,5,2.5z M3,1.5L4,1.5 4,2.5A2.5,2.5,0,0,0,6.5,5L9.5,5A2.5,2.5,0,0,0,12,2.5L12,1.5 13,1.5A2,2,0,0,1,15,3.5L15,14A2,2,0,0,1,13,16L3,16A2,2,0,0,1,1,14L1,3.5A2,2,0,0,1,3,1.5" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="TrashIcon">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="#FFFF4136" Geometry="F1 M16,16z M0,0z M2.5,1A1,1,0,0,0,1.5,2L1.5,3A1,1,0,0,0,2.5,4L3,4 3,13A2,2,0,0,0,5,15L11,15A2,2,0,0,0,13,13L13,4 13.5,4A1,1,0,0,0,14.5,3L14.5,2A1,1,0,0,0,13.5,1L10,1A1,1,0,0,0,9,0L7,0A1,1,0,0,0,6,1L2.5,1z M5.5,5A0.5,0.5,0,0,1,6,5.5L6,12.5A0.5,0.5,0,0,1,5,12.5L5,5.5A0.5,0.5,0,0,1,5.5,5z M8,5A0.5,0.5,0,0,1,8.5,5.5L8.5,12.5A0.5,0.5,0,0,1,7.5,12.5L7.5,5.5A0.5,0.5,0,0,1,8,5z M11,5.5L11,12.5A0.5,0.5,0,0,1,10,12.5L10,5.5A0.5,0.5,0,0,1,11,5.5z" />
             </DrawingGroup>
         </DrawingImage.Drawing>
     </DrawingImage>

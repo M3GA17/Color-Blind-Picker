@@ -116,14 +116,14 @@ public class ColorModel : BaseViewModel
 
         return ColorDescription;
     }
-    string FindClosestValue(double numberToSearch, Dictionary<string, double> Values)
+    static string FindClosestValue(double numberToSearch, Dictionary<string, double> Values)
     {
         if (Values == null || Values.Count == 0)
         {
             throw new ArgumentException("Brightness values dictionary is empty or null.");
         }
 
-        string closestSymbolicName = null;
+        string closestSymbolicName = string.Empty;
         double minDifference = double.MaxValue;
 
         foreach (var kvp in Values)
@@ -139,10 +139,10 @@ public class ColorModel : BaseViewModel
 
         return closestSymbolicName;
     }
+
     //HSL
 
-
-    HslModel ConvertToHsl(Color color)
+    static HslModel ConvertToHsl(Color color)
     {
         HslModel colorHsl = new();
 

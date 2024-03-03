@@ -1,5 +1,6 @@
 ﻿using ColorBlindPicker.ApplicationLayer.Models;
 using ColorBlindPicker.BusinessLayer.Services;
+using System.Windows;
 
 namespace ColorBlindPicker.ApplicationLayer.ViewModels;
 
@@ -38,7 +39,7 @@ public class MainWindowViewModel : BaseViewModel
             pickColor = value;
             OnPropertyChanged(nameof(PickColor));
             if (value)
-                pickColorOn();
+                PickColorOn();
         }
     }
     public bool ViewHistory
@@ -51,12 +52,19 @@ public class MainWindowViewModel : BaseViewModel
         }
     }
 
-    void pickColorOn()
+    public RelayCommand DeleteCommand => new(execute: DeleteCommandExecute);
+    private void DeleteCommandExecute(object parameter)
+    {
+        // Implementa la logica di eliminazione qui
+    }
+
+    void PickColorOn()
     {
         if (new TransparentWindow().ShowDialog() == true)
         {
             PickColor = false;
             FileService.AddColor(new ColorModel(ColorModel.Hex));
+            Clipboard.SetText("#" + ColorModel.Hex);
         }
     }
 }
