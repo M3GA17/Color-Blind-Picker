@@ -1,4 +1,5 @@
 ﻿using ColorBlindPicker.ApplicationLayer.ViewModels;
+using ColorBlindPicker.BusinessLayer.Helpers;
 using System.Drawing;
 
 
@@ -38,7 +39,7 @@ public class ColorModel : BaseViewModel
     }
     public string Description
     {
-        get { return FindColorDescription(); }
+        get { return GetColorDescriptionWithLocalization(); }
     }
     public string Hex
     {
@@ -59,8 +60,14 @@ public class ColorModel : BaseViewModel
 
     public string GetColorDescriptionWithLocalization()
     {
+        string result = string.Empty;
 
-        return FindColorDescription();
+        foreach (var keyword in FindColorDescription().Split(' '))
+        {
+            result += string.Concat(" ", LocalizationProvider.GetLocalizedValue<string>(keyword));
+        }
+
+        return result;
     }
     public string FindColorDescription()
     {
@@ -68,19 +75,19 @@ public class ColorModel : BaseViewModel
         string saturation = FindClosestValue(HslColor.Saturation, SaturationValues);
         string lightness = FindClosestValue(HslColor.Lightness, BrightnessValues);
 
-        if (lightness == "Nero" || lightness == "Bianco")
+        if (lightness == "Black" || lightness == "White")
             return lightness;
 
-        if (saturation == "Grigio")
+        if (saturation == "Gray")
             return saturation;
 
 
         string ColorDescription = hue;
 
-        if (lightness != "Normale")
+        if (lightness != "Normal")
             ColorDescription += string.Concat(" ", lightness);
 
-        if (saturation != "Normale")
+        if (saturation != "Normal")
             ColorDescription += string.Concat(" ", saturation);
 
 
@@ -162,28 +169,30 @@ public class ColorModel : BaseViewModel
         {"Orange", 30},
         {"Yellow_Orange", 45},
         {"Yellow", 60},
-        {"Verde giallognolo", 75},
-        {"Verde", 120},
-        {"Blu verdastro", 195},
-        {"Blu", 240},
-        {"Blu violaceo", 255},
-        {"Viola", 270},
-        {"Rosso violaceo", 315}
+        {"Yellowish_green", 75},
+        {"Green", 120},
+        {"Bluish_green", 195},
+        {"Blue", 240},
+        {"Bluish_purple", 255},
+        {"Purple", 270},
+        {"Reddish_purple", 315}
     };
     readonly Dictionary<string, double> SaturationValues = new()
     {
-        {"Grigio", 0},
-        {"Tendente al grigio", 0.25},
-        {"Sbiadito", 0.50},
-        {"Leggermente sbiadito", 0.75},
-        {"Normale", 1}
+        {"Gray", 0},
+        {"Grayish", 0.25},
+        {"Faded", 0.50},
+        {"Slightly_faded", 0.75},
+        {"Normal", 1}
     };
     readonly Dictionary<string, double> BrightnessValues = new()
     {
-        {"Nero", 0.0},
-        {"Scuro", 0.25},
-        {"Normale", 0.50},
-        {"Chiaro", 0.75},
-        {"Bianco", 1}
+        {"Black", 0.0},
+        {"Dark", 0.25},
+        {"Normal", 0.50},
+        {"Bright", 0.75},
+        {"White", 1}
     };
+
+    //TODO: convert to wellKnown
 }

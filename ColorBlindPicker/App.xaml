@@ -1,16 +1,19 @@
 ﻿<Application x:Class="ColorBlindPicker.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:ColorBlindPicker" 
+             xmlns:local="clr-namespace:ColorBlindPicker"
+             xmlns:lex="http://wpflocalizeextension.codeplex.com"
              xmlns:viewmodel="clr-namespace:ColorBlindPicker.ApplicationLayer.ViewModels"
              StartupUri="MainWindow.xaml">
 
 
     <Application.Resources>
+
         <ResourceDictionary>
             <!--<viewmodel:MainWindowViewModel x:Key="MainWindowViewModel"/>-->
-
+          
             <ResourceDictionary.MergedDictionaries>
+
                 <ResourceDictionary Source="Resources/Icons.xaml"/>
                 <ResourceDictionary Source="Resources/Styles.xaml"/>
             </ResourceDictionary.MergedDictionaries>

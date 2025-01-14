@@ -118,9 +118,66 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Red" xml:space="preserve">
-    <value>Rosso</value>
+    <value>Reddoso</value>
   </data>
-  <data name="Red_Orange" xml:space="preserve">
-    <value>Rosso aranciato</value>
+  <data name="Orange_red" xml:space="preserve">
+    <value>Orange red</value>
+  </data>
+  <data name="Orange" xml:space="preserve">
+    <value>Orange</value>
+  </data>
+  <data name="Yellow_orange" xml:space="preserve">
+    <value>Yellow orange</value>
+  </data>
+  <data name="Yellow" xml:space="preserve">
+    <value>Yellow</value>
+  </data>
+  <data name="Green" xml:space="preserve">
+    <value>Green</value>
+  </data>
+  <data name="Bluish_green" xml:space="preserve">
+    <value>Bluish green</value>
+  </data>
+  <data name="Blue" xml:space="preserve">
+    <value>Blue</value>
+  </data>
+  <data name="Bluish_purple" xml:space="preserve">
+    <value>Bluish purple</value>
+  </data>
+  <data name="Purple" xml:space="preserve">
+    <value>Purple</value>
+  </data>
+  <data name="Reddish_purple" xml:space="preserve">
+    <value>Reddish purple</value>
+  </data>
+  <data name="Gray" xml:space="preserve">
+    <value>Gray</value>
+  </data>
+  <data name="Grayish" xml:space="preserve">
+    <value>Grayish</value>
+  </data>
+  <data name="Faded" xml:space="preserve">
+    <value>Faded</value>
+  </data>
+  <data name="Slightly_faded" xml:space="preserve">
+    <value>Slightly faded</value>
+  </data>
+  <data name="Normal" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="Black" xml:space="preserve">
+    <value>Black</value>
+  </data>
+  <data name="Dark" xml:space="preserve">
+    <value>Dark</value>
+  </data>
+  <data name="Bright" xml:space="preserve">
+    <value>Bright</value>
+  </data>
+  <data name="White" xml:space="preserve">
+    <value>White</value>
+  </data>
+  <data name="Yellowish_green" xml:space="preserve">
+    <value>Yellowish green</value>
   </data>
 </root>

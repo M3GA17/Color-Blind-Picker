@@ -11,35 +11,30 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Drawing.Common" Version="8.0.0" />
+    <PackageReference Include="System.Drawing.Common" Version="9.0.1" />
+    <PackageReference Include="WPFLocalizeExtension" Version="3.10.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Resources\Localizations\Localization_EN.Designer.cs">
-      <DependentUpon>Localization_EN.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-    </Compile>
-    <Compile Update="Resources\Localizations\Localization_IT.Designer.cs">
-      <DependentUpon>Localization_IT.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-    </Compile>
     <Compile Update="Properties\Settings.Designer.cs">
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Update="Resources\Localizations\Localization.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Localization.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Resources\Localizations\Localization_EN.resx">
-      <LastGenOutput>Localization_EN.Designer.cs</LastGenOutput>
+    <EmbeddedResource Update="Resources\Localizations\Localization.it.resx">
       <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Resources\Localizations\Localization_IT.resx">
-      <LastGenOutput>Localization_IT.Designer.cs</LastGenOutput>
+    <EmbeddedResource Update="Resources\Localizations\Localization.resx">
       <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Localization.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
 
