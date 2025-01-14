@@ -15,11 +15,32 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Resources\Localizations\Localization_EN.Designer.cs">
+      <DependentUpon>Localization_EN.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\Localizations\Localization_IT.Designer.cs">
+      <DependentUpon>Localization_IT.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
     <Compile Update="Properties\Settings.Designer.cs">
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Localizations\Localization_EN.resx">
+      <LastGenOutput>Localization_EN.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Localizations\Localization_IT.resx">
+      <LastGenOutput>Localization_IT.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>

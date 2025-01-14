@@ -41,14 +41,13 @@ public class ColorFileService : BaseViewModel
 
     private void SaveToFile()
     {
-        // Creare una lista di stringhe Hex dal colorList
+        // create list of Hex string from colorList
         List<string> hexList = [];
         foreach (var color in colorList)
         {
             hexList.Add(color.Hex);
         }
 
-        // Serializzare la lista di stringhe Hex
         string json = JsonSerializer.Serialize(hexList);
         File.WriteAllText(FilePath, json);
     }

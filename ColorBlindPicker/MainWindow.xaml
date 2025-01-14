@@ -42,6 +42,7 @@
                     <ColumnDefinition Width="auto"/>
                     <ColumnDefinition Width="auto"/>
                     <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="20"/>
                 </Grid.ColumnDefinitions>
 
                 <Border x:Name="Quadrato" Grid.Column="0" Margin="5,5,5,5" Background="{Binding ColorModel.ColorBrush}" CornerRadius="15"/>

@@ -6,10 +6,6 @@
     
     <SolidColorBrush x:Key="RedBrush" Color="{StaticResource Red}"/>
     
-    
-    
-    
-    
     <Color x:Key="Green">#23d83e</Color>
 
 </ResourceDictionary>

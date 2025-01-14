@@ -90,4 +90,9 @@ public partial class MainWindow : Window
         Top = Properties.Settings.Default.Top;
         Left = Properties.Settings.Default.Left;
     }
+
+    private void Button_Click(object sender, RoutedEventArgs e)
+    {
+
+    }
 }

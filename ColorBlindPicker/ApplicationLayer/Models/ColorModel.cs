@@ -49,49 +49,19 @@ public class ColorModel : BaseViewModel
     {
 
     }
-    public ColorModel(string Hex)
+    public ColorModel(string hexRgb)
     {
-        string hexArgb = "FF" + Hex;
-
-        // Convertire il valore esadecimale ARGB in colore
-        int argbValue = Convert.ToInt32(hexArgb, 16);
+        //Covert Hex RGB to ARGB color
+        int argbValue = Convert.ToInt32("FF" + hexRgb, 16);
         Color = Color.FromArgb(argbValue);
-
-        //Color = Color.FromArgb(Convert.ToInt32(Hex));
     }
 
-    //HSL Description
-    readonly Dictionary<string, double> HueValues = new()
-{
-    {"Rosso", 0},
-    {"Rosso aranciato", 15},
-    {"Arancione", 30},
-    {"Giallo aranciato", 45},
-    {"Giallo", 60},
-    {"Verde giallognolo", 75},
-    {"Verde", 120},
-    {"Blu verdastro", 195},
-    {"Blu", 240},
-    {"Blu violaceo", 255},
-    {"Viola", 270},
-    {"Rosso violaceo", 315}
-};
-    readonly Dictionary<string, double> SaturationValues = new()
-{
-    {"Grigio", 0},
-    {"Tendente al grigio", 0.25},
-    {"Sbiadito", 0.50},
-    {"Leggermente sbiadito", 0.75},
-    {"Normale", 1}
-};
-    readonly Dictionary<string, double> BrightnessValues = new()
-{
-    {"Nero", 0.0},
-    {"Scuro", 0.25},
-    {"Normale", 0.50},
-    {"Chiaro", 0.75},
-    {"Bianco", 1}
-};
+
+    public string GetColorDescriptionWithLocalization()
+    {
+
+        return FindColorDescription();
+    }
     public string FindColorDescription()
     {
         string hue = FindClosestValue(HslColor.Hue, HueValues);
@@ -183,4 +153,37 @@ public class ColorModel : BaseViewModel
     {
         return new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromArgb(Color.A, Color.R, Color.G, Color.B));
     }
+
+    //HSL Checkpoint
+    readonly Dictionary<string, double> HueValues = new()
+    {
+        {"Red", 0},
+        {"Red_Orange", 15},
+        {"Orange", 30},
+        {"Yellow_Orange", 45},
+        {"Yellow", 60},
+        {"Verde giallognolo", 75},
+        {"Verde", 120},
+        {"Blu verdastro", 195},
+        {"Blu", 240},
+        {"Blu violaceo", 255},
+        {"Viola", 270},
+        {"Rosso violaceo", 315}
+    };
+    readonly Dictionary<string, double> SaturationValues = new()
+    {
+        {"Grigio", 0},
+        {"Tendente al grigio", 0.25},
+        {"Sbiadito", 0.50},
+        {"Leggermente sbiadito", 0.75},
+        {"Normale", 1}
+    };
+    readonly Dictionary<string, double> BrightnessValues = new()
+    {
+        {"Nero", 0.0},
+        {"Scuro", 0.25},
+        {"Normale", 0.50},
+        {"Chiaro", 0.75},
+        {"Bianco", 1}
+    };
 }
