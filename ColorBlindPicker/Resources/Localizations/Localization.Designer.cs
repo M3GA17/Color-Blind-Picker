@@ -187,7 +187,7 @@ namespace ColorBlindPicker.Resources.Localizations {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Reddoso.
+        ///   Looks up a localized string similar to Red.
         /// </summary>
         internal static string Red {
             get {

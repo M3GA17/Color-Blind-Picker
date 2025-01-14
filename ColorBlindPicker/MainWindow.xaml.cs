@@ -38,10 +38,12 @@ public partial class MainWindow : Window
         await Task.Run(MouseMoveTimer.Start);
     }
     private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e) => SaveWindowsPositionAndFlags();
-
     private void DragMove(object sender, System.Windows.Input.MouseButtonEventArgs e) => DragMove();
     private void CloseButton_Click(object sender, RoutedEventArgs e) => Application.Current.Shutdown();
+    private void SettingsButton_Click(object sender, RoutedEventArgs e)
+    {
 
+    }
     private void ColorPanel_DeleteCommand(object sender, EventArgs e)
     {
         Button panel = (Button)sender;
@@ -91,8 +93,5 @@ public partial class MainWindow : Window
         Left = Properties.Settings.Default.Left;
     }
 
-    private void Button_Click(object sender, RoutedEventArgs e)
-    {
 
-    }
 }
