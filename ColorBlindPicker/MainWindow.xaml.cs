@@ -4,7 +4,9 @@ using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media.Effects;
 using System.Windows.Threading;
+using WPFLocalizeExtension.Engine;
 using Drawing = System.Drawing;
 
 namespace ColorBlindPicker;
@@ -83,6 +85,7 @@ public partial class MainWindow : Window
         Properties.Settings.Default.Left = Left;
         Properties.Settings.Default.AlwaysOnTop = viewModel.AlwaysOnTop;
         Properties.Settings.Default.ViewHistory = viewModel.ViewHistory;
+        Properties.Settings.Default.Localization = LocalizeDictionary.Instance.Culture.TwoLetterISOLanguageName;
         Properties.Settings.Default.Save();
     }
     public void SetWindowsPositionAndFlags()
@@ -93,5 +96,17 @@ public partial class MainWindow : Window
         Left = Properties.Settings.Default.Left;
     }
 
-
+    public void BlurWindow(bool value)
+    {
+        if (value)
+        {
+            BlurEffect Effect = new();
+            this.Effect = Effect;
+        }
+        else
+        {
+            this.Effect = null;
+            this.Opacity = 1;
+        }
+    }
 }

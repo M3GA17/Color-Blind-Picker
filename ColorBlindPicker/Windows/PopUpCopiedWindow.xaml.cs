@@ -3,13 +3,13 @@ using System.Windows.Threading;
 
 namespace ColorBlindPicker.Windows;
 
-public partial class PopUpCopied : Window
+public partial class PopUpCopiedWindow : Window
 {
     readonly DispatcherTimer CloseWindowTimer = new()
     {
         Interval = TimeSpan.FromSeconds(1)
     };
-    public PopUpCopied()
+    public PopUpCopiedWindow()
     {
         InitializeComponent();
         CloseWindowTimer.Tick += CloseWindowTimer_tick;

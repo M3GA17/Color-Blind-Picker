@@ -180,4 +180,10 @@
   <data name="Yellowish_green" xml:space="preserve">
     <value>Verde giallognolo</value>
   </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Impostazioni</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Lingua</value>
+  </data>
 </root>

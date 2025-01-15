@@ -1,4 +1,5 @@
-﻿using System.Globalization;
+﻿using ColorBlindPicker.Properties;
+using System.Globalization;
 using System.Windows;
 using WPFLocalizeExtension.Engine;
 
@@ -12,11 +13,7 @@ namespace ColorBlindPicker
         protected override void OnStartup(StartupEventArgs e)
         {
             LocalizeDictionary.Instance.SetCurrentThreadCulture = true;
-            LocalizeDictionary.Instance.Culture = new CultureInfo("en");
-
-            // Imposta la cultura predefinita (es. "en" per inglese)
-            //CultureInfo.DefaultThreadCurrentUICulture = new CultureInfo("en");
-            //CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en");
+            LocalizeDictionary.Instance.Culture = new CultureInfo(Settings.Default.Localization);
 
             base.OnStartup(e); // Assicurati di chiamare il metodo base
         }

@@ -151,6 +151,15 @@ namespace ColorBlindPicker.Resources.Localizations {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Language.
+        /// </summary>
+        internal static string Language {
+            get {
+                return ResourceManager.GetString("Language", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Normal.
         /// </summary>
         internal static string Normal {
@@ -201,6 +210,15 @@ namespace ColorBlindPicker.Resources.Localizations {
         internal static string Reddish_purple {
             get {
                 return ResourceManager.GetString("Reddish_purple", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Settings.
+        /// </summary>
+        internal static string Settings {
+            get {
+                return ResourceManager.GetString("Settings", resourceCulture);
             }
         }
         

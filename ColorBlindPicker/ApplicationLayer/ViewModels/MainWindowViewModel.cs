@@ -7,11 +7,18 @@ namespace ColorBlindPicker.ApplicationLayer.ViewModels;
 
 public class MainWindowViewModel : BaseViewModel
 {
+    readonly MainWindow mainWindow = (MainWindow)Application.Current.MainWindow;
     public ColorFileService FileService { get; set; } = new();
 
     private bool alwaysOnTop;
     private bool viewHistory;
     private bool pickColor;
+    public RelayCommand OpenSettingsCommand { get; }
+
+    public MainWindowViewModel()
+    {
+        OpenSettingsCommand = new RelayCommand(OnOpenSettings);
+    }
 
     private ColorModel colorModel = new();
     public ColorModel ColorModel
@@ -52,6 +59,7 @@ public class MainWindowViewModel : BaseViewModel
             OnPropertyChanged(nameof(ViewHistory));
         }
     }
+
     void PickColorOn()
     {
         if (new TransparentWindow().ShowDialog() == true)
@@ -59,7 +67,16 @@ public class MainWindowViewModel : BaseViewModel
             PickColor = false;
             FileService.AddColor(new ColorModel(ColorModel.Hex));
             Clipboard.SetText("#" + ColorModel.Hex);
-            new PopUpCopied().Show();
+            new PopUpCopiedWindow().Show();
         }
+    }
+
+    void OnOpenSettings(object parameter)
+    {
+        mainWindow.BlurWindow(true);
+
+        new SettingsWindow().ShowDialog();
+
+        mainWindow.BlurWindow(false);
     }
 }

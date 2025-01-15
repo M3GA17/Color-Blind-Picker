@@ -180,4 +180,10 @@
   <data name="Yellowish_green" xml:space="preserve">
     <value>Yellowish green</value>
   </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
 </root>

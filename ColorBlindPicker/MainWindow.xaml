@@ -19,7 +19,7 @@
         <converters:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
     </Window.Resources>
 
-    <Border Background="#5f5f5f" CornerRadius="15" MouseLeftButtonDown="DragMove" BorderBrush="#202020" >
+    <Border Background="#5f5f5f" CornerRadius="15" MouseLeftButtonDown="DragMove" BorderBrush="#ffffff" BorderThickness="1" >
         <Grid>
 
             <Grid.RowDefinitions>
@@ -35,11 +35,11 @@
                     <ColumnDefinition Width="auto"/>
                 </Grid.ColumnDefinitions>
 
-                <TextBlock x:Name="TxtColor" Text="{Binding ColorModel.Description, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}" Foreground="White" FontSize="15" FontWeight="Bold" VerticalAlignment="Center" Margin="10 0"/>
-                <Button Style="{StaticResource IconButton}" Grid.Column="1" Margin="0 0 1 0" Click="CloseButton_Click">
+                <TextBlock x:Name="TxtColor" Text="{Binding ColorModel.Description, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}" Foreground="White" FontSize="{DynamicResource fontSizeTitle}" FontWeight="Bold" VerticalAlignment="Center" Margin="10 0"/>
+                <Button Style="{StaticResource IconButton}" Grid.Column="1" Margin="0 0 1 0" Command="{Binding OpenSettingsCommand}">
                     <Image Source="{StaticResource Settings}" Margin="5"/>
                 </Button>
-                <Button Style="{StaticResource IconButton}" Grid.Column="2" Margin="0 0 1 0" Click="SettingsButton_Click">
+                <Button Style="{StaticResource IconButton}" Grid.Column="2" Margin="0 0 1 0" Click="CloseButton_Click">
                     <Image Source="{StaticResource CrossIcon}" Margin="5"/>
                 </Button>
             </Grid>
@@ -113,8 +113,8 @@
 
                 <Grid Grid.Column="1" Margin="2,2,2,2" Grid.ColumnSpan="2">
                     <StackPanel VerticalAlignment="Center" Grid.Row="0" Orientation="Horizontal">
-                        <TextBlock Text="hex: #" Foreground="White" FontWeight="Bold" FontSize="17"/>
-                        <TextBlock x:Name="TxtRGB" Text="{Binding ColorModel.Hex, UpdateSourceTrigger=PropertyChanged}" Foreground="White" FontWeight="Bold" FontSize="17"/>
+                        <TextBlock Text="hex: #" Foreground="White" FontWeight="Bold" FontSize="{DynamicResource fontSizeBig}"/>
+                        <TextBlock x:Name="TxtRGB" Text="{Binding ColorModel.Hex, UpdateSourceTrigger=PropertyChanged}" Foreground="White" FontWeight="Bold" FontSize="{DynamicResource fontSizeBig}"/>
                     </StackPanel>
                 </Grid>
             </Grid>
