@@ -1,1 +1,1 @@
-![ColorBlindIcon](https://github.com/user-attachments/assets/52d3c61b-fa58-46e5-b331-06245edb9c52)
+![ColorBlindIcon](https://github.com/user-attachments/assets/bcdcd61b-17ec-4c60-a256-f7b68bfa3dbe)
