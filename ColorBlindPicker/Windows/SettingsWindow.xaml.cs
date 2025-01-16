@@ -10,6 +10,8 @@ namespace ColorBlindPicker.Windows
     /// </summary>
     public partial class SettingsWindow : Window
     {
+        MainWindow mainWindow = Application.Current.MainWindow as MainWindow;
+
         public SettingsWindow()
         {
             InitializeComponent();
@@ -19,6 +21,7 @@ namespace ColorBlindPicker.Windows
         {
             MoveBottomRightEdgeOfWindowToMousePosition();
             var languages = Enum.GetNames(typeof(Languages));
+            this.Topmost = mainWindow.Topmost;
 
             CmbLanguage.SelectedIndex = Array.IndexOf(languages, LocalizeDictionary.Instance.Culture.TwoLetterISOLanguageName);
         }

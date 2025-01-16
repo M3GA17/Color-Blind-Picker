@@ -13,7 +13,8 @@
         mc:Ignorable="d" WindowStyle="None" ResizeMode="NoResize"
         AllowsTransparency="True" Background="Transparent"
         WindowStartupLocation="Manual" Loaded="Window_Loaded"
-        Title="SettingsWindow" Width="200" Height="auto" SizeToContent="Height">
+        Title="SettingsWindow" Width="200" Height="auto" SizeToContent="Height"
+        Topmost="{Binding AlwaysOnTop, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}">
     <Window.DataContext>
         <viewmodels:SettingsViewModel/>
     </Window.DataContext>
