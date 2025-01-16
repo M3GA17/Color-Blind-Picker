@@ -36,10 +36,10 @@
                 </Grid.ColumnDefinitions>
 
                 <TextBlock x:Name="TxtColor" Text="{Binding ColorModel.Description, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}" Foreground="White" FontSize="{DynamicResource fontSizeTitle}" FontWeight="Bold" VerticalAlignment="Center" Margin="10 0"/>
-                <Button Style="{StaticResource IconButton}" Grid.Column="1" Margin="0 0 1 0" Command="{Binding OpenSettingsCommand}">
+                <Button Style="{StaticResource IconButton}" Grid.Column="1" Margin="0 0 1 0" Command="{Binding OpenSettingsCommand}" ToolTip="{lex:Loc ColorBlindPicker.Resources.Localizations.Localization:CaptionSettings}">
                     <Image Source="{StaticResource Settings}" Margin="5"/>
                 </Button>
-                <Button Style="{StaticResource IconButton}" Grid.Column="2" Margin="0 0 1 0" Click="CloseButton_Click">
+                <Button Style="{StaticResource IconButton}" Grid.Column="2" Margin="0 0 1 0" Click="CloseButton_Click" ToolTip="{lex:Loc ColorBlindPicker.Resources.Localizations.Localization:CaptionClose}">
                     <Image Source="{StaticResource CrossIcon}" Margin="5"/>
                 </Button>
             </Grid>
@@ -57,7 +57,8 @@
 
                 <Border x:Name="Quadrato" Grid.Column="0" Margin="5,5,5,5" Background="{Binding ColorModel.ColorBrush}" CornerRadius="15"/>
 
-                <ToggleButton x:Name="bntHistory" Grid.Column="3" Margin="5,5,2,5" IsChecked="{Binding ViewHistory, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Cursor="Hand">
+                <ToggleButton x:Name="bntHistory" Grid.Column="3" Margin="5,5,2,5" IsChecked="{Binding ViewHistory, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Cursor="Hand"
+                              ToolTip="{lex:Loc ColorBlindPicker.Resources.Localizations.Localization:CaptionHistory}">
                     <ToggleButton.Template>
                         <ControlTemplate TargetType="{x:Type ToggleButton}" >
                             <Border x:Name="br" CornerRadius="15">
@@ -75,7 +76,8 @@
                     </ToggleButton.Template>
                 </ToggleButton>
 
-                <ToggleButton x:Name="bntColorPicker" Grid.Column="4" Margin="3,5,2,5" IsChecked="{Binding PickColor, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Cursor="Hand"> 
+                <ToggleButton x:Name="bntColorPicker" Grid.Column="4" Margin="3,5,2,5" IsChecked="{Binding PickColor, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Cursor="Hand"
+                              ToolTip="{lex:Loc ColorBlindPicker.Resources.Localizations.Localization:CaptionPicker}"> 
                     <ToggleButton.Template>
                         <ControlTemplate TargetType="{x:Type ToggleButton}" >
                             <Border x:Name="br" CornerRadius="15">
@@ -93,7 +95,8 @@
                     </ToggleButton.Template>
                 </ToggleButton>
 
-                <ToggleButton x:Name="bntAlwaysOnTop" Grid.Column="5" Margin="3,5,5,5" IsChecked="{Binding AlwaysOnTop, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Cursor="Hand">
+                <ToggleButton x:Name="bntAlwaysOnTop" Grid.Column="5" Margin="3,5,5,5" IsChecked="{Binding AlwaysOnTop, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Cursor="Hand" 
+                               ToolTip="{lex:Loc ColorBlindPicker.Resources.Localizations.Localization:CaptionPin}">
                     <ToggleButton.Template>
                         <ControlTemplate TargetType="{x:Type ToggleButton}" >
                             <Border x:Name="br" CornerRadius="15">
@@ -129,10 +132,6 @@
                     </ListView.ItemTemplate>
                 </ListView>
             </Grid>
-
-            <!--<Grid Grid.Row="3">
-                <TextBlock Name="Red" Text="{lex:Loc ColorBlindPicker.Resources.Localizations.Localization:Red}"/>
-            </Grid>-->
         </Grid>
 
 

@@ -117,73 +117,178 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Red" xml:space="preserve">
-    <value>Red</value>
-  </data>
-  <data name="Orange_red" xml:space="preserve">
-    <value>Orange red</value>
-  </data>
-  <data name="Orange" xml:space="preserve">
-    <value>Orange</value>
-  </data>
-  <data name="Yellow_orange" xml:space="preserve">
-    <value>Yellow orange</value>
-  </data>
-  <data name="Yellow" xml:space="preserve">
-    <value>Yellow</value>
-  </data>
-  <data name="Green" xml:space="preserve">
-    <value>Green</value>
-  </data>
-  <data name="Bluish_green" xml:space="preserve">
-    <value>Bluish green</value>
-  </data>
-  <data name="Blue" xml:space="preserve">
-    <value>Blue</value>
-  </data>
-  <data name="Bluish_purple" xml:space="preserve">
-    <value>Bluish purple</value>
-  </data>
-  <data name="Purple" xml:space="preserve">
-    <value>Purple</value>
-  </data>
-  <data name="Reddish_purple" xml:space="preserve">
-    <value>Reddish purple</value>
-  </data>
-  <data name="Gray" xml:space="preserve">
-    <value>Gray</value>
-  </data>
-  <data name="Grayish" xml:space="preserve">
-    <value>Grayish</value>
-  </data>
-  <data name="Faded" xml:space="preserve">
-    <value>Faded</value>
-  </data>
-  <data name="Slightly_faded" xml:space="preserve">
-    <value>Slightly faded</value>
-  </data>
-  <data name="Normal" xml:space="preserve">
-    <value>Normal</value>
-  </data>
-  <data name="Black" xml:space="preserve">
+  <data name="Bright0" xml:space="preserve">
     <value>Black</value>
   </data>
-  <data name="Dark" xml:space="preserve">
+  <data name="Bright0,1" xml:space="preserve">
+    <value>Darkest</value>
+  </data>
+  <data name="Bright0,3" xml:space="preserve">
     <value>Dark</value>
   </data>
-  <data name="Bright" xml:space="preserve">
-    <value>Bright</value>
+  <data name="Bright0,5" xml:space="preserve">
+    <value>Normal br</value>
   </data>
-  <data name="White" xml:space="preserve">
+  <data name="Bright0,7" xml:space="preserve">
+    <value>Light</value>
+  </data>
+  <data name="Bright0,9" xml:space="preserve">
+    <value>Very light</value>
+  </data>
+  <data name="Bright1" xml:space="preserve">
     <value>White</value>
   </data>
-  <data name="Yellowish_green" xml:space="preserve">
-    <value>Yellowish green</value>
+  <data name="CaptionClose" xml:space="preserve">
+    <value>Close</value>
   </data>
-  <data name="Settings" xml:space="preserve">
+  <data name="CaptionCopied" xml:space="preserve">
+    <value>Copied</value>
+  </data>
+  <data name="CaptionCopy" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="CaptionDelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="CaptionHistory" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="CaptionLanguage" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="CaptionPicker" xml:space="preserve">
+    <value>Picker</value>
+  </data>
+  <data name="CaptionPin" xml:space="preserve">
+    <value>Pin at the top</value>
+  </data>
+  <data name="CaptionSettings" xml:space="preserve">
     <value>Settings</value>
   </data>
-  <data name="Language" xml:space="preserve">
-    <value>Language</value>
+  <data name="Hue0" xml:space="preserve">
+    <value>Red</value>
+  </data>
+  <data name="Hue10" xml:space="preserve">
+    <value>Orange red</value>
+  </data>
+  <data name="Hue100" xml:space="preserve">
+    <value>Spring green</value>
+  </data>
+  <data name="Hue110" xml:space="preserve">
+    <value>Light green</value>
+  </data>
+  <data name="Hue120" xml:space="preserve">
+    <value>Emerald green</value>
+  </data>
+  <data name="Hue130" xml:space="preserve">
+    <value>Forest green</value>
+  </data>
+  <data name="Hue140" xml:space="preserve">
+    <value>Olive green</value>
+  </data>
+  <data name="Hue150" xml:space="preserve">
+    <value>Aqua green</value>
+  </data>
+  <data name="Hue160" xml:space="preserve">
+    <value>Turquoise green</value>
+  </data>
+  <data name="Hue170" xml:space="preserve">
+    <value>Turquoise blue</value>
+  </data>
+  <data name="Hue180" xml:space="preserve">
+    <value>Cyan</value>
+  </data>
+  <data name="Hue190" xml:space="preserve">
+    <value>Turquoise blue</value>
+  </data>
+  <data name="Hue20" xml:space="preserve">
+    <value>Reddish orange</value>
+  </data>
+  <data name="Hue200" xml:space="preserve">
+    <value>Greenish blue</value>
+  </data>
+  <data name="Hue210" xml:space="preserve">
+    <value>Blue</value>
+  </data>
+  <data name="Hue220" xml:space="preserve">
+    <value>Ocean blue</value>
+  </data>
+  <data name="Hue230" xml:space="preserve">
+    <value>Royal blue</value>
+  </data>
+  <data name="Hue240" xml:space="preserve">
+    <value>Midnight blue</value>
+  </data>
+  <data name="Hue250" xml:space="preserve">
+    <value>Indigo blue</value>
+  </data>
+  <data name="Hue260" xml:space="preserve">
+    <value>Bluish purple</value>
+  </data>
+  <data name="Hue270" xml:space="preserve">
+    <value>Purple</value>
+  </data>
+  <data name="Hue280" xml:space="preserve">
+    <value>Eggplant purple</value>
+  </data>
+  <data name="Hue290" xml:space="preserve">
+    <value>Amethyst purple</value>
+  </data>
+  <data name="Hue30" xml:space="preserve">
+    <value>Orange</value>
+  </data>
+  <data name="Hue300" xml:space="preserve">
+    <value>Magenta</value>
+  </data>
+  <data name="Hue310" xml:space="preserve">
+    <value>Cyclamen pink</value>
+  </data>
+  <data name="Hue320" xml:space="preserve">
+    <value>Bright pink</value>
+  </data>
+  <data name="Hue330" xml:space="preserve">
+    <value>Magenta red</value>
+  </data>
+  <data name="Hue340" xml:space="preserve">
+    <value>Ruby red</value>
+  </data>
+  <data name="Hue350" xml:space="preserve">
+    <value>Bright red </value>
+  </data>
+  <data name="Hue360" xml:space="preserve">
+    <value>Red</value>
+  </data>
+  <data name="Hue40" xml:space="preserve">
+    <value>Golden orange</value>
+  </data>
+  <data name="Hue50" xml:space="preserve">
+    <value>Yellow orange</value>
+  </data>
+  <data name="Hue60" xml:space="preserve">
+    <value>Yellow</value>
+  </data>
+  <data name="Hue70" xml:space="preserve">
+    <value>Lemon yellow</value>
+  </data>
+  <data name="Hue80" xml:space="preserve">
+    <value>Greenish yellow</value>
+  </data>
+  <data name="Hue90" xml:space="preserve">
+    <value>Green</value>
+  </data>
+  <data name="Sat0" xml:space="preserve">
+    <value>Gray</value>
+  </data>
+  <data name="Sat0,25" xml:space="preserve">
+    <value>Grayish</value>
+  </data>
+  <data name="Sat0,5" xml:space="preserve">
+    <value>Faded</value>
+  </data>
+  <data name="Sat0,75" xml:space="preserve">
+    <value>Slightly faded</value>
+  </data>
+  <data name="Sat1" xml:space="preserve">
+    <value>Normal sat</value>
   </data>
 </root>

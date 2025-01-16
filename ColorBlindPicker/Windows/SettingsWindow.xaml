@@ -31,9 +31,9 @@
                     <ColumnDefinition Width="auto"/>
                 </Grid.ColumnDefinitions>
 
-                <TextBlock x:Name="TxtColor" Text="{lex:Loc ColorBlindPicker.Resources.Localizations.Localization:Settings}" Foreground="White" FontSize="{DynamicResource fontSizeTitle}" FontWeight="Bold" VerticalAlignment="Center" Margin="10 0"/>
+                <TextBlock x:Name="TxtColor" Text="{lex:Loc ColorBlindPicker.Resources.Localizations.Localization:CaptionSettings}" Foreground="White" FontSize="{DynamicResource fontSizeTitle}" FontWeight="Bold" VerticalAlignment="Center" Margin="10 0"/>
 
-                <Button Style="{StaticResource IconButton}" Grid.Column="2" Margin="0 0 1 0" Click="CloseButton_Click">
+                <Button Style="{StaticResource IconButton}" Grid.Column="2" Margin="0 0 1 0" Click="CloseButton_Click" ToolTip="{lex:Loc ColorBlindPicker.Resources.Localizations.Localization:CaptionClose}">
                     <Image Source="{StaticResource CrossIcon}" Margin="5"/>
                 </Button>
             </Grid>
@@ -45,7 +45,7 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
-                <TextBlock Text="{lex:Loc ColorBlindPicker.Resources.Localizations.Localization:Language}" Foreground="White" FontSize="{DynamicResource fontSizeNormal}" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="10 0"/>
+                <TextBlock Text="{lex:Loc ColorBlindPicker.Resources.Localizations.Localization:CaptionLanguage}" Foreground="White" FontSize="{DynamicResource fontSizeNormal}" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="10 0"/>
 
                 <ComboBox Grid.Column="1" Height="20" Width="75" x:Name="CmbLanguage" Style="{StaticResource theComboBox}" ItemsSource="{Binding ListOfLanguage}"
                           SelectionChanged="CmbLanguage_SelectionChanged" SnapsToDevicePixels="True" FontSize="{DynamicResource fontSizeNormal}" HorizontalAlignment="Left"/>

@@ -117,73 +117,178 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Red" xml:space="preserve">
-    <value>Rosso</value>
-  </data>
-  <data name="Orange_red" xml:space="preserve">
-    <value>Rosso aranciato</value>
-  </data>
-  <data name="Orange" xml:space="preserve">
-    <value>Arancione</value>
-  </data>
-  <data name="Yellow_orange" xml:space="preserve">
-    <value>Giallo aranciato</value>
-  </data>
-  <data name="Yellow" xml:space="preserve">
-    <value>Giallo</value>
-  </data>
-  <data name="Green" xml:space="preserve">
-    <value>Verde</value>
-  </data>
-  <data name="Bluish_green" xml:space="preserve">
-    <value>Blu verdastro</value>
-  </data>
-  <data name="Blue" xml:space="preserve">
-    <value>Blue</value>
-  </data>
-  <data name="Bluish_purple" xml:space="preserve">
-    <value>Blu violaceo</value>
-  </data>
-  <data name="Purple" xml:space="preserve">
-    <value>Viola</value>
-  </data>
-  <data name="Reddish_purple" xml:space="preserve">
-    <value>Rosso violaceo</value>
-  </data>
-  <data name="Gray" xml:space="preserve">
-    <value>Grigio</value>
-  </data>
-  <data name="Grayish" xml:space="preserve">
-    <value>Tendente al grigio</value>
-  </data>
-  <data name="Faded" xml:space="preserve">
-    <value>Sbiadito</value>
-  </data>
-  <data name="Slightly_faded" xml:space="preserve">
-    <value>Leggermente sbiadito</value>
-  </data>
-  <data name="Normal" xml:space="preserve">
-    <value>Normale</value>
-  </data>
-  <data name="Black" xml:space="preserve">
+  <data name="Bright0" xml:space="preserve">
     <value>Nero</value>
   </data>
-  <data name="Dark" xml:space="preserve">
+  <data name="Bright0,1" xml:space="preserve">
+    <value>Scurissimo</value>
+  </data>
+  <data name="Bright0,3" xml:space="preserve">
     <value>Scuro</value>
   </data>
-  <data name="Bright" xml:space="preserve">
+  <data name="Bright0,5" xml:space="preserve">
+    <value>Normale</value>
+  </data>
+  <data name="Bright0,7" xml:space="preserve">
     <value>Chiaro</value>
   </data>
-  <data name="White" xml:space="preserve">
+  <data name="Bright0,9" xml:space="preserve">
+    <value>Chiarissimo</value>
+  </data>
+  <data name="Bright1" xml:space="preserve">
     <value>Bianco</value>
   </data>
-  <data name="Yellowish_green" xml:space="preserve">
-    <value>Verde giallognolo</value>
+  <data name="CaptionClose" xml:space="preserve">
+    <value>Chiudi</value>
   </data>
-  <data name="Settings" xml:space="preserve">
+  <data name="CaptionCopied" xml:space="preserve">
+    <value>Copiato</value>
+  </data>
+  <data name="CaptionCopy" xml:space="preserve">
+    <value>Copia</value>
+  </data>
+  <data name="CaptionDelete" xml:space="preserve">
+    <value>Elimina</value>
+  </data>
+  <data name="CaptionHistory" xml:space="preserve">
+    <value>Cronologia</value>
+  </data>
+  <data name="CaptionLanguage" xml:space="preserve">
+    <value>Lingua</value>
+  </data>
+  <data name="CaptionPicker" xml:space="preserve">
+    <value>Picker</value>
+  </data>
+  <data name="CaptionPin" xml:space="preserve">
+    <value>Fissa in alto</value>
+  </data>
+  <data name="CaptionSettings" xml:space="preserve">
     <value>Impostazioni</value>
   </data>
-  <data name="Language" xml:space="preserve">
-    <value>Lingua</value>
+  <data name="Hue0" xml:space="preserve">
+    <value>Rosso</value>
+  </data>
+  <data name="Hue10" xml:space="preserve">
+    <value>Rosso aranciato</value>
+  </data>
+  <data name="Hue100" xml:space="preserve">
+    <value>Verde primaverile</value>
+  </data>
+  <data name="Hue110" xml:space="preserve">
+    <value>Verde chiaro</value>
+  </data>
+  <data name="Hue120" xml:space="preserve">
+    <value>Verde smeraldo</value>
+  </data>
+  <data name="Hue130" xml:space="preserve">
+    <value>Verde bosco</value>
+  </data>
+  <data name="Hue140" xml:space="preserve">
+    <value>Verde oliva</value>
+  </data>
+  <data name="Hue150" xml:space="preserve">
+    <value>Verde acqua</value>
+  </data>
+  <data name="Hue160" xml:space="preserve">
+    <value>Verde turchese</value>
+  </data>
+  <data name="Hue170" xml:space="preserve">
+    <value>Azzurro turchese</value>
+  </data>
+  <data name="Hue180" xml:space="preserve">
+    <value>Ciano</value>
+  </data>
+  <data name="Hue190" xml:space="preserve">
+    <value>Blu turchese</value>
+  </data>
+  <data name="Hue20" xml:space="preserve">
+    <value>Arancione rossastro</value>
+  </data>
+  <data name="Hue200" xml:space="preserve">
+    <value>Blu verdastro</value>
+  </data>
+  <data name="Hue210" xml:space="preserve">
+    <value>Blu</value>
+  </data>
+  <data name="Hue220" xml:space="preserve">
+    <value>Blu oceano</value>
+  </data>
+  <data name="Hue230" xml:space="preserve">
+    <value>Blu reale</value>
+  </data>
+  <data name="Hue240" xml:space="preserve">
+    <value>Blu notte</value>
+  </data>
+  <data name="Hue250" xml:space="preserve">
+    <value>Blu indaco</value>
+  </data>
+  <data name="Hue260" xml:space="preserve">
+    <value>Viola bluastro</value>
+  </data>
+  <data name="Hue270" xml:space="preserve">
+    <value>Viola</value>
+  </data>
+  <data name="Hue280" xml:space="preserve">
+    <value>Viola melanzana</value>
+  </data>
+  <data name="Hue290" xml:space="preserve">
+    <value>Viola ametista</value>
+  </data>
+  <data name="Hue30" xml:space="preserve">
+    <value>Arancione</value>
+  </data>
+  <data name="Hue300" xml:space="preserve">
+    <value>Magenta</value>
+  </data>
+  <data name="Hue310" xml:space="preserve">
+    <value>Rosa ciclamino</value>
+  </data>
+  <data name="Hue320" xml:space="preserve">
+    <value>Rosa acceso</value>
+  </data>
+  <data name="Hue330" xml:space="preserve">
+    <value>Rosso magenta</value>
+  </data>
+  <data name="Hue340" xml:space="preserve">
+    <value>Rosso rubino</value>
+  </data>
+  <data name="Hue350" xml:space="preserve">
+    <value>Rosso vivo</value>
+  </data>
+  <data name="Hue360" xml:space="preserve">
+    <value>Rosso</value>
+  </data>
+  <data name="Hue40" xml:space="preserve">
+    <value>Arancione dorato</value>
+  </data>
+  <data name="Hue50" xml:space="preserve">
+    <value>Giallo aranciato</value>
+  </data>
+  <data name="Hue60" xml:space="preserve">
+    <value>Giallo</value>
+  </data>
+  <data name="Hue70" xml:space="preserve">
+    <value>Giallo limone</value>
+  </data>
+  <data name="Hue80" xml:space="preserve">
+    <value>Giallo verdastro</value>
+  </data>
+  <data name="Hue90" xml:space="preserve">
+    <value>Verde</value>
+  </data>
+  <data name="Sat0" xml:space="preserve">
+    <value>Grigio</value>
+  </data>
+  <data name="Sat0,25" xml:space="preserve">
+    <value>Leggermente grigio</value>
+  </data>
+  <data name="Sat0,5" xml:space="preserve">
+    <value>Sbiadito</value>
+  </data>
+  <data name="Sat0,75" xml:space="preserve">
+    <value>Leggermente sbiadito</value>
+  </data>
+  <data name="Sat1" xml:space="preserve">
+    <value>Normale</value>
   </data>
 </root>

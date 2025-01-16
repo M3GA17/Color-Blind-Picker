@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:ColorBlindPicker"
              xmlns:lex="http://wpflocalizeextension.codeplex.com"
              xmlns:viewmodel="clr-namespace:ColorBlindPicker.ApplicationLayer.ViewModels"
-             StartupUri="MainWindow.xaml">
+             StartupUri="MainWindow.xaml" >
 
 
     <Application.Resources>

@@ -52,7 +52,6 @@ public class ColorModel : BaseViewModel
     }
     public ColorModel(string hexRgb)
     {
-        //Covert Hex RGB to ARGB color
         int argbValue = Convert.ToInt32("FF" + hexRgb, 16);
         Color = Color.FromArgb(argbValue);
     }
@@ -62,59 +61,53 @@ public class ColorModel : BaseViewModel
     {
         string result = string.Empty;
 
-        foreach (var keyword in FindColorDescription().Split(' '))
+        foreach (var keyword in FindColorDescriptionCheckpoints().Split(' '))
         {
             result += string.Concat(" ", LocalizationProvider.GetLocalizedValue<string>(keyword));
         }
 
         return result;
     }
-    public string FindColorDescription()
+    public string FindColorDescriptionCheckpoints()
     {
-        string hue = FindClosestValue(HslColor.Hue, HueValues);
-        string saturation = FindClosestValue(HslColor.Saturation, SaturationValues);
-        string lightness = FindClosestValue(HslColor.Lightness, BrightnessValues);
+        double hue = FindClosestValue(HslColor.Hue, HueCheckpoints);
+        double saturation = FindClosestValue(HslColor.Saturation, SaturationCheckpoints);
+        double lightness = FindClosestValue(HslColor.Lightness, BrightnessCheckpoints);
 
-        if (lightness == "Black" || lightness == "White")
-            return lightness;
+        if (lightness == 0 || lightness == 1)
+            return string.Concat("Bright", lightness);
 
-        if (saturation == "Gray")
-            return saturation;
+        if (saturation == 0)
+            return string.Concat("Sat", saturation);
 
+        string ColorDescription = string.Concat("Hue", hue);
 
-        string ColorDescription = hue;
+        if (lightness != 0.5)
+            ColorDescription += string.Concat(" Bright", lightness);
 
-        if (lightness != "Normal")
-            ColorDescription += string.Concat(" ", lightness);
-
-        if (saturation != "Normal")
-            ColorDescription += string.Concat(" ", saturation);
+        if (saturation != 1)
+            ColorDescription += string.Concat(" Sat", saturation);
 
 
         return ColorDescription;
     }
-    static string FindClosestValue(double numberToSearch, Dictionary<string, double> Values)
+    static double FindClosestValue(double numberToSearch, double[] Values)
     {
-        if (Values == null || Values.Count == 0)
-        {
-            throw new ArgumentException("Brightness values dictionary is empty or null.");
-        }
-
-        string closestSymbolicName = string.Empty;
         double minDifference = double.MaxValue;
+        double closestValue = 0;
 
-        foreach (var kvp in Values)
+        foreach (var value in Values)
         {
-            double currentDifference = Math.Abs(numberToSearch - kvp.Value);
+            double currentDifference = Math.Abs(numberToSearch - value);
 
             if (currentDifference < minDifference)
             {
                 minDifference = currentDifference;
-                closestSymbolicName = kvp.Key;
+                closestValue = value;
             }
         }
 
-        return closestSymbolicName;
+        return closestValue;
     }
 
     //HSL
@@ -162,37 +155,14 @@ public class ColorModel : BaseViewModel
     }
 
     //HSL Checkpoint
-    readonly Dictionary<string, double> HueValues = new()
-    {
-        {"Red", 0},
-        {"Red_Orange", 15},
-        {"Orange", 30},
-        {"Yellow_Orange", 45},
-        {"Yellow", 60},
-        {"Yellowish_green", 75},
-        {"Green", 120},
-        {"Bluish_green", 195},
-        {"Blue", 240},
-        {"Bluish_purple", 255},
-        {"Purple", 270},
-        {"Reddish_purple", 315}
-    };
-    readonly Dictionary<string, double> SaturationValues = new()
-    {
-        {"Gray", 0},
-        {"Grayish", 0.25},
-        {"Faded", 0.50},
-        {"Slightly_faded", 0.75},
-        {"Normal", 1}
-    };
-    readonly Dictionary<string, double> BrightnessValues = new()
-    {
-        {"Black", 0.0},
-        {"Dark", 0.25},
-        {"Normal", 0.50},
-        {"Bright", 0.75},
-        {"White", 1}
-    };
+    readonly double[] HueCheckpoints = [0,10,20,30,40,50,60,70,80,90,
+                                        100, 110, 120, 130, 140, 150, 160, 170, 180, 190,
+                                        200, 210, 220, 230, 240, 250, 260, 270, 280, 290,
+                                        300, 310, 320, 330, 340, 350, 360];
+
+    readonly double[] SaturationCheckpoints = [0, 0.25, 0.5, 0.75, 1];
+    readonly double[] BrightnessCheckpoints = [0, 0.1, 0.3, 0.5, 0.7, 0.9, 1];
+
 
     //TODO: convert to wellKnown
 }

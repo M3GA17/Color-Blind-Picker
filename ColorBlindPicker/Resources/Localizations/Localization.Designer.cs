@@ -63,207 +63,522 @@ namespace ColorBlindPicker.Resources.Localizations {
         /// <summary>
         ///   Looks up a localized string similar to Black.
         /// </summary>
-        internal static string Black {
+        internal static string Bright0 {
             get {
-                return ResourceManager.GetString("Black", resourceCulture);
+                return ResourceManager.GetString("Bright0", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Blue.
+        ///   Looks up a localized string similar to Darkest.
         /// </summary>
-        internal static string Blue {
+        internal static string Bright0_1 {
             get {
-                return ResourceManager.GetString("Blue", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Bluish green.
-        /// </summary>
-        internal static string Bluish_green {
-            get {
-                return ResourceManager.GetString("Bluish_green", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Bluish purple.
-        /// </summary>
-        internal static string Bluish_purple {
-            get {
-                return ResourceManager.GetString("Bluish_purple", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Bright.
-        /// </summary>
-        internal static string Bright {
-            get {
-                return ResourceManager.GetString("Bright", resourceCulture);
+                return ResourceManager.GetString("Bright0,1", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Dark.
         /// </summary>
-        internal static string Dark {
+        internal static string Bright0_3 {
             get {
-                return ResourceManager.GetString("Dark", resourceCulture);
+                return ResourceManager.GetString("Bright0,3", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Faded.
+        ///   Looks up a localized string similar to Normal br.
         /// </summary>
-        internal static string Faded {
+        internal static string Bright0_5 {
             get {
-                return ResourceManager.GetString("Faded", resourceCulture);
+                return ResourceManager.GetString("Bright0,5", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Gray.
+        ///   Looks up a localized string similar to Light.
         /// </summary>
-        internal static string Gray {
+        internal static string Bright0_7 {
             get {
-                return ResourceManager.GetString("Gray", resourceCulture);
+                return ResourceManager.GetString("Bright0,7", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Grayish.
+        ///   Looks up a localized string similar to Very light.
         /// </summary>
-        internal static string Grayish {
+        internal static string Bright0_9 {
             get {
-                return ResourceManager.GetString("Grayish", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Green.
-        /// </summary>
-        internal static string Green {
-            get {
-                return ResourceManager.GetString("Green", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Language.
-        /// </summary>
-        internal static string Language {
-            get {
-                return ResourceManager.GetString("Language", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Normal.
-        /// </summary>
-        internal static string Normal {
-            get {
-                return ResourceManager.GetString("Normal", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Orange.
-        /// </summary>
-        internal static string Orange {
-            get {
-                return ResourceManager.GetString("Orange", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Orange red.
-        /// </summary>
-        internal static string Orange_red {
-            get {
-                return ResourceManager.GetString("Orange_red", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Purple.
-        /// </summary>
-        internal static string Purple {
-            get {
-                return ResourceManager.GetString("Purple", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Red.
-        /// </summary>
-        internal static string Red {
-            get {
-                return ResourceManager.GetString("Red", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Reddish purple.
-        /// </summary>
-        internal static string Reddish_purple {
-            get {
-                return ResourceManager.GetString("Reddish_purple", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Settings.
-        /// </summary>
-        internal static string Settings {
-            get {
-                return ResourceManager.GetString("Settings", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Slightly faded.
-        /// </summary>
-        internal static string Slightly_faded {
-            get {
-                return ResourceManager.GetString("Slightly_faded", resourceCulture);
+                return ResourceManager.GetString("Bright0,9", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to White.
         /// </summary>
-        internal static string White {
+        internal static string Bright1 {
             get {
-                return ResourceManager.GetString("White", resourceCulture);
+                return ResourceManager.GetString("Bright1", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Yellow.
+        ///   Looks up a localized string similar to Close.
         /// </summary>
-        internal static string Yellow {
+        internal static string CaptionClose {
             get {
-                return ResourceManager.GetString("Yellow", resourceCulture);
+                return ResourceManager.GetString("CaptionClose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copied.
+        /// </summary>
+        internal static string CaptionCopied {
+            get {
+                return ResourceManager.GetString("CaptionCopied", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copy.
+        /// </summary>
+        internal static string CaptionCopy {
+            get {
+                return ResourceManager.GetString("CaptionCopy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete.
+        /// </summary>
+        internal static string CaptionDelete {
+            get {
+                return ResourceManager.GetString("CaptionDelete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to History.
+        /// </summary>
+        internal static string CaptionHistory {
+            get {
+                return ResourceManager.GetString("CaptionHistory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Language.
+        /// </summary>
+        internal static string CaptionLanguage {
+            get {
+                return ResourceManager.GetString("CaptionLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Picker.
+        /// </summary>
+        internal static string CaptionPicker {
+            get {
+                return ResourceManager.GetString("CaptionPicker", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pin at the top.
+        /// </summary>
+        internal static string CaptionPin {
+            get {
+                return ResourceManager.GetString("CaptionPin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Settings.
+        /// </summary>
+        internal static string CaptionSettings {
+            get {
+                return ResourceManager.GetString("CaptionSettings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Red.
+        /// </summary>
+        internal static string Hue0 {
+            get {
+                return ResourceManager.GetString("Hue0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Orange red.
+        /// </summary>
+        internal static string Hue10 {
+            get {
+                return ResourceManager.GetString("Hue10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Spring green.
+        /// </summary>
+        internal static string Hue100 {
+            get {
+                return ResourceManager.GetString("Hue100", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Light green.
+        /// </summary>
+        internal static string Hue110 {
+            get {
+                return ResourceManager.GetString("Hue110", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Emerald green.
+        /// </summary>
+        internal static string Hue120 {
+            get {
+                return ResourceManager.GetString("Hue120", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Forest green.
+        /// </summary>
+        internal static string Hue130 {
+            get {
+                return ResourceManager.GetString("Hue130", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Olive green.
+        /// </summary>
+        internal static string Hue140 {
+            get {
+                return ResourceManager.GetString("Hue140", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Aqua green.
+        /// </summary>
+        internal static string Hue150 {
+            get {
+                return ResourceManager.GetString("Hue150", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Turquoise green.
+        /// </summary>
+        internal static string Hue160 {
+            get {
+                return ResourceManager.GetString("Hue160", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Turquoise blue.
+        /// </summary>
+        internal static string Hue170 {
+            get {
+                return ResourceManager.GetString("Hue170", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cyan.
+        /// </summary>
+        internal static string Hue180 {
+            get {
+                return ResourceManager.GetString("Hue180", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Turquoise blue.
+        /// </summary>
+        internal static string Hue190 {
+            get {
+                return ResourceManager.GetString("Hue190", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reddish orange.
+        /// </summary>
+        internal static string Hue20 {
+            get {
+                return ResourceManager.GetString("Hue20", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Greenish blue.
+        /// </summary>
+        internal static string Hue200 {
+            get {
+                return ResourceManager.GetString("Hue200", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Blue.
+        /// </summary>
+        internal static string Hue210 {
+            get {
+                return ResourceManager.GetString("Hue210", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocean blue.
+        /// </summary>
+        internal static string Hue220 {
+            get {
+                return ResourceManager.GetString("Hue220", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Royal blue.
+        /// </summary>
+        internal static string Hue230 {
+            get {
+                return ResourceManager.GetString("Hue230", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Midnight blue.
+        /// </summary>
+        internal static string Hue240 {
+            get {
+                return ResourceManager.GetString("Hue240", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Indigo blue.
+        /// </summary>
+        internal static string Hue250 {
+            get {
+                return ResourceManager.GetString("Hue250", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bluish purple.
+        /// </summary>
+        internal static string Hue260 {
+            get {
+                return ResourceManager.GetString("Hue260", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Purple.
+        /// </summary>
+        internal static string Hue270 {
+            get {
+                return ResourceManager.GetString("Hue270", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Eggplant purple.
+        /// </summary>
+        internal static string Hue280 {
+            get {
+                return ResourceManager.GetString("Hue280", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Amethyst purple.
+        /// </summary>
+        internal static string Hue290 {
+            get {
+                return ResourceManager.GetString("Hue290", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Orange.
+        /// </summary>
+        internal static string Hue30 {
+            get {
+                return ResourceManager.GetString("Hue30", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Magenta.
+        /// </summary>
+        internal static string Hue300 {
+            get {
+                return ResourceManager.GetString("Hue300", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cyclamen pink.
+        /// </summary>
+        internal static string Hue310 {
+            get {
+                return ResourceManager.GetString("Hue310", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bright pink.
+        /// </summary>
+        internal static string Hue320 {
+            get {
+                return ResourceManager.GetString("Hue320", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Magenta red.
+        /// </summary>
+        internal static string Hue330 {
+            get {
+                return ResourceManager.GetString("Hue330", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ruby red.
+        /// </summary>
+        internal static string Hue340 {
+            get {
+                return ResourceManager.GetString("Hue340", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bright red .
+        /// </summary>
+        internal static string Hue350 {
+            get {
+                return ResourceManager.GetString("Hue350", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Red.
+        /// </summary>
+        internal static string Hue360 {
+            get {
+                return ResourceManager.GetString("Hue360", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Golden orange.
+        /// </summary>
+        internal static string Hue40 {
+            get {
+                return ResourceManager.GetString("Hue40", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Yellow orange.
         /// </summary>
-        internal static string Yellow_orange {
+        internal static string Hue50 {
             get {
-                return ResourceManager.GetString("Yellow_orange", resourceCulture);
+                return ResourceManager.GetString("Hue50", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Yellowish green.
+        ///   Looks up a localized string similar to Yellow.
         /// </summary>
-        internal static string Yellowish_green {
+        internal static string Hue60 {
             get {
-                return ResourceManager.GetString("Yellowish_green", resourceCulture);
+                return ResourceManager.GetString("Hue60", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lemon yellow.
+        /// </summary>
+        internal static string Hue70 {
+            get {
+                return ResourceManager.GetString("Hue70", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Greenish yellow.
+        /// </summary>
+        internal static string Hue80 {
+            get {
+                return ResourceManager.GetString("Hue80", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Green.
+        /// </summary>
+        internal static string Hue90 {
+            get {
+                return ResourceManager.GetString("Hue90", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gray.
+        /// </summary>
+        internal static string Sat0 {
+            get {
+                return ResourceManager.GetString("Sat0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Grayish.
+        /// </summary>
+        internal static string Sat0_25 {
+            get {
+                return ResourceManager.GetString("Sat0,25", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Faded.
+        /// </summary>
+        internal static string Sat0_5 {
+            get {
+                return ResourceManager.GetString("Sat0,5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Slightly faded.
+        /// </summary>
+        internal static string Sat0_75 {
+            get {
+                return ResourceManager.GetString("Sat0,75", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Normal sat.
+        /// </summary>
+        internal static string Sat1 {
+            get {
+                return ResourceManager.GetString("Sat1", resourceCulture);
             }
         }
     }

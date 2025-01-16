@@ -3,6 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:lex="http://wpflocalizeextension.codeplex.com"
+             lex:LocalizeDictionary.DesignCulture="en"
+             lex:LocalizeDictionary.OutputMissingKeys="True"
+             lex:ResxLocalizationProvider.DefaultAssembly="ColorBlindPicker"
+             lex:ResxLocalizationProvider.DefaultDictionary="Resources"  
              mc:Ignorable="d" Loaded="UserControl_Loaded"
              Height="28" d:DesignWidth="300" >
     <Border Background="gray" CornerRadius="10">   
@@ -20,10 +25,10 @@
         <Label Grid.Column="2" Content="{Binding Hex}" VerticalAlignment="Center"/>
         <StackPanel Grid.Column="3" Orientation="Horizontal" >
                 <Button Width="30" Style="{StaticResource IconButton}" Click="CopyButton_Click">
-                    <Image Source="{StaticResource CopyIcon}" Margin="5"/>
+                    <Image Source="{StaticResource CopyIcon}" Margin="5" ToolTip="{lex:Loc ColorBlindPicker.Resources.Localizations.Localization:CaptionCopy}"/>
                 </Button>
                 <Button Style="{StaticResource IconButton}" Click="DeleteButton_Click">
-                    <Image Source="{StaticResource TrashIcon}" Margin="5"/>
+                    <Image Source="{StaticResource TrashIcon}" Margin="5" ToolTip="{lex:Loc ColorBlindPicker.Resources.Localizations.Localization:CaptionDelete}"/>
                 </Button>
 
             </StackPanel>
