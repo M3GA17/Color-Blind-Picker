@@ -120,19 +120,19 @@
   <data name="Bright0" xml:space="preserve">
     <value>Nero</value>
   </data>
-  <data name="Bright0,1" xml:space="preserve">
+  <data name="Bright0.1" xml:space="preserve">
     <value>Scurissimo</value>
   </data>
-  <data name="Bright0,3" xml:space="preserve">
+  <data name="Bright0.3" xml:space="preserve">
     <value>Scuro</value>
   </data>
-  <data name="Bright0,5" xml:space="preserve">
+  <data name="Bright0.5" xml:space="preserve">
     <value>Normale</value>
   </data>
-  <data name="Bright0,7" xml:space="preserve">
+  <data name="Bright0.7" xml:space="preserve">
     <value>Chiaro</value>
   </data>
-  <data name="Bright0,9" xml:space="preserve">
+  <data name="Bright0.9" xml:space="preserve">
     <value>Chiarissimo</value>
   </data>
   <data name="Bright1" xml:space="preserve">
@@ -279,13 +279,13 @@
   <data name="Sat0" xml:space="preserve">
     <value>Grigio</value>
   </data>
-  <data name="Sat0,25" xml:space="preserve">
+  <data name="Sat0.25" xml:space="preserve">
     <value>Leggermente grigio</value>
   </data>
-  <data name="Sat0,5" xml:space="preserve">
+  <data name="Sat0.5" xml:space="preserve">
     <value>Sbiadito</value>
   </data>
-  <data name="Sat0,75" xml:space="preserve">
+  <data name="Sat0.75" xml:space="preserve">
     <value>Leggermente sbiadito</value>
   </data>
   <data name="Sat1" xml:space="preserve">

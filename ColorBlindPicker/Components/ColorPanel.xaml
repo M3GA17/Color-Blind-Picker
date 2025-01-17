@@ -21,7 +21,7 @@
 
             <Border x:Name="Quadrato" Grid.Column="0" Margin="5" Background="{Binding ColorBrush}" CornerRadius="15"/>
 
-            <Label Grid.Column="1" Content="{Binding Description}" VerticalAlignment="Center"/>
+            <Label Grid.Column="1" Content="{Binding Description}" ToolTip="{Binding Description}" VerticalAlignment="Center"/>
         <Label Grid.Column="2" Content="{Binding Hex}" VerticalAlignment="Center"/>
         <StackPanel Grid.Column="3" Orientation="Horizontal" >
                 <Button Width="30" Style="{StaticResource IconButton}" Click="CopyButton_Click">

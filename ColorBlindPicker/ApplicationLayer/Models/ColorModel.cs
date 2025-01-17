@@ -75,18 +75,18 @@ public class ColorModel : BaseViewModel
         double lightness = FindClosestValue(HslColor.Lightness, BrightnessCheckpoints);
 
         if (lightness == 0 || lightness == 1)
-            return string.Concat("Bright", lightness);
+            return string.Concat("Bright", lightness.ToString(System.Globalization.CultureInfo.InvariantCulture));
 
         if (saturation == 0)
-            return string.Concat("Sat", saturation);
+            return string.Concat("Sat", saturation.ToString(System.Globalization.CultureInfo.InvariantCulture));
 
-        string ColorDescription = string.Concat("Hue", hue);
+        string ColorDescription = string.Concat("Hue", hue.ToString(System.Globalization.CultureInfo.InvariantCulture));
 
         if (lightness != 0.5)
-            ColorDescription += string.Concat(" Bright", lightness);
+            ColorDescription += string.Concat(" Bright", lightness.ToString(System.Globalization.CultureInfo.InvariantCulture));
 
         if (saturation != 1)
-            ColorDescription += string.Concat(" Sat", saturation);
+            ColorDescription += string.Concat(" Sat", saturation.ToString(System.Globalization.CultureInfo.InvariantCulture));
 
 
         return ColorDescription;

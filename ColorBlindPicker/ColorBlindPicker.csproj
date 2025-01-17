@@ -13,10 +13,17 @@
 
   <ItemGroup>
     <None Remove="Resources\favicon.ico" />
+    <None Remove="Resources\Files\ColorBlindPicker.png" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Resources\favicon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <Resource Include="Resources\Files\ColorBlindPicker.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <EmbeddedResource Include="Resources\Files\favicon.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>

@@ -5,11 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ColorBlindPicker.ApplicationLayer.ViewModels" Cursor="UpArrow"
         mc:Ignorable="d" Background="#01000000" AllowsTransparency="True" WindowStyle="None"
-        Title="TransparentWindow" Height="450" Width="800" MouseDown="Window_MouseDown">
-
-    <!--<Window.Resources>
-        <Cursor x:Key="CustomCursor">/Resources/color-picker.cur</Cursor>
-    </Window.Resources>-->
+        Title="TransparentWindow" Height="450" Width="800" MouseDown="Window_MouseDown" Topmost="True">
     <Border BorderThickness="5"  BorderBrush="Red">
         
     </Border>

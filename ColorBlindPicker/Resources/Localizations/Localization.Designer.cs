@@ -74,7 +74,7 @@ namespace ColorBlindPicker.Resources.Localizations {
         /// </summary>
         internal static string Bright0_1 {
             get {
-                return ResourceManager.GetString("Bright0,1", resourceCulture);
+                return ResourceManager.GetString("Bright0.1", resourceCulture);
             }
         }
         
@@ -83,7 +83,7 @@ namespace ColorBlindPicker.Resources.Localizations {
         /// </summary>
         internal static string Bright0_3 {
             get {
-                return ResourceManager.GetString("Bright0,3", resourceCulture);
+                return ResourceManager.GetString("Bright0.3", resourceCulture);
             }
         }
         
@@ -92,7 +92,7 @@ namespace ColorBlindPicker.Resources.Localizations {
         /// </summary>
         internal static string Bright0_5 {
             get {
-                return ResourceManager.GetString("Bright0,5", resourceCulture);
+                return ResourceManager.GetString("Bright0.5", resourceCulture);
             }
         }
         
@@ -101,7 +101,7 @@ namespace ColorBlindPicker.Resources.Localizations {
         /// </summary>
         internal static string Bright0_7 {
             get {
-                return ResourceManager.GetString("Bright0,7", resourceCulture);
+                return ResourceManager.GetString("Bright0.7", resourceCulture);
             }
         }
         
@@ -110,7 +110,7 @@ namespace ColorBlindPicker.Resources.Localizations {
         /// </summary>
         internal static string Bright0_9 {
             get {
-                return ResourceManager.GetString("Bright0,9", resourceCulture);
+                return ResourceManager.GetString("Bright0.9", resourceCulture);
             }
         }
         
@@ -551,7 +551,7 @@ namespace ColorBlindPicker.Resources.Localizations {
         /// </summary>
         internal static string Sat0_25 {
             get {
-                return ResourceManager.GetString("Sat0,25", resourceCulture);
+                return ResourceManager.GetString("Sat0.25", resourceCulture);
             }
         }
         
@@ -560,7 +560,7 @@ namespace ColorBlindPicker.Resources.Localizations {
         /// </summary>
         internal static string Sat0_5 {
             get {
-                return ResourceManager.GetString("Sat0,5", resourceCulture);
+                return ResourceManager.GetString("Sat0.5", resourceCulture);
             }
         }
         
@@ -569,7 +569,7 @@ namespace ColorBlindPicker.Resources.Localizations {
         /// </summary>
         internal static string Sat0_75 {
             get {
-                return ResourceManager.GetString("Sat0,75", resourceCulture);
+                return ResourceManager.GetString("Sat0.75", resourceCulture);
             }
         }
         
