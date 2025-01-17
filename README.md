@@ -3,6 +3,7 @@
 # Color Blind Picker
 
 **Color Blind Picker** is an open-source color picker designed to help people with color blindness identify colors. In addition to providing the Hex values of the selected color, **the software describes it in words**, making color recognition more accessible.
+Dev stack: .net 8 Wpf
 
 ![Color Blind Picker 2](https://github.com/user-attachments/assets/5e6a501b-f63d-4124-9849-a8a3fc7d8b44) ![Color Blind Picker](https://github.com/user-attachments/assets/0ce12a56-1040-4917-b03b-8e8554b6d1c7)
 ![Color Blind Picker 3](https://github.com/user-attachments/assets/0197ae5e-1087-41b6-9cfc-8e06db751ea7) ![Color Blind Picker 4](https://github.com/user-attachments/assets/beb79173-14ff-447e-849b-a27d67a72f8b)
