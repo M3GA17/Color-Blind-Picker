@@ -2,14 +2,17 @@ import { useEffect, useRef, useState } from 'react';
 import { Check, ChevronDown, ChevronUp, CircleAlert, Copy, Ellipsis, History, LoaderCircle, Pin, Pipette, ScanEye, Settings2, Trash2, X } from 'lucide-react';
 import { messages } from './i18n';
 import { desktop, native } from './native';
+import { LiveLabel } from './live-label';
 import type { ColorSample, HistoryColor, Settings, Snapshot } from './types';
-import { defaultSnapshot, formatColor, initialColor } from './types';
+import { colorLabel, defaultSnapshot, formatColor, initialColor, referenceTitle } from './types';
 
 interface Notice { message: string; error?: boolean; detail?: string; undo?: { entry: HistoryColor; index: number } }
 
 export function App() {
   const [snapshot, setSnapshot] = useState<Snapshot>(defaultSnapshot);
   const [current, setCurrent] = useState<ColorSample | null>(desktop ? null : initialColor);
+  const [label, setLabel] = useState<ColorSample | null>(desktop ? null : initialColor);
+  const liveLabel = useRef(new LiveLabel());
   const [ready, setReady] = useState(false);
   const [pending, setPending] = useState(false);
   const [capturing, setCapturing] = useState(false);
@@ -44,6 +47,8 @@ export function App() {
         const m = messages(outcome.snapshot.settings.language);
         setSnapshot(outcome.snapshot);
         setCurrent(outcome.color);
+        liveLabel.current.reset(outcome.color);
+        setLabel(outcome.color);
         setNotice({ message: outcome.copied ? `${m.captured} · ${outcome.snapshot.settings.format.toUpperCase()} ${m.andCopied}` : `${m.captured} · ${m.copyFailed}`, error: !outcome.copied, detail: outcome.copyError ?? undefined });
       },
       closed: () => setCapturing(false),
@@ -62,7 +67,11 @@ export function App() {
       try {
         const color = await native.sample();
         if (!disposed) {
-          if (color) setCurrent(previous => previous?.hex === color.hex ? previous : color);
+          if (color) {
+            const nextLabel = liveLabel.current.update(color, performance.now());
+            setCurrent(previous => previous?.hex === color.hex ? previous : color);
+            setLabel(previous => previous?.naming.id === nextLabel.naming.id ? previous : nextLabel);
+          }
           setLiveError(false);
         }
       } catch { if (!disposed) setLiveError(true); }
@@ -146,7 +155,7 @@ export function App() {
 
   const controlsDisabled = !desktop || !ready || pending || capturing;
   const language = snapshot.settings.language;
-  const colorName = current?.name[language] ?? t.waiting;
+  const colorName = label?.name[language] ?? t.waiting;
 
   return <main className="picker" ref={container} aria-label="Color Blind Picker">
     <header className="titlebar" onPointerDown={event => {
@@ -167,8 +176,8 @@ export function App() {
     <section className="readout" aria-label={colorName}>
       <div className={`swatch${!current ? ' swatch-empty' : ''}`} style={current ? { backgroundColor: current.hex } : undefined} aria-hidden="true" />
       <div className="color-info">
-        <h1>{!ready ? t.loading : colorName}</h1>
-        <div className="color-description">{current?.description[language] ?? t.waitingHint}</div>
+        <h1 title={label ? referenceTitle(label) : undefined}>{!ready ? t.loading : colorName}</h1>
+        <div className="color-description">{label ? label.description[language] || t.approximateName : t.waitingHint}</div>
         {current && <button className="color-code" disabled={controlsDisabled} aria-label={`${t.copy} ${formatColor(current, snapshot.settings.format)}`} title={t.copy} onClick={() => copy(current)}>
           <span>{formatColor(current, snapshot.settings.format)}</span><Copy size={14} />
         </button>}
@@ -201,6 +210,7 @@ export function App() {
         const value = event.target.value;
         if (value === 'hex' || value === 'rgb') changeSettings({ format: value });
       }}><option value="hex">HEX</option><option value="rgb">RGB</option></select></label>
+      <p className="naming-note">{t.namingMethod}</p>
     </section>}
 
     {snapshot.settings.historyOpen && <section className="history-panel" id="history-panel" aria-label={t.history}>
@@ -210,9 +220,9 @@ export function App() {
         {snapshot.history.map((entry, index) => <div className="history-entry" key={entry.id}>
           <div className="history-row">
             <span className="mini-swatch" style={{ backgroundColor: entry.color.hex }} aria-hidden="true" />
-            <div className="history-color"><div>{entry.color.name[language]}</div><span>{entry.color.hex}</span></div>
-            <button className="icon-button" disabled={controlsDisabled} aria-label={`${t.copy} ${entry.color.name[language]}`} title={t.copy} onClick={() => copy(entry.color)}><Copy /></button>
-            <div data-history-menu><button className="icon-button" disabled={controlsDisabled} aria-label={`${t.more}: ${entry.color.name[language]}`} title={t.more} aria-expanded={menu === entry.id} aria-controls={`color-actions-${entry.id}`} onClick={() => setMenu(value => value === entry.id ? null : entry.id)}><Ellipsis /></button></div>
+            <div className="history-color" title={referenceTitle(entry.color)}><div>{colorLabel(entry.color, language)}</div><span>{entry.color.hex}</span></div>
+            <button className="icon-button" disabled={controlsDisabled} aria-label={`${t.copy} ${colorLabel(entry.color, language)}`} title={t.copy} onClick={() => copy(entry.color)}><Copy /></button>
+            <div data-history-menu><button className="icon-button" disabled={controlsDisabled} aria-label={`${t.more}: ${colorLabel(entry.color, language)}`} title={t.more} aria-expanded={menu === entry.id} aria-controls={`color-actions-${entry.id}`} onClick={() => setMenu(value => value === entry.id ? null : entry.id)}><Ellipsis /></button></div>
           </div>
           {menu === entry.id && <div className="row-actions" id={`color-actions-${entry.id}`} data-history-menu><button className="button destructive" disabled={controlsDisabled} onClick={() => remove(entry, index)}><Trash2 />{t.remove}</button></div>}
         </div>)}

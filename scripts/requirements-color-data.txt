@@ -1,0 +1,4 @@
+# Offline table-generation tools only; the app does not require Python.
+colour-science==0.4.6
+numpy==2.2.6
+scipy==1.15.3

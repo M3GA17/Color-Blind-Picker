@@ -34,6 +34,11 @@
     "targets": ["nsis"],
     "shortDescription": "Identify colors in words",
     "category": "Utility",
+    "resources": {
+      "../THIRD_PARTY_NOTICES.md": "THIRD_PARTY_NOTICES.md",
+      "../docs/data/README.md": "COLOR_DATA_SOURCES.md",
+      "../docs/COLOR-NAMING.md": "COLOR_NAMING_METHOD.md"
+    },
     "icon": ["icons/32x32.png", "icons/128x128.png", "icons/128x128@2x.png", "icons/icon.ico"],
     "windows": { "nsis": { "languages": ["Italian", "English"], "displayLanguageSelector": true } }
   }

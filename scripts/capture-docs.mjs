@@ -6,7 +6,6 @@ import assert from 'node:assert/strict';
 
 if (process.platform !== 'win32') throw Error('Documentation screenshots require the Windows desktop app.');
 
-const root = resolve('.');
 const assets = resolve('docs/assets');
 const work = resolve('test-results/docs');
 const profile = join(work, `profile-${Date.now()}`);
@@ -46,6 +45,7 @@ try {
   await main.getByRole('button', { name: 'Pick a color', exact: true }).waitFor();
   const nativeState = await main.evaluate(() => window.__TAURI_INTERNALS__.invoke('load_state'));
   const example = nativeState.history[0].color;
+  const displayLabel = color => color.description.en ? `${color.name.en} · ${color.description.en}` : color.name.en;
   assert.equal(example.hex, '#EB4064');
   // Freeze only live sampling for consistent documentation. All UI, color names,
   // settings, clipboard, history and actions remain the real desktop app.
@@ -64,7 +64,7 @@ try {
     }, sample);
   }
   await freezeSample(main, example);
-  await main.getByRole('heading', { name: 'Bright red', exact: true }).waitFor();
+  await main.getByRole('heading', { name: example.name.en, exact: true }).waitFor();
 
   async function shot(name) {
     await main.mouse.move(2, 2);
@@ -85,7 +85,7 @@ try {
   await main.locator('.history-row').nth(3).waitFor();
   await shot('history');
 
-  await main.getByRole('button', { name: 'More actions: Bright red', exact: true }).click();
+  await main.getByRole('button', { name: `More actions: ${displayLabel(example)}`, exact: true }).click();
   await main.getByRole('button', { name: 'Delete color', exact: true }).waitFor();
   await shot('history-actions');
   await main.getByRole('button', { name: 'Delete color', exact: true }).click();
@@ -118,12 +118,12 @@ try {
   await overlayCdp.send('Emulation.setDeviceMetricsOverride', { width: 1200, height: 600, deviceScaleFactor: 1.5, mobile: false });
   // A documentation-only palette behind the unchanged transparent overlay keeps
   // screenshots private and makes the real capture tooltip easy to understand.
-  await overlay.evaluate(() => {
+  await overlay.evaluate(colors => {
     document.documentElement.style.background = '#111315';
     const palette = document.createElement('div');
     palette.setAttribute('aria-hidden', 'true');
     palette.style.cssText = 'position:fixed;inset:90px 80px 90px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;pointer-events:none';
-    for (const [hex, name] of [['#EB4064', 'Bright red'], ['#0252A9', 'Dark blue'], ['#FCC31D', 'Golden orange'], ['#41DBD9', 'Cyan']]) {
+    for (const [hex, name] of colors) {
       const cell = document.createElement('div');
       cell.style.cssText = 'border-radius:16px;overflow:hidden;background:#202326;display:flex;flex-direction:column';
       const color = document.createElement('div');
@@ -135,9 +135,9 @@ try {
       label.append(title, code); cell.append(color, label); palette.append(cell);
     }
     document.body.prepend(palette);
-  });
+  }, nativeState.history.map(entry => [entry.color.hex, displayLabel(entry.color)]));
   await overlay.mouse.move(960, 260);
-  await overlay.locator('.capture-tooltip strong').filter({ hasText: 'Cyan' }).waitFor();
+  await overlay.locator('.capture-tooltip strong').filter({ hasText: displayLabel(cyan) }).waitFor();
   await overlay.screenshot({ path: join(assets, 'capture.png'), fullPage: false });
   generated.push('capture.png');
   await overlay.keyboard.press('Escape');

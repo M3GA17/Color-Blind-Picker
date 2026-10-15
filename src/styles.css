@@ -72,6 +72,7 @@ h2 { font-size: 12px; font-weight: 600; margin: 0; }
 .settings-panel h2 { margin-bottom: 12px; }
 .settings-panel label { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 10px; font-size: 12px; }
 .settings-panel label:last-child { margin-bottom: 0; }
+.naming-note { margin: 12px 0 0; color: var(--muted); font-size: 11px; }
 select { background: var(--raised); border: 1px solid var(--border); border-radius: 7px; padding: 6px 8px; min-width: 110px; font-size: 12px; }
 .notice { display: flex; align-items: flex-start; gap: 7px; padding: 10px; border-top: 1px solid var(--border); font-size: 12px; }
 .notice > svg { flex-shrink: 0; margin-top: 2px; }

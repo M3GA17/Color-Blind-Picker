@@ -1,0 +1,56 @@
+[
+  {
+    "hex": "#EB403B",
+    "rgb": [
+      235,
+      64,
+      59
+    ],
+    "name": {
+      "it": "Arancione rossastro",
+      "en": "Reddish orange"
+    },
+    "description": {
+      "it": "Intenso",
+      "en": "Strong"
+    },
+    "naming": {
+      "method": "iscc-nbs-centroid-ciede2000-v1",
+      "id": 35,
+      "referenceName": "strong reddish orange",
+      "deltaE": 8.26914715,
+      "alternative": {
+        "id": 27,
+        "referenceName": "deep yellowish pink",
+        "deltaE": 8.52517029
+      }
+    }
+  },
+  {
+    "hex": "#EB403C",
+    "rgb": [
+      235,
+      64,
+      60
+    ],
+    "name": {
+      "it": "Rosa giallastro",
+      "en": "Yellowish pink"
+    },
+    "description": {
+      "it": "Profondo",
+      "en": "Deep"
+    },
+    "naming": {
+      "method": "iscc-nbs-centroid-ciede2000-v1",
+      "id": 27,
+      "referenceName": "deep yellowish pink",
+      "deltaE": 8.41239152,
+      "alternative": {
+        "id": 35,
+        "referenceName": "strong reddish orange",
+        "deltaE": 8.45177766
+      }
+    }
+  }
+]

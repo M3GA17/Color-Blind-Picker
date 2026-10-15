@@ -1,4 +1,7 @@
 node_modules/
+.venv/
+__pycache__/
+*.pyc
 dist/
 src-tauri/target/
 src-tauri/gen/

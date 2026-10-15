@@ -1,0 +1,83 @@
+[
+  {
+    "hex": "#EB4064",
+    "rgb": [
+      235,
+      64,
+      100
+    ],
+    "name": {
+      "it": "Rosa",
+      "en": "Pink"
+    },
+    "description": {
+      "it": "Profondo",
+      "en": "Deep"
+    },
+    "naming": {
+      "method": "iscc-nbs-centroid-ciede2000-v1",
+      "id": 3,
+      "referenceName": "deep pink",
+      "deltaE": 8.17438221,
+      "alternative": {
+        "id": 12,
+        "referenceName": "strong red",
+        "deltaE": 9.65478444
+      }
+    }
+  },
+  {
+    "hex": "#0252A9",
+    "rgb": [
+      2,
+      82,
+      169
+    ],
+    "name": {
+      "it": "Blu",
+      "en": "Blue"
+    },
+    "description": {
+      "it": "Moderato",
+      "en": "Moderate"
+    },
+    "naming": {
+      "method": "iscc-nbs-centroid-ciede2000-v1",
+      "id": 182,
+      "referenceName": "moderate blue",
+      "deltaE": 8.16803857,
+      "alternative": {
+        "id": 196,
+        "referenceName": "strong purplish blue",
+        "deltaE": 8.89301713
+      }
+    }
+  },
+  {
+    "hex": "#41DBD9",
+    "rgb": [
+      65,
+      219,
+      217
+    ],
+    "name": {
+      "it": "Verde bluastro",
+      "en": "Bluish green"
+    },
+    "description": {
+      "it": "Brillante",
+      "en": "Brilliant"
+    },
+    "naming": {
+      "method": "iscc-nbs-centroid-ciede2000-v1",
+      "id": 159,
+      "referenceName": "brilliant bluish green",
+      "deltaE": 6.96258286,
+      "alternative": {
+        "id": 162,
+        "referenceName": "very light bluish green",
+        "deltaE": 8.0452515
+      }
+    }
+  }
+]

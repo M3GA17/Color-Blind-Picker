@@ -1,4 +1,4 @@
-use crate::color::{from_hex, ColorSample};
+use crate::color::{from_hex, parse_hex, ColorSample};
 use serde::{Deserialize, Serialize};
 use std::{
     fs,
@@ -188,7 +188,8 @@ fn validate(data: &AppData) -> Result<(), String> {
     }
     let mut ids = std::collections::HashSet::new();
     for saved in &data.history {
-        from_hex(&saved.hex)?;
+        // Validation needs only the encoded value; naming is derived in snapshot().
+        parse_hex(&saved.hex)?;
         if !ids.insert(saved.id) {
             return Err("History contains duplicate identifiers.".into());
         }
@@ -249,6 +250,7 @@ mod tests {
             ["#EB4064", "#0252A9", "#EB4064"]
         );
         validate(&data).unwrap();
+        assert_eq!(data.snapshot().history[0].color.naming.id, 3);
         assert!(import_legacy(br##"["invalid"]"##).is_err());
     }
 
@@ -283,6 +285,7 @@ mod tests {
         .unwrap();
         let reopened = Repository::open(path, &[]).unwrap().read().unwrap();
         assert_eq!(reopened.history.len(), snapshot.history.len());
+        assert_eq!(reopened.snapshot().history[0].color.naming.id, 182);
         assert!(matches!(reopened.settings.language, Language::En));
         // Delete only this test's verified unique temporary directory.
         fs::remove_dir_all(directory).unwrap();

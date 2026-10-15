@@ -72,12 +72,17 @@ try {
   const saved = await main.evaluate(() => window.__TAURI_INTERNALS__.invoke('load_state'));
   assert.equal(saved.history.length, 1);
   assert.equal(saved.history[0].color.hex, '#0252A9');
+  assert.equal(saved.history[0].color.naming.id, 182);
+  assert.equal(saved.history[0].color.naming.referenceName, 'moderate blue');
+  assert.equal(saved.history[0].color.naming.method, 'iscc-nbs-centroid-ciede2000-v1');
+  assert.equal(saved.history[0].color.name.it, 'Blu');
+  assert.equal(saved.history[0].color.description.it, 'Moderato');
   const clipboard = execFileSync('powershell.exe', ['-NoProfile', '-NonInteractive', '-Command', 'Get-Clipboard -Raw'], { encoding: 'utf8', windowsHide: true }).trim();
   assert.equal(clipboard, 'rgb(2, 82, 169)', 'Native clipboard did not receive the chosen RGB color');
   await main.getByRole('button', { name: 'Cronologia', exact: true }).click();
   await main.locator('.history-row').waitFor();
   await main.screenshot({ path: resolve(output, 'desktop-history.png') });
-  await main.getByRole('button', { name: 'Altre azioni: Blu scuro', exact: true }).click();
+  await main.getByRole('button', { name: 'Altre azioni: Blu · Moderato', exact: true }).click();
   await main.getByRole('button', { name: 'Elimina colore', exact: true }).click();
   await main.getByRole('button', { name: 'Annulla', exact: true }).click();
   await main.locator('.history-row').waitFor();
@@ -91,8 +96,8 @@ try {
   assert.equal(disk.history.length, 1);
   assert.equal(disk.history[0].hex, '#0252A9');
   assert.deepEqual(errors, [], 'Native WebView errors');
-  await writeFile(resolve(output, 'smoke-result.json'), JSON.stringify({ passed: true, checked: ['native live pixel sampling', 'capture overlay', 'Esc cancellation', 'RGB clipboard', 'always on top', 'delete and undo', 'IT/EN', 'disk persistence'], profile }, null, 2));
-  console.log('Native Windows smoke passed: capture, cancel, real GDI pixel, RGB clipboard, pin, history, undo, language and persistence.');
+  await writeFile(resolve(output, 'smoke-result.json'), JSON.stringify({ passed: true, checked: ['native live pixel sampling', 'ISCC–NBS category and qualifier', 'capture overlay', 'Esc cancellation', 'RGB clipboard', 'always on top', 'delete and undo', 'IT/EN', 'disk persistence'], profile }, null, 2));
+  console.log('Native Windows smoke passed: GDI pixel, ISCC–NBS name, capture, cancel, RGB clipboard, pin, history, undo, language and persistence.');
 } finally {
   if (main && !main.isClosed()) {
     await main.evaluate(() => window.__TAURI_INTERNALS__.invoke('plugin:window|close', { label: 'main' })).catch(() => {});

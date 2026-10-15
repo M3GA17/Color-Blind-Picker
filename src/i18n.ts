@@ -13,6 +13,8 @@ const it = {
   webPreview: 'Anteprima web · il campionamento richiede l’app desktop',
   error: 'Operazione non riuscita', pinned: 'Finestra in primo piano', unpinned: 'Finestra non fissata',
   waiting: 'Sposta il cursore', waitingHint: 'Su un colore fuori da questa finestra',
+  namingMethod: 'Nomi ISCC–NBS · corrispondenza approssimata',
+  approximateName: 'Nome approssimato',
 };
 type Messages = typeof it;
 const en: Messages = {
@@ -28,5 +30,7 @@ const en: Messages = {
   webPreview: 'Web preview · screen sampling requires the desktop app',
   error: 'The action failed', pinned: 'Always on top enabled', unpinned: 'Always on top disabled',
   waiting: 'Move the pointer', waitingHint: 'Over a color outside this window',
+  namingMethod: 'ISCC–NBS names · approximate matching',
+  approximateName: 'Approximate name',
 };
 export function messages(language: Language): Messages { return language === 'it' ? it : en; }

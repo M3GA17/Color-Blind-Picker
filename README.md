@@ -45,7 +45,7 @@ The screenshots below come from the Windows app using an isolated example palett
 A color name, a plain-language qualifier and a copyable value. Move the pointer outside the picker to identify another color.
 
 <p align="center">
-  <img src="docs/assets/compact.png" width="380" alt="Compact picker identifying Bright red, Slightly faded, HEX #EB4064">
+  <img src="docs/assets/compact.png" width="380" alt="Compact picker identifying Pink, Deep, HEX #EB4064 using an ISCC–NBS reference">
 </p>
 
 ### Saved color history
@@ -61,7 +61,7 @@ Keep the colors you pick, see their names and copy a value again. History expand
 Click **Pick a color** and the main window steps aside. A transparent capture surface lets you choose a pixel without activating the application underneath. The tooltip follows the pointer; **Esc** cancels and brings the picker back.
 
 <p align="center">
-  <img src="docs/assets/capture.png" width="1100" alt="Actual capture overlay over an example palette, with a Cyan #41DBD9 tooltip and the Click to pick / Esc to cancel hint">
+  <img src="docs/assets/capture.png" width="1100" alt="Actual capture overlay over an example palette, identifying Bluish green, Brilliant, #41DBD9 with the Click to pick / Esc to cancel hint">
 </p>
 
 *Capture overlay shown over an example palette for documentation.*
@@ -109,7 +109,17 @@ Pin the picker above other windows, then drag its title bar wherever it is most 
 - **Less screen-reader noise.** Explicit action results are announced; continuous pointer changes are not repeatedly announced.
 - **Local history.** The latest 1,000 saved colors and your preferences persist between sessions. Identification and history work locally, without an account or a server.
 
-The color names are HSL-based descriptions, using the original project's hue checkpoints. Screen sampling currently supports **Windows** and virtual-desktop coordinates for multiple monitors. It reads 8-bit desktop RGB; it is not a color-calibration or HDR tool.
+Screen sampling currently supports **Windows** and virtual-desktop coordinates for multiple monitors. It reads 8-bit desktop RGB, interpreted as SDR sRGB for naming; it is not a color-calibration or HDR tool.
+
+## Color names with a documented reference
+
+Color descriptions now use the historical **ISCC–NBS nomenclature**, replacing the original HSL hue checkpoints. The app compares a sample with published reference centroids in CIELAB using **CIEDE2000**, then shows the selected hue and qualifier in English or Italian. For example, `#964B00` is **Brown · Strong** and `#FFC0CB` is **Pink · Light**.
+
+Matching is **approximate**: the reference publication defines named regions, and choosing the nearest central sample does not reproduce their exact boundaries. The source includes 267 categories; this version uses **266 numerical references**, excluding one ambiguous printed notation. Italian terms are project translations. The original English designation and ID are available by hovering over the main name or a history label.
+
+Names can differ from CSS keywords or familiar everyday descriptions. Exact HEX/RGB values are preserved, and a short delay stabilizes ambiguous live labels without delaying the swatch, value, copying or capture. Saved history keeps its original values and receives the new descriptions automatically.
+
+The [naming guide](docs/COLOR-NAMING.md) documents the standards choice, source data, conversion, exclusions, before/after examples, tests and reproducible generation. The [research note](docs/COLOR-NAMING-RESEARCH.md) compares ISCC–NBS, CSS, ISO/CIE and professional catalogs.
 
 ## Get started
 

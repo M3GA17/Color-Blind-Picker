@@ -1,0 +1,5871 @@
+{
+  "method": "iscc-nbs-centroid-ciede2000-v1",
+  "source_sha256": "231f94d69dc1a0bd3476477bb115c6bb14cc71640a8553eeacfa25de3d12c353",
+  "source": "Kelly, 1958, NBS J. Res. 61(5), pp. 427–431, table 1",
+  "conversion": "Colour 0.4.6; Munsell xyY/C -> Bradford XYZ/D65 -> CIELAB/D65; no sRGB clipping",
+  "excluded_ids": [
+    222
+  ],
+  "matching": {
+    "metric": "CIEDE2000",
+    "k_l": 1,
+    "k_c": 1,
+    "k_h": 1,
+    "neutral_axis_delta_e": 1.5,
+    "tie_break": "lower source ID"
+  },
+  "references": [
+    {
+      "id": 1,
+      "name_en": "vivid pink",
+      "munsell_source": "1.5R 7/13+*",
+      "munsell": "1.5R 7/13",
+      "estimated": true,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosa",
+        "en": "Pink"
+      },
+      "qualifier": {
+        "it": "Vivido",
+        "en": "Vivid"
+      },
+      "lab_d65": [
+        70.7160993066,
+        56.1387074997,
+        17.148091056
+      ]
+    },
+    {
+      "id": 2,
+      "name_en": "strong pink",
+      "munsell_source": "1.5R 7.5/9.1*",
+      "munsell": "1.5R 7.5/9.1",
+      "estimated": true,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosa",
+        "en": "Pink"
+      },
+      "qualifier": {
+        "it": "Intenso",
+        "en": "Strong"
+      },
+      "lab_d65": [
+        75.6127212797,
+        38.7440795997,
+        12.3471734633
+      ]
+    },
+    {
+      "id": 3,
+      "name_en": "deep pink",
+      "munsell_source": "1.9R 6.0/11.1",
+      "munsell": "1.9R 6.0/11.1",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosa",
+        "en": "Pink"
+      },
+      "qualifier": {
+        "it": "Profondo",
+        "en": "Deep"
+      },
+      "lab_d65": [
+        60.9274084569,
+        47.0412786264,
+        14.9061042818
+      ]
+    },
+    {
+      "id": 4,
+      "name_en": "light pink",
+      "munsell_source": "2.5R 8.6/5.2*",
+      "munsell": "2.5R 8.6/5.2",
+      "estimated": true,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosa",
+        "en": "Pink"
+      },
+      "qualifier": {
+        "it": "Chiaro",
+        "en": "Light"
+      },
+      "lab_d65": [
+        86.2649967999,
+        21.7447129551,
+        8.4420717009
+      ]
+    },
+    {
+      "id": 5,
+      "name_en": "moderate pink",
+      "munsell_source": "2.5R 7.2/5.2",
+      "munsell": "2.5R 7.2/5.2",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosa",
+        "en": "Pink"
+      },
+      "qualifier": {
+        "it": "Moderato",
+        "en": "Moderate"
+      },
+      "lab_d65": [
+        72.7573561222,
+        20.9869572991,
+        7.7834007538
+      ]
+    },
+    {
+      "id": 6,
+      "name_en": "dark pink",
+      "munsell_source": "2.5R 6.0/6.0",
+      "munsell": "2.5R 6.0/6.0",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosa",
+        "en": "Pink"
+      },
+      "qualifier": {
+        "it": "Scuro",
+        "en": "Dark"
+      },
+      "lab_d65": [
+        60.9895949021,
+        25.439431163,
+        9.1151909853
+      ]
+    },
+    {
+      "id": 7,
+      "name_en": "pale pink",
+      "munsell_source": "2.5R 8.8/2.3*",
+      "munsell": "2.5R 8.8/2.3",
+      "estimated": true,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosa",
+        "en": "Pink"
+      },
+      "qualifier": {
+        "it": "Pallido",
+        "en": "Pale"
+      },
+      "lab_d65": [
+        88.228751652,
+        7.3591089103,
+        2.808205443
+      ]
+    },
+    {
+      "id": 8,
+      "name_en": "grayish pink",
+      "munsell_source": "2.5R 7.2/2.3",
+      "munsell": "2.5R 7.2/2.3",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosa",
+        "en": "Pink"
+      },
+      "qualifier": {
+        "it": "Grigiastro",
+        "en": "Grayish"
+      },
+      "lab_d65": [
+        72.7853971298,
+        8.3354168942,
+        3.1100237966
+      ]
+    },
+    {
+      "id": 9,
+      "name_en": "pinkish white",
+      "munsell_source": "7.6R 9.2/1.0*",
+      "munsell": "7.6R 9.2/1.0",
+      "estimated": true,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Bianco rosato",
+        "en": "Pinkish white"
+      },
+      "qualifier": {
+        "it": "",
+        "en": ""
+      },
+      "lab_d65": [
+        92.1228458888,
+        2.4522631172,
+        1.8352078712
+      ]
+    },
+    {
+      "id": 10,
+      "name_en": "pinkish gray",
+      "munsell_source": "7.6R 7.5/1.0",
+      "munsell": "7.6R 7.5/1.0",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Grigio rosato",
+        "en": "Pinkish gray"
+      },
+      "qualifier": {
+        "it": "",
+        "en": ""
+      },
+      "lab_d65": [
+        75.7004006609,
+        3.3831841505,
+        2.3187437415
+      ]
+    },
+    {
+      "id": 11,
+      "name_en": "vivid red",
+      "munsell_source": "5-R 4/15+*",
+      "munsell": "5R 4/15",
+      "estimated": true,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosso",
+        "en": "Red"
+      },
+      "qualifier": {
+        "it": "Vivido",
+        "en": "Vivid"
+      },
+      "lab_d65": [
+        40.5538886256,
+        65.418332436,
+        31.5782415554
+      ]
+    },
+    {
+      "id": 12,
+      "name_en": "strong red",
+      "munsell_source": "4.0R 4.5/12.0",
+      "munsell": "4.0R 4.5/12.0",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosso",
+        "en": "Red"
+      },
+      "qualifier": {
+        "it": "Intenso",
+        "en": "Strong"
+      },
+      "lab_d65": [
+        45.7529692815,
+        53.8055244355,
+        22.0211210676
+      ]
+    },
+    {
+      "id": 13,
+      "name_en": "deep red",
+      "munsell_source": "5.0R 2.8/9.9",
+      "munsell": "5.0R 2.8/9.9",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosso",
+        "en": "Red"
+      },
+      "qualifier": {
+        "it": "Profondo",
+        "en": "Deep"
+      },
+      "lab_d65": [
+        28.1849418822,
+        47.6607352103,
+        17.5247646461
+      ]
+    },
+    {
+      "id": 14,
+      "name_en": "very deep red",
+      "munsell_source": "5.0R 1.4/9.0*",
+      "munsell": "5.0R 1.4/9.0",
+      "estimated": true,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosso",
+        "en": "Red"
+      },
+      "qualifier": {
+        "it": "Molto profondo",
+        "en": "Very deep"
+      },
+      "lab_d65": [
+        14.2030161791,
+        44.1016908013,
+        3.7078701289
+      ]
+    },
+    {
+      "id": 15,
+      "name_en": "moderate red",
+      "munsell_source": "4.0R 4.5/9.1",
+      "munsell": "4.0R 4.5/9.1",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosso",
+        "en": "Red"
+      },
+      "qualifier": {
+        "it": "Moderato",
+        "en": "Moderate"
+      },
+      "lab_d65": [
+        45.7930753031,
+        41.2768249169,
+        16.9267983808
+      ]
+    },
+    {
+      "id": 16,
+      "name_en": "dark red",
+      "munsell_source": "4.5R 2.8/6.8",
+      "munsell": "4.5R 2.8/6.8",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosso",
+        "en": "Red"
+      },
+      "qualifier": {
+        "it": "Scuro",
+        "en": "Dark"
+      },
+      "lab_d65": [
+        28.2342928028,
+        33.1674872436,
+        11.4168409775
+      ]
+    },
+    {
+      "id": 17,
+      "name_en": "very dark red",
+      "munsell_source": "3.5R 1.2/4.9*",
+      "munsell": "3.5R 1.2/4.9",
+      "estimated": true,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosso",
+        "en": "Red"
+      },
+      "qualifier": {
+        "it": "Molto scuro",
+        "en": "Very dark"
+      },
+      "lab_d65": [
+        12.3201427945,
+        25.7127552348,
+        0.2252669554
+      ]
+    },
+    {
+      "id": 18,
+      "name_en": "light grayish red",
+      "munsell_source": "4.9R 6.0/3.4",
+      "munsell": "4.9R 6.0/3.4",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosso",
+        "en": "Red"
+      },
+      "qualifier": {
+        "it": "Chiaro e grigiastro",
+        "en": "Light grayish"
+      },
+      "lab_d65": [
+        61.0202969213,
+        13.8731860322,
+        6.644268072
+      ]
+    },
+    {
+      "id": 19,
+      "name_en": "grayish red",
+      "munsell_source": "4.6R 4.5/4.7",
+      "munsell": "4.6R 4.5/4.7",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosso",
+        "en": "Red"
+      },
+      "qualifier": {
+        "it": "Grigiastro",
+        "en": "Grayish"
+      },
+      "lab_d65": [
+        45.8477360495,
+        21.7643225062,
+        9.6529028713
+      ]
+    },
+    {
+      "id": 20,
+      "name_en": "dark grayish red",
+      "munsell_source": "3.5R 2.7/2.2",
+      "munsell": "3.5R 2.7/2.2",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosso",
+        "en": "Red"
+      },
+      "qualifier": {
+        "it": "Scuro e grigiastro",
+        "en": "Dark grayish"
+      },
+      "lab_d65": [
+        27.2667734428,
+        12.2060784717,
+        3.2717733388
+      ]
+    },
+    {
+      "id": 21,
+      "name_en": "blackish red",
+      "munsell_source": "3.5R 1.1/1.6*",
+      "munsell": "3.5R 1.1/1.6",
+      "estimated": true,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosso",
+        "en": "Red"
+      },
+      "qualifier": {
+        "it": "Nerastro",
+        "en": "Blackish"
+      },
+      "lab_d65": [
+        11.3849529988,
+        10.3152195805,
+        0.282281352
+      ]
+    },
+    {
+      "id": 22,
+      "name_en": "reddish gray",
+      "munsell_source": "6.5R 5.5/1.1",
+      "munsell": "6.5R 5.5/1.1",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Grigio rossastro",
+        "en": "Reddish gray"
+      },
+      "qualifier": {
+        "it": "",
+        "en": ""
+      },
+      "lab_d65": [
+        56.0483424912,
+        4.5236730486,
+        2.4590072686
+      ]
+    },
+    {
+      "id": 23,
+      "name_en": "dark reddish gray",
+      "munsell_source": "6.0R 3.5/1.1",
+      "munsell": "6.0R 3.5/1.1",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Grigio rossastro",
+        "en": "Reddish gray"
+      },
+      "qualifier": {
+        "it": "Scuro",
+        "en": "Dark"
+      },
+      "lab_d65": [
+        35.5426899026,
+        5.9335825789,
+        2.706788983
+      ]
+    },
+    {
+      "id": 24,
+      "name_en": "reddish black",
+      "munsell_source": "6.0R 0.9/0.8*",
+      "munsell": "6.0R 0.9/0.8",
+      "estimated": true,
+      "source_page": 428,
+      "extrapolated_below_value_one": true,
+      "hue": {
+        "it": "Nero rossastro",
+        "en": "Reddish black"
+      },
+      "qualifier": {
+        "it": "",
+        "en": ""
+      },
+      "lab_d65": [
+        9.3640220711,
+        5.1116520756,
+        0.6770516221
+      ]
+    },
+    {
+      "id": 25,
+      "name_en": "vivid yellowish pink",
+      "munsell_source": "8.0R 7/13+*",
+      "munsell": "8.0R 7/13",
+      "estimated": true,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosa giallastro",
+        "en": "Yellowish pink"
+      },
+      "qualifier": {
+        "it": "Vivido",
+        "en": "Vivid"
+      },
+      "lab_d65": [
+        70.7650671174,
+        51.4488003961,
+        41.2278898072
+      ]
+    },
+    {
+      "id": 26,
+      "name_en": "strong yellowish pink",
+      "munsell_source": "8.0R 7.5/9.0*",
+      "munsell": "8.0R 7.5/9.0",
+      "estimated": true,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosa giallastro",
+        "en": "Yellowish pink"
+      },
+      "qualifier": {
+        "it": "Intenso",
+        "en": "Strong"
+      },
+      "lab_d65": [
+        75.6463603695,
+        35.9907100515,
+        28.0227855203
+      ]
+    },
+    {
+      "id": 27,
+      "name_en": "deep yellowish pink",
+      "munsell_source": "5.6R 6.0/12.4",
+      "munsell": "5.6R 6.0/12.4",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosa giallastro",
+        "en": "Yellowish pink"
+      },
+      "qualifier": {
+        "it": "Profondo",
+        "en": "Deep"
+      },
+      "lab_d65": [
+        60.9315434164,
+        51.4046514919,
+        28.5504274143
+      ]
+    },
+    {
+      "id": 28,
+      "name_en": "light yellowish pink",
+      "munsell_source": "0.7YR 8.6/4.8*",
+      "munsell": "0.7YR 8.6/4.8",
+      "estimated": true,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosa giallastro",
+        "en": "Yellowish pink"
+      },
+      "qualifier": {
+        "it": "Chiaro",
+        "en": "Light"
+      },
+      "lab_d65": [
+        86.2959569286,
+        17.6237099082,
+        19.0945003709
+      ]
+    },
+    {
+      "id": 29,
+      "name_en": "moderate yellowish pink",
+      "munsell_source": "0.7YR 7.2/4.8",
+      "munsell": "0.7YR 7.2/4.8",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosa giallastro",
+        "en": "Yellowish pink"
+      },
+      "qualifier": {
+        "it": "Moderato",
+        "en": "Moderate"
+      },
+      "lab_d65": [
+        72.7861790172,
+        17.2458896027,
+        17.9275085696
+      ]
+    },
+    {
+      "id": 30,
+      "name_en": "dark yellowish pink",
+      "munsell_source": "7.0R 6.0/6.0",
+      "munsell": "7.0R 6.0/6.0",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosa giallastro",
+        "en": "Yellowish pink"
+      },
+      "qualifier": {
+        "it": "Scuro",
+        "en": "Dark"
+      },
+      "lab_d65": [
+        61.0042839317,
+        24.2484453959,
+        15.5498765364
+      ]
+    },
+    {
+      "id": 31,
+      "name_en": "pale yellowish pink",
+      "munsell_source": "2.1YR 8.8/2.2*",
+      "munsell": "2.1YR 8.8/2.2",
+      "estimated": true,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosa giallastro",
+        "en": "Yellowish pink"
+      },
+      "qualifier": {
+        "it": "Pallido",
+        "en": "Pale"
+      },
+      "lab_d65": [
+        88.2417620596,
+        6.4840704629,
+        8.235646689
+      ]
+    },
+    {
+      "id": 32,
+      "name_en": "grayish yellowish pink",
+      "munsell_source": "0.5YR 7.2/2.3",
+      "munsell": "0.5YR 7.2/2.3",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosa giallastro",
+        "en": "Yellowish pink"
+      },
+      "qualifier": {
+        "it": "Grigiastro",
+        "en": "Grayish"
+      },
+      "lab_d65": [
+        72.7953556176,
+        7.8856741325,
+        7.6141470665
+      ]
+    },
+    {
+      "id": 33,
+      "name_en": "brownish pink",
+      "munsell_source": "6.5YR 7.2/2.2",
+      "munsell": "6.5YR 7.2/2.2",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosa brunastro",
+        "en": "Brownish pink"
+      },
+      "qualifier": {
+        "it": "",
+        "en": ""
+      },
+      "lab_d65": [
+        72.8103761232,
+        5.2789069903,
+        11.849063441
+      ]
+    },
+    {
+      "id": 34,
+      "name_en": "vivid reddish orange",
+      "munsell_source": "9.5+R 5.5/15.5+*",
+      "munsell": "9.5R 5.5/15.5",
+      "estimated": true,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Arancione rossastro",
+        "en": "Reddish orange"
+      },
+      "qualifier": {
+        "it": "Vivido",
+        "en": "Vivid"
+      },
+      "lab_d65": [
+        55.942072303,
+        57.7203550995,
+        60.1065063387
+      ]
+    },
+    {
+      "id": 35,
+      "name_en": "strong reddish orange",
+      "munsell_source": "9.5R 5.5/12.0",
+      "munsell": "9.5R 5.5/12.0",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Arancione rossastro",
+        "en": "Reddish orange"
+      },
+      "qualifier": {
+        "it": "Intenso",
+        "en": "Strong"
+      },
+      "lab_d65": [
+        55.9728340637,
+        46.572848509,
+        44.9064839261
+      ]
+    },
+    {
+      "id": 36,
+      "name_en": "deep reddish orange",
+      "munsell_source": "9.5R 4.0/12.0",
+      "munsell": "9.5R 4.0/12.0",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Arancione rossastro",
+        "en": "Reddish orange"
+      },
+      "qualifier": {
+        "it": "Profondo",
+        "en": "Deep"
+      },
+      "lab_d65": [
+        40.6379486087,
+        47.2094449012,
+        43.5463950829
+      ]
+    },
+    {
+      "id": 37,
+      "name_en": "moderate reddish orange",
+      "munsell_source": "9.5R 5.5/9.1",
+      "munsell": "9.5R 5.5/9.1",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Arancione rossastro",
+        "en": "Reddish orange"
+      },
+      "qualifier": {
+        "it": "Moderato",
+        "en": "Moderate"
+      },
+      "lab_d65": [
+        55.9980264502,
+        35.8893676063,
+        32.6426578613
+      ]
+    },
+    {
+      "id": 38,
+      "name_en": "dark reddish orange",
+      "munsell_source": "9.5R 4.0/9.1",
+      "munsell": "9.5R 4.0/9.1",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Arancione rossastro",
+        "en": "Reddish orange"
+      },
+      "qualifier": {
+        "it": "Scuro",
+        "en": "Dark"
+      },
+      "lab_d65": [
+        40.6659124655,
+        37.2141339646,
+        31.6651002886
+      ]
+    },
+    {
+      "id": 39,
+      "name_en": "grayish reddish orange",
+      "munsell_source": "0.5YR 5.5/6.0",
+      "munsell": "0.5YR 5.5/6.0",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Arancione rossastro",
+        "en": "Reddish orange"
+      },
+      "qualifier": {
+        "it": "Grigiastro",
+        "en": "Grayish"
+      },
+      "lab_d65": [
+        56.0275542977,
+        22.9689926421,
+        22.6418242632
+      ]
+    },
+    {
+      "id": 40,
+      "name_en": "strong reddish brown",
+      "munsell_source": "0.5YR 3.0/11.2*",
+      "munsell": "0.5YR 3.0/11.2",
+      "estimated": true,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Marrone rossastro",
+        "en": "Reddish brown"
+      },
+      "qualifier": {
+        "it": "Intenso",
+        "en": "Strong"
+      },
+      "lab_d65": [
+        30.2754551085,
+        45.3984097882,
+        43.2771972197
+      ]
+    },
+    {
+      "id": 41,
+      "name_en": "deep reddish brown",
+      "munsell_source": "9.8R 1.5+/7.5+*",
+      "munsell": "9.8R 1.5/7.5",
+      "estimated": true,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Marrone rossastro",
+        "en": "Reddish brown"
+      },
+      "qualifier": {
+        "it": "Profondo",
+        "en": "Deep"
+      },
+      "lab_d65": [
+        15.2295890289,
+        36.3354049645,
+        15.4713714575
+      ]
+    },
+    {
+      "id": 42,
+      "name_en": "light reddish brown",
+      "munsell_source": "0.5YR 5.5/4.1",
+      "munsell": "0.5YR 5.5/4.1",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Marrone rossastro",
+        "en": "Reddish brown"
+      },
+      "qualifier": {
+        "it": "Chiaro",
+        "en": "Light"
+      },
+      "lab_d65": [
+        56.0382062454,
+        15.8253056062,
+        15.0899832663
+      ]
+    },
+    {
+      "id": 43,
+      "name_en": "moderate reddish brown",
+      "munsell_source": "9.6R 3.4/5.2",
+      "munsell": "9.6R 3.4/5.2",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Marrone rossastro",
+        "en": "Reddish brown"
+      },
+      "qualifier": {
+        "it": "Moderato",
+        "en": "Moderate"
+      },
+      "lab_d65": [
+        34.4750957051,
+        23.6262078677,
+        17.6118413786
+      ]
+    },
+    {
+      "id": 44,
+      "name_en": "dark reddish brown",
+      "munsell_source": "9.5R 1.3/3.6*",
+      "munsell": "9.5R 1.3/3.6",
+      "estimated": true,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Marrone rossastro",
+        "en": "Reddish brown"
+      },
+      "qualifier": {
+        "it": "Scuro",
+        "en": "Dark"
+      },
+      "lab_d65": [
+        13.3364430302,
+        19.6610864784,
+        7.4829727719
+      ]
+    },
+    {
+      "id": 45,
+      "name_en": "light grayish reddish brown",
+      "munsell_source": "3.0YR 5.5/2.3",
+      "munsell": "3.0YR 5.5/2.3",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Marrone rossastro",
+        "en": "Reddish brown"
+      },
+      "qualifier": {
+        "it": "Chiaro e grigiastro",
+        "en": "Light grayish"
+      },
+      "lab_d65": [
+        56.0525675921,
+        8.0107457459,
+        9.9950447995
+      ]
+    },
+    {
+      "id": 46,
+      "name_en": "grayish reddish brown",
+      "munsell_source": "9.9R 3.4/2.3",
+      "munsell": "9.9R 3.4/2.3",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Marrone rossastro",
+        "en": "Reddish brown"
+      },
+      "qualifier": {
+        "it": "Grigiastro",
+        "en": "Grayish"
+      },
+      "lab_d65": [
+        34.5001811235,
+        11.1913287013,
+        8.1135430047
+      ]
+    },
+    {
+      "id": 47,
+      "name_en": "dark grayish reddish brown",
+      "munsell_source": "9.5R 2.0/2.0",
+      "munsell": "9.5R 2.0/2.0",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Marrone rossastro",
+        "en": "Reddish brown"
+      },
+      "qualifier": {
+        "it": "Scuro e grigiastro",
+        "en": "Dark grayish"
+      },
+      "lab_d65": [
+        20.2174711935,
+        9.7486180848,
+        5.2944550716
+      ]
+    },
+    {
+      "id": 48,
+      "name_en": "vivid orange",
+      "munsell_source": "4.5YR 6.6/16+*",
+      "munsell": "4.5YR 6.6/16",
+      "estimated": true,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Arancione",
+        "en": "Orange"
+      },
+      "qualifier": {
+        "it": "Vivido",
+        "en": "Vivid"
+      },
+      "lab_d65": [
+        66.9322448619,
+        39.4370245595,
+        86.9048489292
+      ]
+    },
+    {
+      "id": 49,
+      "name_en": "brilliant orange",
+      "munsell_source": "4.5YR 8.0/12.1*",
+      "munsell": "4.5YR 8.0/12.1",
+      "estimated": true,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Arancione",
+        "en": "Orange"
+      },
+      "qualifier": {
+        "it": "Brillante",
+        "en": "Brilliant"
+      },
+      "lab_d65": [
+        80.519333694,
+        32.3881973934,
+        63.2485100214
+      ]
+    },
+    {
+      "id": 50,
+      "name_en": "strong orange",
+      "munsell_source": "4.5YR 6.5/12.1",
+      "munsell": "4.5YR 6.5/12.1",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Arancione",
+        "en": "Orange"
+      },
+      "qualifier": {
+        "it": "Intenso",
+        "en": "Strong"
+      },
+      "lab_d65": [
+        65.9616231875,
+        32.89393603,
+        62.7244710058
+      ]
+    },
+    {
+      "id": 51,
+      "name_en": "deep orange",
+      "munsell_source": "4.5YR 5.0/12.1",
+      "munsell": "4.5YR 5.0/12.1",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Arancione",
+        "en": "Orange"
+      },
+      "qualifier": {
+        "it": "Profondo",
+        "en": "Deep"
+      },
+      "lab_d65": [
+        50.9770357953,
+        32.5584604006,
+        62.668582931
+      ]
+    },
+    {
+      "id": 52,
+      "name_en": "light orange",
+      "munsell_source": "4.5YR 8/8.1*",
+      "munsell": "4.5YR 8/8.1",
+      "estimated": true,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Arancione",
+        "en": "Orange"
+      },
+      "qualifier": {
+        "it": "Chiaro",
+        "en": "Light"
+      },
+      "lab_d65": [
+        80.5281879704,
+        22.6738463632,
+        41.5550016218
+      ]
+    },
+    {
+      "id": 53,
+      "name_en": "moderate orange",
+      "munsell_source": "4.6YR 6.5/8.1",
+      "munsell": "4.6YR 6.5/8.1",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Arancione",
+        "en": "Orange"
+      },
+      "qualifier": {
+        "it": "Moderato",
+        "en": "Moderate"
+      },
+      "lab_d65": [
+        65.9742003133,
+        23.0838220137,
+        40.6619898267
+      ]
+    },
+    {
+      "id": 54,
+      "name_en": "brownish orange",
+      "munsell_source": "4.5YR 5.0/8.2",
+      "munsell": "4.5YR 5.0/8.2",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Arancione brunastro",
+        "en": "Brownish orange"
+      },
+      "qualifier": {
+        "it": "",
+        "en": ""
+      },
+      "lab_d65": [
+        50.9897748682,
+        24.6237908873,
+        41.5401069084
+      ]
+    },
+    {
+      "id": 55,
+      "name_en": "strong brown",
+      "munsell_source": "5.0YR 3.5+/8+*",
+      "munsell": "5.0YR 3.5/8",
+      "estimated": true,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Marrone",
+        "en": "Brown"
+      },
+      "qualifier": {
+        "it": "Intenso",
+        "en": "Strong"
+      },
+      "lab_d65": [
+        35.5333161733,
+        24.0640436083,
+        41.7905939407
+      ]
+    },
+    {
+      "id": 56,
+      "name_en": "deep brown",
+      "munsell_source": "5.0YR 2.1/6+*",
+      "munsell": "5.0YR 2.1/6",
+      "estimated": true,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Marrone",
+        "en": "Brown"
+      },
+      "qualifier": {
+        "it": "Profondo",
+        "en": "Deep"
+      },
+      "lab_d65": [
+        21.2057600447,
+        20.0822070167,
+        28.8842880488
+      ]
+    },
+    {
+      "id": 57,
+      "name_en": "light brown",
+      "munsell_source": "5.5YR 5.5/4.6",
+      "munsell": "5.5YR 5.5/4.6",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Marrone",
+        "en": "Brown"
+      },
+      "qualifier": {
+        "it": "Chiaro",
+        "en": "Light"
+      },
+      "lab_d65": [
+        56.0590102973,
+        13.1207604479,
+        23.7380474495
+      ]
+    },
+    {
+      "id": 58,
+      "name_en": "moderate brown",
+      "munsell_source": "5.5YR 3.5/3.9",
+      "munsell": "5.5YR 3.5/3.9",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Marrone",
+        "en": "Brown"
+      },
+      "qualifier": {
+        "it": "Moderato",
+        "en": "Moderate"
+      },
+      "lab_d65": [
+        35.5500403273,
+        12.7985925983,
+        20.2016549962
+      ]
+    },
+    {
+      "id": 59,
+      "name_en": "dark brown",
+      "munsell_source": "5.5YR 1.6/3.6*",
+      "munsell": "5.5YR 1.6/3.6",
+      "estimated": true,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Marrone",
+        "en": "Brown"
+      },
+      "qualifier": {
+        "it": "Scuro",
+        "en": "Dark"
+      },
+      "lab_d65": [
+        16.2886925497,
+        15.0288194928,
+        18.4643238635
+      ]
+    },
+    {
+      "id": 60,
+      "name_en": "light grayish brown",
+      "munsell_source": "6.5YR 5.5/2.2",
+      "munsell": "6.5YR 5.5/2.2",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Marrone",
+        "en": "Brown"
+      },
+      "qualifier": {
+        "it": "Chiaro e grigiastro",
+        "en": "Light grayish"
+      },
+      "lab_d65": [
+        56.0615395514,
+        5.9459310452,
+        11.7971179024
+      ]
+    },
+    {
+      "id": 61,
+      "name_en": "grayish brown",
+      "munsell_source": "5.6YR 3.5/2.0",
+      "munsell": "5.6YR 3.5/2.0",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Marrone",
+        "en": "Brown"
+      },
+      "qualifier": {
+        "it": "Grigiastro",
+        "en": "Grayish"
+      },
+      "lab_d65": [
+        35.5536915806,
+        6.9815344766,
+        10.6106885163
+      ]
+    },
+    {
+      "id": 62,
+      "name_en": "dark grayish brown",
+      "munsell_source": "5.5YR 2.0/1.7",
+      "munsell": "5.5YR 2.0/1.7",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Marrone",
+        "en": "Brown"
+      },
+      "qualifier": {
+        "it": "Scuro e grigiastro",
+        "en": "Dark grayish"
+      },
+      "lab_d65": [
+        20.2320598758,
+        6.0646420463,
+        7.4169759285
+      ]
+    },
+    {
+      "id": 63,
+      "name_en": "light brownish gray",
+      "munsell_source": "6.8YR 5.5/1.0",
+      "munsell": "6.8YR 5.5/1.0",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Grigio brunastro",
+        "en": "Brownish gray"
+      },
+      "qualifier": {
+        "it": "Chiaro",
+        "en": "Light"
+      },
+      "lab_d65": [
+        56.0590133967,
+        2.7508757058,
+        5.4154884366
+      ]
+    },
+    {
+      "id": 64,
+      "name_en": "brownish gray",
+      "munsell_source": "6.4YR 3.5/0.9",
+      "munsell": "6.4YR 3.5/0.9",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Grigio brunastro",
+        "en": "Brownish gray"
+      },
+      "qualifier": {
+        "it": "",
+        "en": ""
+      },
+      "lab_d65": [
+        35.5546489333,
+        3.1545017823,
+        4.8655896404
+      ]
+    },
+    {
+      "id": 65,
+      "name_en": "brownish black",
+      "munsell_source": "7.5YR 0.8/0.8*",
+      "munsell": "7.5YR 0.8/0.8",
+      "estimated": true,
+      "source_page": 428,
+      "extrapolated_below_value_one": true,
+      "hue": {
+        "it": "Nero brunastro",
+        "en": "Brownish black"
+      },
+      "qualifier": {
+        "it": "",
+        "en": ""
+      },
+      "lab_d65": [
+        8.3080737906,
+        3.3510354862,
+        3.9555955846
+      ]
+    },
+    {
+      "id": 66,
+      "name_en": "vivid orange yellow",
+      "munsell_source": "9.0YR 7.2/16+*",
+      "munsell": "9.0YR 7.2/16",
+      "estimated": true,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Giallo aranciato",
+        "en": "Orange yellow"
+      },
+      "qualifier": {
+        "it": "Vivido",
+        "en": "Vivid"
+      },
+      "lab_d65": [
+        72.8403395608,
+        21.958234603,
+        99.7059572034
+      ]
+    },
+    {
+      "id": 67,
+      "name_en": "brilliant orange yellow",
+      "munsell_source": "9.0YR 8.4/12.1*",
+      "munsell": "9.0YR 8.4/12.1",
+      "estimated": true,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Giallo aranciato",
+        "en": "Orange yellow"
+      },
+      "qualifier": {
+        "it": "Brillante",
+        "en": "Brilliant"
+      },
+      "lab_d65": [
+        84.4274088404,
+        18.0255549949,
+        74.6770744779
+      ]
+    },
+    {
+      "id": 68,
+      "name_en": "strong orange yellow",
+      "munsell_source": "9.0YR 7.2/12.1",
+      "munsell": "9.0YR 7.2/12.1",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Giallo aranciato",
+        "en": "Orange yellow"
+      },
+      "qualifier": {
+        "it": "Intenso",
+        "en": "Strong"
+      },
+      "lab_d65": [
+        72.8403946255,
+        18.6854265311,
+        74.543952145
+      ]
+    },
+    {
+      "id": 69,
+      "name_en": "deep orange yellow",
+      "munsell_source": "9.0YR 6.0/12.1",
+      "munsell": "9.0YR 6.0/12.1",
+      "estimated": false,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Giallo aranciato",
+        "en": "Orange yellow"
+      },
+      "qualifier": {
+        "it": "Profondo",
+        "en": "Deep"
+      },
+      "lab_d65": [
+        61.0757778494,
+        18.9806114591,
+        74.2211731982
+      ]
+    },
+    {
+      "id": 70,
+      "name_en": "light orange yellow",
+      "munsell_source": "9.0YR 8.6/8.1*",
+      "munsell": "9.0YR 8.6/8.1",
+      "estimated": true,
+      "source_page": 428,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Giallo aranciato",
+        "en": "Orange yellow"
+      },
+      "qualifier": {
+        "it": "Chiaro",
+        "en": "Light"
+      },
+      "lab_d65": [
+        86.3540932893,
+        12.2708724776,
+        50.9549950355
+      ]
+    },
+    {
+      "id": 71,
+      "name_en": "moderate orange yellow",
+      "munsell_source": "9.0YR 7.2/8.1",
+      "munsell": "9.0YR 7.2/8.1",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Giallo aranciato",
+        "en": "Orange yellow"
+      },
+      "qualifier": {
+        "it": "Moderato",
+        "en": "Moderate"
+      },
+      "lab_d65": [
+        72.838011835,
+        13.1385522051,
+        49.2401536447
+      ]
+    },
+    {
+      "id": 72,
+      "name_en": "dark orange yellow",
+      "munsell_source": "9.0YR 6.0/8.1",
+      "munsell": "9.0YR 6.0/8.1",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Giallo aranciato",
+        "en": "Orange yellow"
+      },
+      "qualifier": {
+        "it": "Scuro",
+        "en": "Dark"
+      },
+      "lab_d65": [
+        61.0754573305,
+        14.1168633375,
+        49.3645962194
+      ]
+    },
+    {
+      "id": 73,
+      "name_en": "pale orange yellow",
+      "munsell_source": "9.1YR 8.6/4.4*",
+      "munsell": "9.1YR 8.6/4.4",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Giallo aranciato",
+        "en": "Orange yellow"
+      },
+      "qualifier": {
+        "it": "Pallido",
+        "en": "Pale"
+      },
+      "lab_d65": [
+        86.342726468,
+        6.2681034133,
+        28.2435177507
+      ]
+    },
+    {
+      "id": 74,
+      "name_en": "strong yellowish brown",
+      "munsell_source": "9.0YR 4.6/9.6*",
+      "munsell": "9.0YR 4.6/9.6",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Marrone giallastro",
+        "en": "Yellowish brown"
+      },
+      "qualifier": {
+        "it": "Intenso",
+        "en": "Strong"
+      },
+      "lab_d65": [
+        46.9391934764,
+        16.7727863622,
+        59.0097873649
+      ]
+    },
+    {
+      "id": 75,
+      "name_en": "deep yellowish brown",
+      "munsell_source": "9.5YR 2.9/6+*",
+      "munsell": "9.5YR 2.9/6",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Marrone giallastro",
+        "en": "Yellowish brown"
+      },
+      "qualifier": {
+        "it": "Profondo",
+        "en": "Deep"
+      },
+      "lab_d65": [
+        29.3614205286,
+        11.4936728566,
+        37.1153458423
+      ]
+    },
+    {
+      "id": 76,
+      "name_en": "light yellowish brown",
+      "munsell_source": "9.2YR 6.6/4.7",
+      "munsell": "9.2YR 6.6/4.7",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Marrone giallastro",
+        "en": "Yellowish brown"
+      },
+      "qualifier": {
+        "it": "Chiaro",
+        "en": "Light"
+      },
+      "lab_d65": [
+        66.9856219788,
+        7.8343767733,
+        28.8252750236
+      ]
+    },
+    {
+      "id": 77,
+      "name_en": "moderate yellowish brown",
+      "munsell_source": "9.5YR 4.5/4.0",
+      "munsell": "9.5YR 4.5/4.0",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Marrone giallastro",
+        "en": "Yellowish brown"
+      },
+      "qualifier": {
+        "it": "Moderato",
+        "en": "Moderate"
+      },
+      "lab_d65": [
+        45.9129630304,
+        7.7231842228,
+        25.3295317184
+      ]
+    },
+    {
+      "id": 78,
+      "name_en": "dark yellowish brown",
+      "munsell_source": "9.5YR 2.2/3.7*",
+      "munsell": "9.5YR 2.2/3.7",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Marrone giallastro",
+        "en": "Yellowish brown"
+      },
+      "qualifier": {
+        "it": "Scuro",
+        "en": "Dark"
+      },
+      "lab_d65": [
+        22.2380615069,
+        7.950698508,
+        21.5444877132
+      ]
+    },
+    {
+      "id": 79,
+      "name_en": "light grayish yellowish brown",
+      "munsell_source": "9.5YR 6.4/2.4",
+      "munsell": "9.5YR 6.4/2.4",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Marrone giallastro",
+        "en": "Yellowish brown"
+      },
+      "qualifier": {
+        "it": "Chiaro e grigiastro",
+        "en": "Light grayish"
+      },
+      "lab_d65": [
+        65.0143719408,
+        3.7854670739,
+        15.1412840318
+      ]
+    },
+    {
+      "id": 80,
+      "name_en": "grayish yellowish brown",
+      "munsell_source": "9.5YR 4.6/2.1",
+      "munsell": "9.5YR 4.6/2.1",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Marrone giallastro",
+        "en": "Yellowish brown"
+      },
+      "qualifier": {
+        "it": "Grigiastro",
+        "en": "Grayish"
+      },
+      "lab_d65": [
+        46.9329996628,
+        4.0443827327,
+        13.3051664013
+      ]
+    },
+    {
+      "id": 81,
+      "name_en": "dark grayish yellow brown",
+      "munsell_source": "9.5YR 2.4/1.8",
+      "munsell": "9.5YR 2.4/1.8",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Marrone giallastro",
+        "en": "Yellow brown"
+      },
+      "qualifier": {
+        "it": "Scuro e grigiastro",
+        "en": "Dark grayish"
+      },
+      "lab_d65": [
+        24.2496148197,
+        4.0319668066,
+        10.2167194429
+      ]
+    },
+    {
+      "id": 82,
+      "name_en": "vivid yellow",
+      "munsell_source": "4.0Y 7.8/14.5+*",
+      "munsell": "4.0Y 7.8/14.5",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Giallo",
+        "en": "Yellow"
+      },
+      "qualifier": {
+        "it": "Vivido",
+        "en": "Vivid"
+      },
+      "lab_d65": [
+        78.6998094775,
+        2.1619584206,
+        99.4997023812
+      ]
+    },
+    {
+      "id": 83,
+      "name_en": "brilliant yellow",
+      "munsell_source": "4.0Y 8.8/9.5*",
+      "munsell": "4.0Y 8.8/9.5",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Giallo",
+        "en": "Yellow"
+      },
+      "qualifier": {
+        "it": "Brillante",
+        "en": "Brilliant"
+      },
+      "lab_d65": [
+        88.3392658884,
+        -0.862006722,
+        66.9964126753
+      ]
+    },
+    {
+      "id": 84,
+      "name_en": "strong yellow",
+      "munsell_source": "4.0Y 7.2/9.5",
+      "munsell": "4.0Y 7.2/9.5",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Giallo",
+        "en": "Yellow"
+      },
+      "qualifier": {
+        "it": "Intenso",
+        "en": "Strong"
+      },
+      "lab_d65": [
+        72.8854209468,
+        1.1605863198,
+        66.0114968016
+      ]
+    },
+    {
+      "id": 85,
+      "name_en": "deep yellow",
+      "munsell_source": "4.0Y 6.0/9.5",
+      "munsell": "4.0Y 6.0/9.5",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Giallo",
+        "en": "Yellow"
+      },
+      "qualifier": {
+        "it": "Profondo",
+        "en": "Deep"
+      },
+      "lab_d65": [
+        61.1199687307,
+        2.4059850414,
+        65.8524615784
+      ]
+    },
+    {
+      "id": 86,
+      "name_en": "light yellow",
+      "munsell_source": "4.0Y 8.8/6.6*",
+      "munsell": "4.0Y 8.8/6.6",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Giallo",
+        "en": "Yellow"
+      },
+      "qualifier": {
+        "it": "Chiaro",
+        "en": "Light"
+      },
+      "lab_d65": [
+        88.3228380261,
+        -1.6784111814,
+        47.6827180595
+      ]
+    },
+    {
+      "id": 87,
+      "name_en": "moderate yellow",
+      "munsell_source": "4.0Y 7.2/6.6",
+      "munsell": "4.0Y 7.2/6.6",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Giallo",
+        "en": "Yellow"
+      },
+      "qualifier": {
+        "it": "Moderato",
+        "en": "Moderate"
+      },
+      "lab_d65": [
+        72.8721953877,
+        -0.0753735345,
+        46.1770958366
+      ]
+    },
+    {
+      "id": 88,
+      "name_en": "dark yellow",
+      "munsell_source": "4.0Y 6.0/6.6",
+      "munsell": "4.0Y 6.0/6.6",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Giallo",
+        "en": "Yellow"
+      },
+      "qualifier": {
+        "it": "Scuro",
+        "en": "Dark"
+      },
+      "lab_d65": [
+        61.1101416599,
+        1.0281126377,
+        46.3280558034
+      ]
+    },
+    {
+      "id": 89,
+      "name_en": "pale yellow",
+      "munsell_source": "4.2Y 8.9/3.6*",
+      "munsell": "4.2Y 8.9/3.6",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Giallo",
+        "en": "Yellow"
+      },
+      "qualifier": {
+        "it": "Pallido",
+        "en": "Pale"
+      },
+      "lab_d65": [
+        89.2664584909,
+        -2.251920195,
+        27.4768163917
+      ]
+    },
+    {
+      "id": 90,
+      "name_en": "grayish yellow",
+      "munsell_source": "4.2Y 7.2/3.6",
+      "munsell": "4.2Y 7.2/3.6",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Giallo",
+        "en": "Yellow"
+      },
+      "qualifier": {
+        "it": "Grigiastro",
+        "en": "Grayish"
+      },
+      "lab_d65": [
+        72.8507555355,
+        -1.1979807621,
+        26.0227098111
+      ]
+    },
+    {
+      "id": 91,
+      "name_en": "dark grayish yellow",
+      "munsell_source": "4.0Y 6.0/4.1",
+      "munsell": "4.0Y 6.0/4.1",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Giallo",
+        "en": "Yellow"
+      },
+      "qualifier": {
+        "it": "Scuro e grigiastro",
+        "en": "Dark grayish"
+      },
+      "lab_d65": [
+        61.0948835809,
+        -0.244493293,
+        28.8302588861
+      ]
+    },
+    {
+      "id": 92,
+      "name_en": "yellowish white",
+      "munsell_source": "4.1Y 9.2/1.3*",
+      "munsell": "4.1Y 9.2/1.3",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Bianco giallastro",
+        "en": "Yellowish white"
+      },
+      "qualifier": {
+        "it": "",
+        "en": ""
+      },
+      "lab_d65": [
+        92.1455409554,
+        -0.8764064633,
+        8.8010321064
+      ]
+    },
+    {
+      "id": 93,
+      "name_en": "yellowish gray",
+      "munsell_source": "4.1Y 7.5/1.3",
+      "munsell": "4.1Y 7.5/1.3",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Grigio giallastro",
+        "en": "Yellowish gray"
+      },
+      "qualifier": {
+        "it": "",
+        "en": ""
+      },
+      "lab_d65": [
+        75.7261877317,
+        -0.7290532692,
+        9.9108726469
+      ]
+    },
+    {
+      "id": 94,
+      "name_en": "light olive brown",
+      "munsell_source": "2.5Y 5.0/8.4*",
+      "munsell": "2.5Y 5.0/8.4",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Marrone olivastro",
+        "en": "Olive brown"
+      },
+      "qualifier": {
+        "it": "Chiaro",
+        "en": "Light"
+      },
+      "lab_d65": [
+        51.0545662966,
+        6.5707797469,
+        56.3190439501
+      ]
+    },
+    {
+      "id": 95,
+      "name_en": "moderate olive brown",
+      "munsell_source": "2.5Y 3.5+/6+*",
+      "munsell": "2.5Y 3.5/6",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Marrone olivastro",
+        "en": "Olive brown"
+      },
+      "qualifier": {
+        "it": "Moderato",
+        "en": "Moderate"
+      },
+      "lab_d65": [
+        35.5893992724,
+        5.6541304067,
+        40.2455078698
+      ]
+    },
+    {
+      "id": 96,
+      "name_en": "dark olive brown",
+      "munsell_source": "2.5Y 1.8/2.5+*",
+      "munsell": "2.5Y 1.8/2.5",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Marrone olivastro",
+        "en": "Olive brown"
+      },
+      "qualifier": {
+        "it": "Scuro",
+        "en": "Dark"
+      },
+      "lab_d65": [
+        18.2794431065,
+        3.1839921686,
+        16.8420720738
+      ]
+    },
+    {
+      "id": 97,
+      "name_en": "vivid greenish yellow",
+      "munsell_source": "9.5Y 7.8/14.5+*",
+      "munsell": "9.5Y 7.8/14.5",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Giallo verdastro",
+        "en": "Greenish yellow"
+      },
+      "qualifier": {
+        "it": "Vivido",
+        "en": "Vivid"
+      },
+      "lab_d65": [
+        78.7475212061,
+        -15.497180761,
+        103.2383989616
+      ]
+    },
+    {
+      "id": 98,
+      "name_en": "brilliant greenish yellow",
+      "munsell_source": "9.5Y 8.8/9.5*",
+      "munsell": "9.5Y 8.8/9.5",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Giallo verdastro",
+        "en": "Greenish yellow"
+      },
+      "qualifier": {
+        "it": "Brillante",
+        "en": "Brilliant"
+      },
+      "lab_d65": [
+        88.376343263,
+        -14.1140953097,
+        69.7104248186
+      ]
+    },
+    {
+      "id": 99,
+      "name_en": "strong greenish yellow",
+      "munsell_source": "9.5Y 7.2/9.5",
+      "munsell": "9.5Y 7.2/9.5",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Giallo verdastro",
+        "en": "Greenish yellow"
+      },
+      "qualifier": {
+        "it": "Intenso",
+        "en": "Strong"
+      },
+      "lab_d65": [
+        72.9239504025,
+        -12.7022404925,
+        68.903130361
+      ]
+    },
+    {
+      "id": 100,
+      "name_en": "deep greenish yellow",
+      "munsell_source": "9.5Y 6.0/9.5",
+      "munsell": "9.5Y 6.0/9.5",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Giallo verdastro",
+        "en": "Greenish yellow"
+      },
+      "qualifier": {
+        "it": "Profondo",
+        "en": "Deep"
+      },
+      "lab_d65": [
+        61.1585679188,
+        -11.6739741989,
+        68.3711796859
+      ]
+    },
+    {
+      "id": 101,
+      "name_en": "light greenish yellow",
+      "munsell_source": "9.5Y 8.8/6.6*",
+      "munsell": "9.5Y 8.8/6.6",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Giallo verdastro",
+        "en": "Greenish yellow"
+      },
+      "qualifier": {
+        "it": "Chiaro",
+        "en": "Light"
+      },
+      "lab_d65": [
+        88.3504719484,
+        -11.3799211335,
+        49.47515046
+      ]
+    },
+    {
+      "id": 102,
+      "name_en": "moderate greenish yellow",
+      "munsell_source": "9.5Y 7.2/6.6",
+      "munsell": "9.5Y 7.2/6.6",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Giallo verdastro",
+        "en": "Greenish yellow"
+      },
+      "qualifier": {
+        "it": "Moderato",
+        "en": "Moderate"
+      },
+      "lab_d65": [
+        72.9008258168,
+        -10.3127931208,
+        47.6822584318
+      ]
+    },
+    {
+      "id": 103,
+      "name_en": "dark greenish yellow",
+      "munsell_source": "9.5Y 6.0/6.6",
+      "munsell": "9.5Y 6.0/6.6",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Giallo verdastro",
+        "en": "Greenish yellow"
+      },
+      "qualifier": {
+        "it": "Scuro",
+        "en": "Dark"
+      },
+      "lab_d65": [
+        61.1402315234,
+        -9.7919734959,
+        47.9348152607
+      ]
+    },
+    {
+      "id": 104,
+      "name_en": "pale greenish yellow",
+      "munsell_source": "9.5Y 8.9/4.1*",
+      "munsell": "9.5Y 8.9/4.1",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Giallo verdastro",
+        "en": "Greenish yellow"
+      },
+      "qualifier": {
+        "it": "Pallido",
+        "en": "Pale"
+      },
+      "lab_d65": [
+        89.2888863721,
+        -8.2404310613,
+        31.9648493849
+      ]
+    },
+    {
+      "id": 105,
+      "name_en": "grayish greenish yellow",
+      "munsell_source": "9.5Y 7.2/4.1",
+      "munsell": "9.5Y 7.2/4.1",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Giallo verdastro",
+        "en": "Greenish yellow"
+      },
+      "qualifier": {
+        "it": "Grigiastro",
+        "en": "Grayish"
+      },
+      "lab_d65": [
+        72.8734373878,
+        -7.5083612262,
+        30.2915495028
+      ]
+    },
+    {
+      "id": 106,
+      "name_en": "light olive",
+      "munsell_source": "8.1Y 5.1/8.0*",
+      "munsell": "8.1Y 5.1/8.0",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Oliva",
+        "en": "Olive"
+      },
+      "qualifier": {
+        "it": "Chiaro",
+        "en": "Light"
+      },
+      "lab_d65": [
+        52.1083084809,
+        -6.9916761193,
+        58.1305735795
+      ]
+    },
+    {
+      "id": 107,
+      "name_en": "moderate olive",
+      "munsell_source": "8.0Y 3.5+/5.8+*",
+      "munsell": "8.0Y 3.5/5.8",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Oliva",
+        "en": "Olive"
+      },
+      "qualifier": {
+        "it": "Moderato",
+        "en": "Moderate"
+      },
+      "lab_d65": [
+        35.6180527258,
+        -4.5738505515,
+        41.3205354244
+      ]
+    },
+    {
+      "id": 108,
+      "name_en": "dark olive",
+      "munsell_source": "8.0Y 1.7/3.2*",
+      "munsell": "8.0Y 1.7/3.2",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Oliva",
+        "en": "Olive"
+      },
+      "qualifier": {
+        "it": "Scuro",
+        "en": "Dark"
+      },
+      "lab_d65": [
+        17.3211416976,
+        -2.2082824634,
+        23.1894440594
+      ]
+    },
+    {
+      "id": 109,
+      "name_en": "light grayish olive",
+      "munsell_source": "8.3Y 5.5/2.4",
+      "munsell": "8.3Y 5.5/2.4",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Oliva",
+        "en": "Olive"
+      },
+      "qualifier": {
+        "it": "Chiaro e grigiastro",
+        "en": "Light grayish"
+      },
+      "lab_d65": [
+        56.0972097573,
+        -3.6664616874,
+        17.5924776761
+      ]
+    },
+    {
+      "id": 110,
+      "name_en": "grayish olive",
+      "munsell_source": "8.1Y 3.5/2.3",
+      "munsell": "8.1Y 3.5/2.3",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Oliva",
+        "en": "Olive"
+      },
+      "qualifier": {
+        "it": "Grigiastro",
+        "en": "Grayish"
+      },
+      "lab_d65": [
+        35.5884085674,
+        -2.7642344127,
+        15.7339601423
+      ]
+    },
+    {
+      "id": 111,
+      "name_en": "dark grayish olive",
+      "munsell_source": "8.0Y 2.0/2.0",
+      "munsell": "8.0Y 2.0/2.0",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Oliva",
+        "en": "Olive"
+      },
+      "qualifier": {
+        "it": "Scuro e grigiastro",
+        "en": "Dark grayish"
+      },
+      "lab_d65": [
+        20.2598259126,
+        -1.7885928145,
+        11.3011903727
+      ]
+    },
+    {
+      "id": 112,
+      "name_en": "light olive gray",
+      "munsell_source": "7.4Y 5.5/1.3",
+      "munsell": "7.4Y 5.5/1.3",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Grigio olivastro",
+        "en": "Olive gray"
+      },
+      "qualifier": {
+        "it": "Chiaro",
+        "en": "Light"
+      },
+      "lab_d65": [
+        56.0791050912,
+        -1.7789529973,
+        9.6488979734
+      ]
+    },
+    {
+      "id": 113,
+      "name_en": "olive gray",
+      "munsell_source": "8.1Y 3.5/1.0",
+      "munsell": "8.1Y 3.5/1.0",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Grigio olivastro",
+        "en": "Olive gray"
+      },
+      "qualifier": {
+        "it": "",
+        "en": ""
+      },
+      "lab_d65": [
+        35.5706123618,
+        -1.354485846,
+        6.8616906405
+      ]
+    },
+    {
+      "id": 114,
+      "name_en": "olive black",
+      "munsell_source": "9.0Y 0.9/0.8*",
+      "munsell": "9.0Y 0.9/0.8",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": true,
+      "hue": {
+        "it": "Nero olivastro",
+        "en": "Olive black"
+      },
+      "qualifier": {
+        "it": "",
+        "en": ""
+      },
+      "lab_d65": [
+        9.3892525015,
+        -1.0656300773,
+        4.8284104459
+      ]
+    },
+    {
+      "id": 115,
+      "name_en": "vivid yellow green",
+      "munsell_source": "5.0GY 7.5/14.5+*",
+      "munsell": "5.0GY 7.5/14.5",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde giallo",
+        "en": "Yellow green"
+      },
+      "qualifier": {
+        "it": "Vivido",
+        "en": "Vivid"
+      },
+      "lab_d65": [
+        75.9018255455,
+        -38.0351658282,
+        96.1221204074
+      ]
+    },
+    {
+      "id": 116,
+      "name_en": "brilliant yellow green",
+      "munsell_source": "5.0GY 8.5/9.1*",
+      "munsell": "5.0GY 8.5/9.1",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde giallo",
+        "en": "Yellow green"
+      },
+      "qualifier": {
+        "it": "Brillante",
+        "en": "Brilliant"
+      },
+      "lab_d65": [
+        85.5041280498,
+        -28.1135592904,
+        60.5572063105
+      ]
+    },
+    {
+      "id": 117,
+      "name_en": "strong yellow green",
+      "munsell_source": "5.0GY 6.0/9.1",
+      "munsell": "5.0GY 6.0/9.1",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde giallo",
+        "en": "Yellow green"
+      },
+      "qualifier": {
+        "it": "Intenso",
+        "en": "Strong"
+      },
+      "lab_d65": [
+        61.1911024169,
+        -27.6320577408,
+        57.9182130167
+      ]
+    },
+    {
+      "id": 118,
+      "name_en": "deep yellow green",
+      "munsell_source": "5.0GY 4.0/9.1",
+      "munsell": "5.0GY 4.0/9.1",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde giallo",
+        "en": "Yellow green"
+      },
+      "qualifier": {
+        "it": "Profondo",
+        "en": "Deep"
+      },
+      "lab_d65": [
+        40.8636032159,
+        -26.1338862985,
+        58.0655733454
+      ]
+    },
+    {
+      "id": 119,
+      "name_en": "light yellow green",
+      "munsell_source": "5.0GY 8.6/5.2*",
+      "munsell": "5.0GY 8.6/5.2",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde giallo",
+        "en": "Yellow green"
+      },
+      "qualifier": {
+        "it": "Chiaro",
+        "en": "Light"
+      },
+      "lab_d65": [
+        86.4170249999,
+        -17.6662029563,
+        36.045557669
+      ]
+    },
+    {
+      "id": 120,
+      "name_en": "moderate yellow green",
+      "munsell_source": "5.0GY 6.0/5.2",
+      "munsell": "5.0GY 6.0/5.2",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde giallo",
+        "en": "Yellow green"
+      },
+      "qualifier": {
+        "it": "Moderato",
+        "en": "Moderate"
+      },
+      "lab_d65": [
+        61.1433242477,
+        -17.2835662214,
+        32.4534033371
+      ]
+    },
+    {
+      "id": 121,
+      "name_en": "pale yellow green",
+      "munsell_source": "3.5GY 8.7/2.2*",
+      "munsell": "3.5GY 8.7/2.2",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde giallo",
+        "en": "Yellow green"
+      },
+      "qualifier": {
+        "it": "Pallido",
+        "en": "Pale"
+      },
+      "lab_d65": [
+        87.3294922692,
+        -7.6404598088,
+        17.4619715727
+      ]
+    },
+    {
+      "id": 122,
+      "name_en": "grayish yellow green",
+      "munsell_source": "4.4GY 6.1/2.2",
+      "munsell": "4.4GY 6.1/2.2",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde giallo",
+        "en": "Yellow green"
+      },
+      "qualifier": {
+        "it": "Grigiastro",
+        "en": "Grayish"
+      },
+      "lab_d65": [
+        62.0852738093,
+        -7.8180862184,
+        14.5894669858
+      ]
+    },
+    {
+      "id": 123,
+      "name_en": "strong olive green",
+      "munsell_source": "5.0GY 3.2/7.8+*",
+      "munsell": "5.0GY 3.2/7.8",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde oliva",
+        "en": "Olive green"
+      },
+      "qualifier": {
+        "it": "Intenso",
+        "en": "Strong"
+      },
+      "lab_d65": [
+        32.5561591963,
+        -23.3878074661,
+        48.7036830591
+      ]
+    },
+    {
+      "id": 124,
+      "name_en": "deep olive green",
+      "munsell_source": "5.0GY 2.4+/7.1+*",
+      "munsell": "5.0GY 2.4/7.1",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde oliva",
+        "en": "Olive green"
+      },
+      "qualifier": {
+        "it": "Profondo",
+        "en": "Deep"
+      },
+      "lab_d65": [
+        24.3459860273,
+        -23.0365152464,
+        42.5296254198
+      ]
+    },
+    {
+      "id": 125,
+      "name_en": "moderate olive green",
+      "munsell_source": "5.0GY 3.5/5.2",
+      "munsell": "5.0GY 3.5/5.2",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde oliva",
+        "en": "Olive green"
+      },
+      "qualifier": {
+        "it": "Moderato",
+        "en": "Moderate"
+      },
+      "lab_d65": [
+        35.6403970407,
+        -16.9303835909,
+        30.3399115042
+      ]
+    },
+    {
+      "id": 126,
+      "name_en": "dark olive green",
+      "munsell_source": "5.0GY 1.8/3.7*",
+      "munsell": "5.0GY 1.8/3.7",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde oliva",
+        "en": "Olive green"
+      },
+      "qualifier": {
+        "it": "Scuro",
+        "en": "Dark"
+      },
+      "lab_d65": [
+        18.3235497748,
+        -12.8199981732,
+        20.0352356252
+      ]
+    },
+    {
+      "id": 127,
+      "name_en": "grayish olive green",
+      "munsell_source": "5.0GY 3.5/2.2",
+      "munsell": "5.0GY 3.5/2.2",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde oliva",
+        "en": "Olive green"
+      },
+      "qualifier": {
+        "it": "Grigiastro",
+        "en": "Grayish"
+      },
+      "lab_d65": [
+        35.5949270691,
+        -7.4038946271,
+        11.988821965
+      ]
+    },
+    {
+      "id": 128,
+      "name_en": "dark grayish olive green",
+      "munsell_source": "5.0GY 2.0/2.0",
+      "munsell": "5.0GY 2.0/2.0",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde oliva",
+        "en": "Olive green"
+      },
+      "qualifier": {
+        "it": "Scuro e grigiastro",
+        "en": "Dark grayish"
+      },
+      "lab_d65": [
+        20.2638954669,
+        -5.2844749114,
+        7.9239658305
+      ]
+    },
+    {
+      "id": 129,
+      "name_en": "vivid yellowish green",
+      "munsell_source": "0.5G 7/15.5+*",
+      "munsell": "0.5G 7/15.5",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde giallastro",
+        "en": "Yellowish green"
+      },
+      "qualifier": {
+        "it": "Vivido",
+        "en": "Vivid"
+      },
+      "lab_d65": [
+        71.1045471445,
+        -73.2651788723,
+        58.738623261
+      ]
+    },
+    {
+      "id": 130,
+      "name_en": "brilliant yellowish green",
+      "munsell_source": "0.5G 8.0/9.1*",
+      "munsell": "0.5G 8.0/9.1",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde giallastro",
+        "en": "Yellowish green"
+      },
+      "qualifier": {
+        "it": "Brillante",
+        "en": "Brilliant"
+      },
+      "lab_d65": [
+        80.6955721866,
+        -44.6261938791,
+        36.0623879753
+      ]
+    },
+    {
+      "id": 131,
+      "name_en": "strong yellowish green",
+      "munsell_source": "0.5G 5.5/9.1",
+      "munsell": "0.5G 5.5/9.1",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde giallastro",
+        "en": "Yellowish green"
+      },
+      "qualifier": {
+        "it": "Intenso",
+        "en": "Strong"
+      },
+      "lab_d65": [
+        56.2147856529,
+        -45.1278041444,
+        33.984622965
+      ]
+    },
+    {
+      "id": 132,
+      "name_en": "deep yellowish green",
+      "munsell_source": "0.5G 3.5/11.5+*",
+      "munsell": "0.5G 3.5/11.5",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde giallastro",
+        "en": "Yellowish green"
+      },
+      "qualifier": {
+        "it": "Profondo",
+        "en": "Deep"
+      },
+      "lab_d65": [
+        35.7231924101,
+        -56.7775463699,
+        38.8798458098
+      ]
+    },
+    {
+      "id": 133,
+      "name_en": "very deep yellowish green",
+      "munsell_source": "0.5G 2.0/9.2+*",
+      "munsell": "0.5G 2.0/9.2",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde giallastro",
+        "en": "Yellowish green"
+      },
+      "qualifier": {
+        "it": "Molto profondo",
+        "en": "Very deep"
+      },
+      "lab_d65": [
+        20.3591664043,
+        -43.5211249313,
+        25.6197660226
+      ]
+    },
+    {
+      "id": 134,
+      "name_en": "very light yellowish green",
+      "munsell_source": "0.5G 9.1/5.1*",
+      "munsell": "0.5G 9.1/5.1",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde giallastro",
+        "en": "Yellowish green"
+      },
+      "qualifier": {
+        "it": "Molto chiaro",
+        "en": "Very light"
+      },
+      "lab_d65": [
+        91.2605342996,
+        -26.715081412,
+        21.3523621446
+      ]
+    },
+    {
+      "id": 135,
+      "name_en": "light yellowish green",
+      "munsell_source": "0.5G 7.5/5.1",
+      "munsell": "0.5G 7.5/5.1",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde giallastro",
+        "en": "Yellowish green"
+      },
+      "qualifier": {
+        "it": "Chiaro",
+        "en": "Light"
+      },
+      "lab_d65": [
+        75.8091554441,
+        -26.2393270702,
+        20.6483010066
+      ]
+    },
+    {
+      "id": 136,
+      "name_en": "moderate yellowish green",
+      "munsell_source": "0.5G 5.5/5.1",
+      "munsell": "0.5G 5.5/5.1",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde giallastro",
+        "en": "Yellowish green"
+      },
+      "qualifier": {
+        "it": "Moderato",
+        "en": "Moderate"
+      },
+      "lab_d65": [
+        56.1535270091,
+        -25.5469589689,
+        19.0423088319
+      ]
+    },
+    {
+      "id": 137,
+      "name_en": "dark yellowish green",
+      "munsell_source": "0.5G 3.5/5.1",
+      "munsell": "0.5G 3.5/5.1",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde giallastro",
+        "en": "Yellowish green"
+      },
+      "qualifier": {
+        "it": "Scuro",
+        "en": "Dark"
+      },
+      "lab_d65": [
+        35.6436484711,
+        -24.9012969118,
+        17.2969254264
+      ]
+    },
+    {
+      "id": 138,
+      "name_en": "very dark yellowish green",
+      "munsell_source": "0.5G 1.5/4.9*",
+      "munsell": "0.5G 1.5/4.9",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde giallastro",
+        "en": "Yellowish green"
+      },
+      "qualifier": {
+        "it": "Molto scuro",
+        "en": "Very dark"
+      },
+      "lab_d65": [
+        15.4147024869,
+        -26.4121598853,
+        14.4856862456
+      ]
+    },
+    {
+      "id": 139,
+      "name_en": "vivid green",
+      "munsell_source": "6.5G 5.2/18+*",
+      "munsell": "6.5G 5.2/18",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde",
+        "en": "Green"
+      },
+      "qualifier": {
+        "it": "Vivido",
+        "en": "Vivid"
+      },
+      "lab_d65": [
+        53.2528965204,
+        -99.5933325212,
+        16.6807615066
+      ]
+    },
+    {
+      "id": 140,
+      "name_en": "brilliant green",
+      "munsell_source": "6.0G 7.4/9.1*",
+      "munsell": "6.0G 7.4/9.1",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde",
+        "en": "Green"
+      },
+      "qualifier": {
+        "it": "Brillante",
+        "en": "Brilliant"
+      },
+      "lab_d65": [
+        74.8839027387,
+        -49.4425722125,
+        14.3782496244
+      ]
+    },
+    {
+      "id": 141,
+      "name_en": "strong green",
+      "munsell_source": "6.0G 4.5/9.1",
+      "munsell": "6.0G 4.5/9.1",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde",
+        "en": "Green"
+      },
+      "qualifier": {
+        "it": "Intenso",
+        "en": "Strong"
+      },
+      "lab_d65": [
+        46.0282484406,
+        -50.1559707922,
+        11.9505386916
+      ]
+    },
+    {
+      "id": 142,
+      "name_en": "deep green",
+      "munsell_source": "6.0G 2.3/9.1*",
+      "munsell": "6.0G 2.3/9.1",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde",
+        "en": "Green"
+      },
+      "qualifier": {
+        "it": "Profondo",
+        "en": "Deep"
+      },
+      "lab_d65": [
+        23.3439591386,
+        -46.4044502306,
+        8.4809594737
+      ]
+    },
+    {
+      "id": 143,
+      "name_en": "very light green",
+      "munsell_source": "6.0G 8.6/5.1*",
+      "munsell": "6.0G 8.6/5.1",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde",
+        "en": "Green"
+      },
+      "qualifier": {
+        "it": "Molto chiaro",
+        "en": "Very light"
+      },
+      "lab_d65": [
+        86.4078886964,
+        -30.7030659459,
+        10.066624074
+      ]
+    },
+    {
+      "id": 144,
+      "name_en": "light green",
+      "munsell_source": "6.0G 6.5/5.1",
+      "munsell": "6.0G 6.5/5.1",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde",
+        "en": "Green"
+      },
+      "qualifier": {
+        "it": "Chiaro",
+        "en": "Light"
+      },
+      "lab_d65": [
+        66.0666977316,
+        -28.3228738372,
+        8.6532056286
+      ]
+    },
+    {
+      "id": 145,
+      "name_en": "moderate green",
+      "munsell_source": "6.0G 4.5/5.1",
+      "munsell": "6.0G 4.5/5.1",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde",
+        "en": "Green"
+      },
+      "qualifier": {
+        "it": "Moderato",
+        "en": "Moderate"
+      },
+      "lab_d65": [
+        45.976491414,
+        -27.827122389,
+        7.6947743133
+      ]
+    },
+    {
+      "id": 146,
+      "name_en": "dark green",
+      "munsell_source": "6.0G 2.7/5.0",
+      "munsell": "6.0G 2.7/5.0",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde",
+        "en": "Green"
+      },
+      "qualifier": {
+        "it": "Scuro",
+        "en": "Dark"
+      },
+      "lab_d65": [
+        27.3672220514,
+        -25.2679829622,
+        6.1161236772
+      ]
+    },
+    {
+      "id": 147,
+      "name_en": "very dark green",
+      "munsell_source": "6.0G 1.3/4.9*",
+      "munsell": "6.0G 1.3/4.9",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde",
+        "en": "Green"
+      },
+      "qualifier": {
+        "it": "Molto scuro",
+        "en": "Very dark"
+      },
+      "lab_d65": [
+        13.4568107408,
+        -28.4097856682,
+        5.2688670431
+      ]
+    },
+    {
+      "id": 148,
+      "name_en": "very pale green",
+      "munsell_source": "9.0G 8.7/1.8*",
+      "munsell": "9.0G 8.7/1.8",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde",
+        "en": "Green"
+      },
+      "qualifier": {
+        "it": "Molto pallido",
+        "en": "Very pale"
+      },
+      "lab_d65": [
+        87.31286253,
+        -11.7899084749,
+        2.6127695079
+      ]
+    },
+    {
+      "id": 149,
+      "name_en": "pale green",
+      "munsell_source": "9.0G 6.5/1.8",
+      "munsell": "9.0G 6.5/1.8",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde",
+        "en": "Green"
+      },
+      "qualifier": {
+        "it": "Pallido",
+        "en": "Pale"
+      },
+      "lab_d65": [
+        66.0108025287,
+        -10.5403689018,
+        2.0566550096
+      ]
+    },
+    {
+      "id": 150,
+      "name_en": "grayish green",
+      "munsell_source": "9.0G 4.5/1.8",
+      "munsell": "9.0G 4.5/1.8",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde",
+        "en": "Green"
+      },
+      "qualifier": {
+        "it": "Grigiastro",
+        "en": "Grayish"
+      },
+      "lab_d65": [
+        45.9218565444,
+        -9.5367116804,
+        1.6114827249
+      ]
+    },
+    {
+      "id": 151,
+      "name_en": "dark grayish green",
+      "munsell_source": "9.0G 2.8/1.6",
+      "munsell": "9.0G 2.8/1.6",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde",
+        "en": "Green"
+      },
+      "qualifier": {
+        "it": "Scuro e grigiastro",
+        "en": "Dark grayish"
+      },
+      "lab_d65": [
+        28.3418189534,
+        -7.336312607,
+        1.0204268517
+      ]
+    },
+    {
+      "id": 152,
+      "name_en": "blackish green",
+      "munsell_source": "9.0G 1.1/1.4*",
+      "munsell": "9.0G 1.1/1.4",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde",
+        "en": "Green"
+      },
+      "qualifier": {
+        "it": "Nerastro",
+        "en": "Blackish"
+      },
+      "lab_d65": [
+        11.4312100872,
+        -5.8127794908,
+        0.6283041497
+      ]
+    },
+    {
+      "id": 153,
+      "name_en": "greenish white",
+      "munsell_source": "7.0G 9.2/0.8*",
+      "munsell": "7.0G 9.2/0.8",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Bianco verdastro",
+        "en": "Greenish white"
+      },
+      "qualifier": {
+        "it": "",
+        "en": ""
+      },
+      "lab_d65": [
+        92.1408825582,
+        -4.5347460292,
+        1.4101877911
+      ]
+    },
+    {
+      "id": 154,
+      "name_en": "light greenish gray",
+      "munsell_source": "7.0G 7.5/0.8",
+      "munsell": "7.0G 7.5/0.8",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Grigio verdastro",
+        "en": "Greenish gray"
+      },
+      "qualifier": {
+        "it": "Chiaro",
+        "en": "Light"
+      },
+      "lab_d65": [
+        75.721413609,
+        -5.0077159672,
+        1.4800502229
+      ]
+    },
+    {
+      "id": 155,
+      "name_en": "greenish gray",
+      "munsell_source": "7.0G 5.5/0.8",
+      "munsell": "7.0G 5.5/0.8",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Grigio verdastro",
+        "en": "Greenish gray"
+      },
+      "qualifier": {
+        "it": "",
+        "en": ""
+      },
+      "lab_d65": [
+        56.0705756081,
+        -4.5478990527,
+        1.2563415636
+      ]
+    },
+    {
+      "id": 156,
+      "name_en": "dark greenish gray",
+      "munsell_source": "7.0G 3.5/0.8",
+      "munsell": "7.0G 3.5/0.8",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Grigio verdastro",
+        "en": "Greenish gray"
+      },
+      "qualifier": {
+        "it": "Scuro",
+        "en": "Dark"
+      },
+      "lab_d65": [
+        35.5665675407,
+        -4.0233182922,
+        0.9875818659
+      ]
+    },
+    {
+      "id": 157,
+      "name_en": "greenish black",
+      "munsell_source": "7.5G 0.9/0.7*",
+      "munsell": "7.5G 0.9/0.7",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": true,
+      "hue": {
+        "it": "Nero verdastro",
+        "en": "Greenish black"
+      },
+      "qualifier": {
+        "it": "",
+        "en": ""
+      },
+      "lab_d65": [
+        9.3856677491,
+        -2.8189439382,
+        0.4975089453
+      ]
+    },
+    {
+      "id": 158,
+      "name_en": "vivid bluish green",
+      "munsell_source": "4.5BG 5.3/15.5+*",
+      "munsell": "4.5BG 5.3/15.5",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde bluastro",
+        "en": "Bluish green"
+      },
+      "qualifier": {
+        "it": "Vivido",
+        "en": "Vivid"
+      },
+      "lab_d65": [
+        54.182129751,
+        -80.0984490492,
+        -11.265905636
+      ]
+    },
+    {
+      "id": 159,
+      "name_en": "brilliant bluish green",
+      "munsell_source": "4.5BG 7.3/9.0*",
+      "munsell": "4.5BG 7.3/9.0",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde bluastro",
+        "en": "Bluish green"
+      },
+      "qualifier": {
+        "it": "Brillante",
+        "en": "Brilliant"
+      },
+      "lab_d65": [
+        73.8751103112,
+        -46.5000024412,
+        -3.638276792
+      ]
+    },
+    {
+      "id": 160,
+      "name_en": "strong bluish green",
+      "munsell_source": "4.5BG 4.5/9.0",
+      "munsell": "4.5BG 4.5/9.0",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde bluastro",
+        "en": "Bluish green"
+      },
+      "qualifier": {
+        "it": "Intenso",
+        "en": "Strong"
+      },
+      "lab_d65": [
+        45.9830573644,
+        -46.5440405888,
+        -7.3705121444
+      ]
+    },
+    {
+      "id": 161,
+      "name_en": "deep bluish green",
+      "munsell_source": "4.5BG 2.3/9.0*",
+      "munsell": "4.5BG 2.3/9.0",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde bluastro",
+        "en": "Bluish green"
+      },
+      "qualifier": {
+        "it": "Profondo",
+        "en": "Deep"
+      },
+      "lab_d65": [
+        23.3008234574,
+        -43.1837914436,
+        -9.556987228
+      ]
+    },
+    {
+      "id": 162,
+      "name_en": "very light bluish green",
+      "munsell_source": "4.5BG 8.5/5.0*",
+      "munsell": "4.5BG 8.5/5.0",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde bluastro",
+        "en": "Bluish green"
+      },
+      "qualifier": {
+        "it": "Molto chiaro",
+        "en": "Very light"
+      },
+      "lab_d65": [
+        85.4153370558,
+        -28.2114827749,
+        -0.8631928877
+      ]
+    },
+    {
+      "id": 163,
+      "name_en": "light bluish green",
+      "munsell_source": "4.5BG 6.5/5.0",
+      "munsell": "4.5BG 6.5/5.0",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde bluastro",
+        "en": "Bluish green"
+      },
+      "qualifier": {
+        "it": "Chiaro",
+        "en": "Light"
+      },
+      "lab_d65": [
+        66.0400809785,
+        -26.1197756813,
+        -2.1962608028
+      ]
+    },
+    {
+      "id": 164,
+      "name_en": "moderate bluish green",
+      "munsell_source": "4.5BG 4.5/5.0",
+      "munsell": "4.5BG 4.5/5.0",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde bluastro",
+        "en": "Bluish green"
+      },
+      "qualifier": {
+        "it": "Moderato",
+        "en": "Moderate"
+      },
+      "lab_d65": [
+        45.9481811948,
+        -25.3477640667,
+        -3.7158321848
+      ]
+    },
+    {
+      "id": 165,
+      "name_en": "dark bluish green",
+      "munsell_source": "4.5BG 2.7/5.0",
+      "munsell": "4.5BG 2.7/5.0",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde bluastro",
+        "en": "Bluish green"
+      },
+      "qualifier": {
+        "it": "Scuro",
+        "en": "Dark"
+      },
+      "lab_d65": [
+        27.3407964519,
+        -23.4227352368,
+        -4.9300705693
+      ]
+    },
+    {
+      "id": 166,
+      "name_en": "very dark bluish green",
+      "munsell_source": "4.5BG 1.3/4.9*",
+      "munsell": "4.5BG 1.3/4.9",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Verde bluastro",
+        "en": "Bluish green"
+      },
+      "qualifier": {
+        "it": "Molto scuro",
+        "en": "Very dark"
+      },
+      "lab_d65": [
+        13.4248176552,
+        -24.9339754289,
+        -6.6962607319
+      ]
+    },
+    {
+      "id": 167,
+      "name_en": "vivid greenish blue",
+      "munsell_source": "4.5B 5.2/13+*",
+      "munsell": "4.5B 5.2/13",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Blu verdastro",
+        "en": "Greenish blue"
+      },
+      "qualifier": {
+        "it": "Vivido",
+        "en": "Vivid"
+      },
+      "lab_d65": [
+        53.006233769,
+        -40.6103655184,
+        -42.0859277973
+      ]
+    },
+    {
+      "id": 168,
+      "name_en": "brilliant greenish blue",
+      "munsell_source": "4.5B 6.8/9.0*",
+      "munsell": "4.5B 6.8/9.0",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Blu verdastro",
+        "en": "Greenish blue"
+      },
+      "qualifier": {
+        "it": "Brillante",
+        "en": "Brilliant"
+      },
+      "lab_d65": [
+        68.9201404141,
+        -29.6068931525,
+        -27.16027507
+      ]
+    },
+    {
+      "id": 169,
+      "name_en": "strong greenish blue",
+      "munsell_source": "4.5B 4.5/9.0",
+      "munsell": "4.5B 4.5/9.0",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Blu verdastro",
+        "en": "Greenish blue"
+      },
+      "qualifier": {
+        "it": "Intenso",
+        "en": "Strong"
+      },
+      "lab_d65": [
+        45.879657209,
+        -27.6359047088,
+        -30.0716373257
+      ]
+    },
+    {
+      "id": 170,
+      "name_en": "deep greenish blue",
+      "munsell_source": "4.5B 2.5/9.0*",
+      "munsell": "4.5B 2.5/9.0",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Blu verdastro",
+        "en": "Greenish blue"
+      },
+      "qualifier": {
+        "it": "Profondo",
+        "en": "Deep"
+      },
+      "lab_d65": [
+        25.2122050308,
+        -25.468206922,
+        -32.7494489987
+      ]
+    },
+    {
+      "id": 171,
+      "name_en": "very light greenish blue",
+      "munsell_source": "4.5B 8.2/5.2*",
+      "munsell": "4.5B 8.2/5.2",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Blu verdastro",
+        "en": "Greenish blue"
+      },
+      "qualifier": {
+        "it": "Molto chiaro",
+        "en": "Very light"
+      },
+      "lab_d65": [
+        82.4693774099,
+        -19.1531129043,
+        -14.9865092827
+      ]
+    },
+    {
+      "id": 172,
+      "name_en": "light greenish blue",
+      "munsell_source": "4.5B 6.5/5.2",
+      "munsell": "4.5B 6.5/5.2",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Blu verdastro",
+        "en": "Greenish blue"
+      },
+      "qualifier": {
+        "it": "Chiaro",
+        "en": "Light"
+      },
+      "lab_d65": [
+        65.9892059432,
+        -17.5772643341,
+        -15.2122754914
+      ]
+    },
+    {
+      "id": 173,
+      "name_en": "moderate greenish blue",
+      "munsell_source": "4.5B 4.5/5.2",
+      "munsell": "4.5B 4.5/5.2",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Blu verdastro",
+        "en": "Greenish blue"
+      },
+      "qualifier": {
+        "it": "Moderato",
+        "en": "Moderate"
+      },
+      "lab_d65": [
+        45.8946711266,
+        -16.4109911462,
+        -16.8840472275
+      ]
+    },
+    {
+      "id": 174,
+      "name_en": "dark greenish blue",
+      "munsell_source": "4.5B 2.7/5.0",
+      "munsell": "4.5B 2.7/5.0",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Blu verdastro",
+        "en": "Greenish blue"
+      },
+      "qualifier": {
+        "it": "Scuro",
+        "en": "Dark"
+      },
+      "lab_d65": [
+        27.2855259655,
+        -14.5746107959,
+        -17.9136229113
+      ]
+    },
+    {
+      "id": 175,
+      "name_en": "very dark greenish blue",
+      "munsell_source": "4.5B 1.3/4.9*",
+      "munsell": "4.5B 1.3/4.9",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Blu verdastro",
+        "en": "Greenish blue"
+      },
+      "qualifier": {
+        "it": "Molto scuro",
+        "en": "Very dark"
+      },
+      "lab_d65": [
+        13.3622226168,
+        -12.8746486358,
+        -18.6340908132
+      ]
+    },
+    {
+      "id": 176,
+      "name_en": "vivid blue",
+      "munsell_source": "3.0PB 4.2/15+*",
+      "munsell": "3.0PB 4.2/15",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Blu",
+        "en": "Blue"
+      },
+      "qualifier": {
+        "it": "Vivido",
+        "en": "Vivid"
+      },
+      "lab_d65": [
+        42.5885447052,
+        -0.8944714776,
+        -61.1003286962
+      ]
+    },
+    {
+      "id": 177,
+      "name_en": "brilliant blue",
+      "munsell_source": "3.0PB 6.4/11.0*",
+      "munsell": "3.0PB 6.4/11.0",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Blu",
+        "en": "Blue"
+      },
+      "qualifier": {
+        "it": "Brillante",
+        "en": "Brilliant"
+      },
+      "lab_d65": [
+        64.8878833076,
+        -5.2927450951,
+        -44.059382437
+      ]
+    },
+    {
+      "id": 178,
+      "name_en": "strong blue",
+      "munsell_source": "3.0PB 4.2/11.0",
+      "munsell": "3.0PB 4.2/11.0",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Blu",
+        "en": "Blue"
+      },
+      "qualifier": {
+        "it": "Intenso",
+        "en": "Strong"
+      },
+      "lab_d65": [
+        42.6709786813,
+        -2.3280126656,
+        -44.6823761472
+      ]
+    },
+    {
+      "id": 179,
+      "name_en": "deep blue",
+      "munsell_source": "3.0PB 2.0/9.0*",
+      "munsell": "3.0PB 2.0/9.0",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Blu",
+        "en": "Blue"
+      },
+      "qualifier": {
+        "it": "Profondo",
+        "en": "Deep"
+      },
+      "lab_d65": [
+        20.0859611514,
+        1.9898792734,
+        -39.5052681967
+      ]
+    },
+    {
+      "id": 180,
+      "name_en": "very light blue",
+      "munsell_source": "2.4PB 8.2/7.2*",
+      "munsell": "2.4PB 8.2/7.2",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Blu",
+        "en": "Blue"
+      },
+      "qualifier": {
+        "it": "Molto chiaro",
+        "en": "Very light"
+      },
+      "lab_d65": [
+        82.4028310031,
+        -7.5032474535,
+        -28.9361649937
+      ]
+    },
+    {
+      "id": 181,
+      "name_en": "light blue",
+      "munsell_source": "2.7PB 6.5/7.3",
+      "munsell": "2.7PB 6.5/7.3",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Blu",
+        "en": "Blue"
+      },
+      "qualifier": {
+        "it": "Chiaro",
+        "en": "Light"
+      },
+      "lab_d65": [
+        65.9217988833,
+        -4.9617478532,
+        -28.0300633355
+      ]
+    },
+    {
+      "id": 182,
+      "name_en": "moderate blue",
+      "munsell_source": "2.9PB 4.2/7.2",
+      "munsell": "2.9PB 4.2/7.2",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Blu",
+        "en": "Blue"
+      },
+      "qualifier": {
+        "it": "Moderato",
+        "en": "Moderate"
+      },
+      "lab_d65": [
+        42.7299798807,
+        -2.7122327836,
+        -29.6801060371
+      ]
+    },
+    {
+      "id": 183,
+      "name_en": "dark blue",
+      "munsell_source": "2.8PB 1.7/5.0*",
+      "munsell": "2.8PB 1.7/5.0",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Blu",
+        "en": "Blue"
+      },
+      "qualifier": {
+        "it": "Scuro",
+        "en": "Dark"
+      },
+      "lab_d65": [
+        17.2144763997,
+        -0.1111089926,
+        -22.8375550949
+      ]
+    },
+    {
+      "id": 184,
+      "name_en": "very pale blue",
+      "munsell_source": "0.9PB 8.4/3.0*",
+      "munsell": "0.9PB 8.4/3.0",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Blu",
+        "en": "Blue"
+      },
+      "qualifier": {
+        "it": "Molto pallido",
+        "en": "Very pale"
+      },
+      "lab_d65": [
+        84.3714176465,
+        -4.6866735192,
+        -10.0586797881
+      ]
+    },
+    {
+      "id": 185,
+      "name_en": "pale blue",
+      "munsell_source": "0.9PB 6.5/3.0",
+      "munsell": "0.9PB 6.5/3.0",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Blu",
+        "en": "Blue"
+      },
+      "qualifier": {
+        "it": "Pallido",
+        "en": "Pale"
+      },
+      "lab_d65": [
+        65.9670728618,
+        -4.1514017163,
+        -10.2797295947
+      ]
+    },
+    {
+      "id": 186,
+      "name_en": "grayish blue",
+      "munsell_source": "0.9PB 4.2/3.0",
+      "munsell": "0.9PB 4.2/3.0",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Blu",
+        "en": "Blue"
+      },
+      "qualifier": {
+        "it": "Grigiastro",
+        "en": "Grayish"
+      },
+      "lab_d65": [
+        42.7857691516,
+        -3.7122400706,
+        -12.0410715789
+      ]
+    },
+    {
+      "id": 187,
+      "name_en": "dark grayish blue",
+      "munsell_source": "9.5B 2.6/1.9",
+      "munsell": "9.5B 2.6/1.9",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Blu",
+        "en": "Blue"
+      },
+      "qualifier": {
+        "it": "Scuro e grigiastro",
+        "en": "Dark grayish"
+      },
+      "lab_d65": [
+        26.2631436211,
+        -3.1602868328,
+        -8.3681642607
+      ]
+    },
+    {
+      "id": 188,
+      "name_en": "blackish blue",
+      "munsell_source": "9.5B 1.1/1.5*",
+      "munsell": "9.5B 1.1/1.5",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Blu",
+        "en": "Blue"
+      },
+      "qualifier": {
+        "it": "Nerastro",
+        "en": "Blackish"
+      },
+      "lab_d65": [
+        11.403649183,
+        -2.0413923245,
+        -6.9788399306
+      ]
+    },
+    {
+      "id": 189,
+      "name_en": "bluish white",
+      "munsell_source": "9.5B 9.1/1.0*",
+      "munsell": "9.5B 9.1/1.0",
+      "estimated": true,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Bianco bluastro",
+        "en": "Bluish white"
+      },
+      "qualifier": {
+        "it": "",
+        "en": ""
+      },
+      "lab_d65": [
+        91.1521927013,
+        -1.7805292808,
+        -2.5095575175
+      ]
+    },
+    {
+      "id": 190,
+      "name_en": "light bluish gray",
+      "munsell_source": "9.5B 7.5/1.0",
+      "munsell": "9.5B 7.5/1.0",
+      "estimated": false,
+      "source_page": 429,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Grigio bluastro",
+        "en": "Bluish gray"
+      },
+      "qualifier": {
+        "it": "Chiaro",
+        "en": "Light"
+      },
+      "lab_d65": [
+        75.7036042305,
+        -1.8092357159,
+        -2.9520609105
+      ]
+    },
+    {
+      "id": 191,
+      "name_en": "bluish gray",
+      "munsell_source": "9.5B 5.5/1.0",
+      "munsell": "9.5B 5.5/1.0",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Grigio bluastro",
+        "en": "Bluish gray"
+      },
+      "qualifier": {
+        "it": "",
+        "en": ""
+      },
+      "lab_d65": [
+        56.0532779847,
+        -1.7920727244,
+        -3.467402648
+      ]
+    },
+    {
+      "id": 192,
+      "name_en": "dark bluish gray",
+      "munsell_source": "9.5B 3.5/1.0",
+      "munsell": "9.5B 3.5/1.0",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Grigio bluastro",
+        "en": "Bluish gray"
+      },
+      "qualifier": {
+        "it": "Scuro",
+        "en": "Dark"
+      },
+      "lab_d65": [
+        35.5491645024,
+        -1.7226135311,
+        -4.2753467437
+      ]
+    },
+    {
+      "id": 193,
+      "name_en": "bluish black",
+      "munsell_source": "9.5B 1.0/0.7*",
+      "munsell": "9.5B 1.0/0.7",
+      "estimated": true,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Nero bluastro",
+        "en": "Bluish black"
+      },
+      "qualifier": {
+        "it": "",
+        "en": ""
+      },
+      "lab_d65": [
+        10.4036725563,
+        -0.8424294325,
+        -3.1754740916
+      ]
+    },
+    {
+      "id": 194,
+      "name_en": "vivid purplish blue",
+      "munsell_source": "8.0PB 2.5/22+*",
+      "munsell": "8.0PB 2.5/22",
+      "estimated": true,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Blu violaceo",
+        "en": "Purplish blue"
+      },
+      "qualifier": {
+        "it": "Vivido",
+        "en": "Vivid"
+      },
+      "lab_d65": [
+        24.5852305144,
+        66.3884065574,
+        -79.7306832413
+      ]
+    },
+    {
+      "id": 195,
+      "name_en": "brilliant purplish blue",
+      "munsell_source": "8.0PB 6.0/10.8*",
+      "munsell": "8.0PB 6.0/10.8",
+      "estimated": true,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Blu violaceo",
+        "en": "Purplish blue"
+      },
+      "qualifier": {
+        "it": "Brillante",
+        "en": "Brilliant"
+      },
+      "lab_d65": [
+        60.8892506563,
+        15.0685327047,
+        -41.2407181315
+      ]
+    },
+    {
+      "id": 196,
+      "name_en": "strong purplish blue",
+      "munsell_source": "8.0PB 4.1/11.4",
+      "munsell": "8.0PB 4.1/11.4",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Blu violaceo",
+        "en": "Purplish blue"
+      },
+      "qualifier": {
+        "it": "Intenso",
+        "en": "Strong"
+      },
+      "lab_d65": [
+        41.5685757218,
+        20.4067296037,
+        -45.2235357452
+      ]
+    },
+    {
+      "id": 197,
+      "name_en": "deep purplish blue",
+      "munsell_source": "8.0PB 1.6/9.1*",
+      "munsell": "8.0PB 1.6/9.1",
+      "estimated": true,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Blu violaceo",
+        "en": "Purplish blue"
+      },
+      "qualifier": {
+        "it": "Profondo",
+        "en": "Deep"
+      },
+      "lab_d65": [
+        16.0849162615,
+        24.164691151,
+        -38.0587711875
+      ]
+    },
+    {
+      "id": 198,
+      "name_en": "very light purplish blue",
+      "munsell_source": "7.PB 7.8+/6.1+*",
+      "munsell": "7.0PB 7.8/6.1",
+      "estimated": true,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Blu violaceo",
+        "en": "Purplish blue"
+      },
+      "qualifier": {
+        "it": "Molto chiaro",
+        "en": "Very light"
+      },
+      "lab_d65": [
+        78.5311043198,
+        4.1250268538,
+        -23.9457095788
+      ]
+    },
+    {
+      "id": 199,
+      "name_en": "light purplish blue",
+      "munsell_source": "7.5PB 6.0/6.8",
+      "munsell": "7.5PB 6.0/6.8",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Blu violaceo",
+        "en": "Purplish blue"
+      },
+      "qualifier": {
+        "it": "Chiaro",
+        "en": "Light"
+      },
+      "lab_d65": [
+        60.9612907878,
+        7.3020070728,
+        -25.9775458154
+      ]
+    },
+    {
+      "id": 200,
+      "name_en": "moderate purplish blue",
+      "munsell_source": "8.0PB 3.5/6.9",
+      "munsell": "8.0PB 3.5/6.9",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Blu violaceo",
+        "en": "Purplish blue"
+      },
+      "qualifier": {
+        "it": "Moderato",
+        "en": "Moderate"
+      },
+      "lab_d65": [
+        35.4332641739,
+        12.6800639805,
+        -29.6880342403
+      ]
+    },
+    {
+      "id": 201,
+      "name_en": "dark purplish blue",
+      "munsell_source": "7.9PB 1.1/4.7*",
+      "munsell": "7.9PB 1.1/4.7",
+      "estimated": true,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Blu violaceo",
+        "en": "Purplish blue"
+      },
+      "qualifier": {
+        "it": "Scuro",
+        "en": "Dark"
+      },
+      "lab_d65": [
+        11.3159743556,
+        11.0508970063,
+        -21.1320630382
+      ]
+    },
+    {
+      "id": 202,
+      "name_en": "very pale purplish blue",
+      "munsell_source": "7.0PB 8.2/4.1*",
+      "munsell": "7.0PB 8.2/4.1",
+      "estimated": true,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Blu violaceo",
+        "en": "Purplish blue"
+      },
+      "qualifier": {
+        "it": "Molto pallido",
+        "en": "Very pale"
+      },
+      "lab_d65": [
+        82.4133865788,
+        2.3218893861,
+        -14.9592085446
+      ]
+    },
+    {
+      "id": 203,
+      "name_en": "pale purplish blue",
+      "munsell_source": "7.0PB 6.0/4.1",
+      "munsell": "7.0PB 6.0/4.1",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Blu violaceo",
+        "en": "Purplish blue"
+      },
+      "qualifier": {
+        "it": "Pallido",
+        "en": "Pale"
+      },
+      "lab_d65": [
+        61.0031218132,
+        3.1000961058,
+        -15.0737395066
+      ]
+    },
+    {
+      "id": 204,
+      "name_en": "grayish purplish blue",
+      "munsell_source": "7.2PB 3.3/4.0",
+      "munsell": "7.2PB 3.3/4.0",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Blu violaceo",
+        "en": "Purplish blue"
+      },
+      "qualifier": {
+        "it": "Grigiastro",
+        "en": "Grayish"
+      },
+      "lab_d65": [
+        33.416588448,
+        5.8312217788,
+        -18.6737266
+      ]
+    },
+    {
+      "id": 205,
+      "name_en": "vivid violet",
+      "munsell_source": "1.0P 2.7/21+*",
+      "munsell": "1.0P 2.7/21",
+      "estimated": true,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Violetto",
+        "en": "Violet"
+      },
+      "qualifier": {
+        "it": "Vivido",
+        "en": "Vivid"
+      },
+      "lab_d65": [
+        26.7068158776,
+        70.5457481345,
+        -69.4926375315
+      ]
+    },
+    {
+      "id": 206,
+      "name_en": "brilliant violet",
+      "munsell_source": "1.0P 5.9/11.1*",
+      "munsell": "1.0P 5.9/11.1",
+      "estimated": true,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Violetto",
+        "en": "Violet"
+      },
+      "qualifier": {
+        "it": "Brillante",
+        "en": "Brilliant"
+      },
+      "lab_d65": [
+        59.8703435061,
+        25.571798779,
+        -39.2882714783
+      ]
+    },
+    {
+      "id": 207,
+      "name_en": "strong violet",
+      "munsell_source": "1.0P 3.5/11.1",
+      "munsell": "1.0P 3.5/11.1",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Violetto",
+        "en": "Violet"
+      },
+      "qualifier": {
+        "it": "Intenso",
+        "en": "Strong"
+      },
+      "lab_d65": [
+        35.3223959284,
+        32.1916090521,
+        -41.2955295664
+      ]
+    },
+    {
+      "id": 208,
+      "name_en": "deep violet",
+      "munsell_source": "1.0P 1.4/10.3*",
+      "munsell": "1.0P 1.4/10.3",
+      "estimated": true,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Violetto",
+        "en": "Violet"
+      },
+      "qualifier": {
+        "it": "Profondo",
+        "en": "Deep"
+      },
+      "lab_d65": [
+        14.0949794181,
+        35.0588521664,
+        -36.9738309945
+      ]
+    },
+    {
+      "id": 209,
+      "name_en": "very light violet",
+      "munsell_source": "1.0P 7.9/7*",
+      "munsell": "1.0P 7.9/7",
+      "estimated": true,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Violetto",
+        "en": "Violet"
+      },
+      "qualifier": {
+        "it": "Molto chiaro",
+        "en": "Very light"
+      },
+      "lab_d65": [
+        79.4612803713,
+        14.1659531714,
+        -25.849586362
+      ]
+    },
+    {
+      "id": 210,
+      "name_en": "light violet",
+      "munsell_source": "1.0P 6.0/7.2",
+      "munsell": "1.0P 6.0/7.2",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Violetto",
+        "en": "Violet"
+      },
+      "qualifier": {
+        "it": "Chiaro",
+        "en": "Light"
+      },
+      "lab_d65": [
+        60.9405522218,
+        15.0822356309,
+        -25.3659846795
+      ]
+    },
+    {
+      "id": 211,
+      "name_en": "moderate violet",
+      "munsell_source": "1.0P 3.5/7.2",
+      "munsell": "1.0P 3.5/7.2",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Violetto",
+        "en": "Violet"
+      },
+      "qualifier": {
+        "it": "Moderato",
+        "en": "Moderate"
+      },
+      "lab_d65": [
+        35.4146045834,
+        20.2454024994,
+        -28.322807092
+      ]
+    },
+    {
+      "id": 212,
+      "name_en": "dark violet",
+      "munsell_source": "1.0P 1.3/5.0*",
+      "munsell": "1.0P 1.3/5.0",
+      "estimated": true,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Violetto",
+        "en": "Violet"
+      },
+      "qualifier": {
+        "it": "Scuro",
+        "en": "Dark"
+      },
+      "lab_d65": [
+        13.2719453641,
+        16.6698925052,
+        -20.5288056183
+      ]
+    },
+    {
+      "id": 213,
+      "name_en": "very pale violet",
+      "munsell_source": "1.0P 8.2/4.1*",
+      "munsell": "1.0P 8.2/4.1",
+      "estimated": true,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Violetto",
+        "en": "Violet"
+      },
+      "qualifier": {
+        "it": "Molto pallido",
+        "en": "Very pale"
+      },
+      "lab_d65": [
+        82.4037406691,
+        6.9173297703,
+        -13.6842225575
+      ]
+    },
+    {
+      "id": 214,
+      "name_en": "pale violet",
+      "munsell_source": "1.0P 6.0/4.1",
+      "munsell": "1.0P 6.0/4.1",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Violetto",
+        "en": "Violet"
+      },
+      "qualifier": {
+        "it": "Pallido",
+        "en": "Pale"
+      },
+      "lab_d65": [
+        60.9923855974,
+        7.8697578742,
+        -14.0376184871
+      ]
+    },
+    {
+      "id": 215,
+      "name_en": "grayish violet",
+      "munsell_source": "1.0P 3.3/4.1",
+      "munsell": "1.0P 3.3/4.1",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Violetto",
+        "en": "Violet"
+      },
+      "qualifier": {
+        "it": "Grigiastro",
+        "en": "Grayish"
+      },
+      "lab_d65": [
+        33.402217733,
+        11.760949107,
+        -17.6695652022
+      ]
+    },
+    {
+      "id": 216,
+      "name_en": "vivid purple",
+      "munsell_source": "6.0P 3.5/20+*",
+      "munsell": "6.0P 3.5/20",
+      "estimated": true,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Viola",
+        "en": "Purple"
+      },
+      "qualifier": {
+        "it": "Vivido",
+        "en": "Vivid"
+      },
+      "lab_d65": [
+        35.0790175083,
+        74.4598430238,
+        -55.1684923813
+      ]
+    },
+    {
+      "id": 217,
+      "name_en": "brilliant purple",
+      "munsell_source": "6.0P 6.7/11.1*",
+      "munsell": "6.0P 6.7/11.1",
+      "estimated": true,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Viola",
+        "en": "Purple"
+      },
+      "qualifier": {
+        "it": "Brillante",
+        "en": "Brilliant"
+      },
+      "lab_d65": [
+        67.7540461497,
+        35.3703054836,
+        -30.5420709646
+      ]
+    },
+    {
+      "id": 218,
+      "name_en": "strong purple",
+      "munsell_source": "6.0P 4.5/11.1",
+      "munsell": "6.0P 4.5/11.1",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Viola",
+        "en": "Purple"
+      },
+      "qualifier": {
+        "it": "Intenso",
+        "en": "Strong"
+      },
+      "lab_d65": [
+        45.6888247155,
+        38.123241348,
+        -31.4445558126
+      ]
+    },
+    {
+      "id": 219,
+      "name_en": "deep purple",
+      "munsell_source": "6.0P 2.8/10.2",
+      "munsell": "6.0P 2.8/10.2",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Viola",
+        "en": "Purple"
+      },
+      "qualifier": {
+        "it": "Profondo",
+        "en": "Deep"
+      },
+      "lab_d65": [
+        28.0960806111,
+        39.4965431457,
+        -31.1252630782
+      ]
+    },
+    {
+      "id": 220,
+      "name_en": "very deep purple",
+      "munsell_source": "6.0P 1.2/10.2*",
+      "munsell": "6.0P 1.2/10.2",
+      "estimated": true,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Viola",
+        "en": "Purple"
+      },
+      "qualifier": {
+        "it": "Molto profondo",
+        "en": "Very deep"
+      },
+      "lab_d65": [
+        12.1511125825,
+        40.0912568248,
+        -29.7950862555
+      ]
+    },
+    {
+      "id": 221,
+      "name_en": "very light purple",
+      "munsell_source": "6.0P 8.0/7.2*",
+      "munsell": "6.0P 8.0/7.2",
+      "estimated": true,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Viola",
+        "en": "Purple"
+      },
+      "qualifier": {
+        "it": "Molto chiaro",
+        "en": "Very light"
+      },
+      "lab_d65": [
+        80.4192266332,
+        21.600642369,
+        -19.7489526593
+      ]
+    },
+    {
+      "id": 223,
+      "name_en": "moderate purple",
+      "munsell_source": "6.0P 4.5/7.2",
+      "munsell": "6.0P 4.5/7.2",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Viola",
+        "en": "Purple"
+      },
+      "qualifier": {
+        "it": "Moderato",
+        "en": "Moderate"
+      },
+      "lab_d65": [
+        45.7673713681,
+        24.6627353044,
+        -21.1368401932
+      ]
+    },
+    {
+      "id": 224,
+      "name_en": "dark purple",
+      "munsell_source": "6.0P 2.7/5.1",
+      "munsell": "6.0P 2.7/5.1",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Viola",
+        "en": "Purple"
+      },
+      "qualifier": {
+        "it": "Scuro",
+        "en": "Dark"
+      },
+      "lab_d65": [
+        27.1922059538,
+        20.0334048638,
+        -16.7885442674
+      ]
+    },
+    {
+      "id": 225,
+      "name_en": "very dark purple",
+      "munsell_source": "6.0P 1.1/4.9*",
+      "munsell": "6.0P 1.1/4.9",
+      "estimated": true,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Viola",
+        "en": "Purple"
+      },
+      "qualifier": {
+        "it": "Molto scuro",
+        "en": "Very dark"
+      },
+      "lab_d65": [
+        11.3026825913,
+        20.4087103193,
+        -16.3656305212
+      ]
+    },
+    {
+      "id": 226,
+      "name_en": "very pale purple",
+      "munsell_source": "5.4P 8.4/3.3*",
+      "munsell": "5.4P 8.4/3.3",
+      "estimated": true,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Viola",
+        "en": "Purple"
+      },
+      "qualifier": {
+        "it": "Molto pallido",
+        "en": "Very pale"
+      },
+      "lab_d65": [
+        84.3403966539,
+        7.8573709288,
+        -8.6246390837
+      ]
+    },
+    {
+      "id": 227,
+      "name_en": "pale purple",
+      "munsell_source": "6.8P 6.4/3.0",
+      "munsell": "6.8P 6.4/3.0",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Viola",
+        "en": "Purple"
+      },
+      "qualifier": {
+        "it": "Pallido",
+        "en": "Pale"
+      },
+      "lab_d65": [
+        64.9559296626,
+        9.1067493217,
+        -7.0629029813
+      ]
+    },
+    {
+      "id": 228,
+      "name_en": "grayish purple",
+      "munsell_source": "7.8P 4.5/2.9",
+      "munsell": "7.8P 4.5/2.9",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Viola",
+        "en": "Purple"
+      },
+      "qualifier": {
+        "it": "Grigiastro",
+        "en": "Grayish"
+      },
+      "lab_d65": [
+        45.8454597593,
+        10.983995936,
+        -7.6666812061
+      ]
+    },
+    {
+      "id": 229,
+      "name_en": "dark grayish purple",
+      "munsell_source": "10.0P 2.8/2.0",
+      "munsell": "10.0P 2.8/2.0",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Viola",
+        "en": "Purple"
+      },
+      "qualifier": {
+        "it": "Scuro e grigiastro",
+        "en": "Dark grayish"
+      },
+      "lab_d65": [
+        28.2780063672,
+        10.3336853814,
+        -5.8033874142
+      ]
+    },
+    {
+      "id": 230,
+      "name_en": "blackish purple",
+      "munsell_source": "10.0P 1.0/1.4*",
+      "munsell": "10.0P 1.0/1.4",
+      "estimated": true,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Viola",
+        "en": "Purple"
+      },
+      "qualifier": {
+        "it": "Nerastro",
+        "en": "Blackish"
+      },
+      "lab_d65": [
+        10.3748851711,
+        7.5927368294,
+        -5.011560504
+      ]
+    },
+    {
+      "id": 231,
+      "name_en": "purplish white",
+      "munsell_source": "9.0P 9.1/1.0*",
+      "munsell": "9.0P 9.1/1.0",
+      "estimated": true,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Bianco violaceo",
+        "en": "Purplish white"
+      },
+      "qualifier": {
+        "it": "",
+        "en": ""
+      },
+      "lab_d65": [
+        91.1447206764,
+        2.0933382222,
+        -1.0601533086
+      ]
+    },
+    {
+      "id": 232,
+      "name_en": "light purplish gray",
+      "munsell_source": "9.0P 7.5/1.0",
+      "munsell": "9.0P 7.5/1.0",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Grigio violaceo",
+        "en": "Purplish gray"
+      },
+      "qualifier": {
+        "it": "Chiaro",
+        "en": "Light"
+      },
+      "lab_d65": [
+        75.6948001735,
+        2.6479364402,
+        -1.3869322717
+      ]
+    },
+    {
+      "id": 233,
+      "name_en": "purplish gray",
+      "munsell_source": "10.0P 5.5/1.0",
+      "munsell": "10.0P 5.5/1.0",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Grigio violaceo",
+        "en": "Purplish gray"
+      },
+      "qualifier": {
+        "it": "",
+        "en": ""
+      },
+      "lab_d65": [
+        56.0425222441,
+        3.5271050572,
+        -1.7181738468
+      ]
+    },
+    {
+      "id": 234,
+      "name_en": "dark purplish gray",
+      "munsell_source": "10.0P 3.5/1.0",
+      "munsell": "10.0P 3.5/1.0",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Grigio violaceo",
+        "en": "Purplish gray"
+      },
+      "qualifier": {
+        "it": "Scuro",
+        "en": "Dark"
+      },
+      "lab_d65": [
+        35.5350004017,
+        4.7832609694,
+        -2.5961208865
+      ]
+    },
+    {
+      "id": 235,
+      "name_en": "purplish black",
+      "munsell_source": "10.0P 1.0/0.7*",
+      "munsell": "10.0P 1.0/0.7",
+      "estimated": true,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Nero violaceo",
+        "en": "Purplish black"
+      },
+      "qualifier": {
+        "it": "",
+        "en": ""
+      },
+      "lab_d65": [
+        10.3932120957,
+        3.5662143365,
+        -2.40374387
+      ]
+    },
+    {
+      "id": 236,
+      "name_en": "vivid reddish purple",
+      "munsell_source": "1.0RP 4+/19+*",
+      "munsell": "1.0RP 4/19",
+      "estimated": true,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Viola rossastro",
+        "en": "Reddish purple"
+      },
+      "qualifier": {
+        "it": "Vivido",
+        "en": "Vivid"
+      },
+      "lab_d65": [
+        40.3527564929,
+        77.5040183837,
+        -34.9256058936
+      ]
+    },
+    {
+      "id": 237,
+      "name_en": "strong reddish purple",
+      "munsell_source": "1.0RP 4.5/11.1",
+      "munsell": "1.0RP 4.5/11.1",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Viola rossastro",
+        "en": "Reddish purple"
+      },
+      "qualifier": {
+        "it": "Intenso",
+        "en": "Strong"
+      },
+      "lab_d65": [
+        45.6993879443,
+        45.3804928154,
+        -19.8461510969
+      ]
+    },
+    {
+      "id": 238,
+      "name_en": "deep reddish purple",
+      "munsell_source": "1.0RP 2.8/10.3",
+      "munsell": "1.0RP 2.8/10.3",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Viola rossastro",
+        "en": "Reddish purple"
+      },
+      "qualifier": {
+        "it": "Profondo",
+        "en": "Deep"
+      },
+      "lab_d65": [
+        28.1060328599,
+        45.4466728856,
+        -22.0559716555
+      ]
+    },
+    {
+      "id": 239,
+      "name_en": "very deep reddish purple",
+      "munsell_source": "1.0RP 1.3/10.3*",
+      "munsell": "1.0RP 1.3/10.3",
+      "estimated": true,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Viola rossastro",
+        "en": "Reddish purple"
+      },
+      "qualifier": {
+        "it": "Molto profondo",
+        "en": "Very deep"
+      },
+      "lab_d65": [
+        13.1394924078,
+        43.8889025714,
+        -25.0438208827
+      ]
+    },
+    {
+      "id": 240,
+      "name_en": "light reddish purple",
+      "munsell_source": "1.0RP 6.0/7.2",
+      "munsell": "1.0RP 6.0/7.2",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Viola rossastro",
+        "en": "Reddish purple"
+      },
+      "qualifier": {
+        "it": "Chiaro",
+        "en": "Light"
+      },
+      "lab_d65": [
+        60.9408730546,
+        27.3994597064,
+        -11.1152892356
+      ]
+    },
+    {
+      "id": 241,
+      "name_en": "moderate reddish purple",
+      "munsell_source": "1.0RP 4.5/7.2",
+      "munsell": "1.0RP 4.5/7.2",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Viola rossastro",
+        "en": "Reddish purple"
+      },
+      "qualifier": {
+        "it": "Moderato",
+        "en": "Moderate"
+      },
+      "lab_d65": [
+        45.7720375226,
+        30.0976365991,
+        -13.0190066911
+      ]
+    },
+    {
+      "id": 242,
+      "name_en": "dark reddish purple",
+      "munsell_source": "1.0RP 2.7/5.1",
+      "munsell": "1.0RP 2.7/5.1",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Viola rossastro",
+        "en": "Reddish purple"
+      },
+      "qualifier": {
+        "it": "Scuro",
+        "en": "Dark"
+      },
+      "lab_d65": [
+        27.1972197101,
+        23.2614135961,
+        -11.3359446224
+      ]
+    },
+    {
+      "id": 243,
+      "name_en": "very dark reddish purple",
+      "munsell_source": "1.0RP 1.1/5.0*",
+      "munsell": "1.0RP 1.1/5.0",
+      "estimated": true,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Viola rossastro",
+        "en": "Reddish purple"
+      },
+      "qualifier": {
+        "it": "Molto scuro",
+        "en": "Very dark"
+      },
+      "lab_d65": [
+        11.303493925,
+        22.8682275758,
+        -13.5336729598
+      ]
+    },
+    {
+      "id": 244,
+      "name_en": "pale reddish purple",
+      "munsell_source": "1.0RP 6.0/4.1",
+      "munsell": "1.0RP 6.0/4.1",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Viola rossastro",
+        "en": "Reddish purple"
+      },
+      "qualifier": {
+        "it": "Pallido",
+        "en": "Pale"
+      },
+      "lab_d65": [
+        60.99115287,
+        14.9121666264,
+        -6.0095905853
+      ]
+    },
+    {
+      "id": 245,
+      "name_en": "grayish reddish purple",
+      "munsell_source": "1.0RP 4.5/4.1",
+      "munsell": "1.0RP 4.5/4.1",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Viola rossastro",
+        "en": "Reddish purple"
+      },
+      "qualifier": {
+        "it": "Grigiastro",
+        "en": "Grayish"
+      },
+      "lab_d65": [
+        45.8274831085,
+        17.1920472419,
+        -7.3761512922
+      ]
+    },
+    {
+      "id": 246,
+      "name_en": "brilliant purplish pink",
+      "munsell_source": "4.0RP 7.9+/11+*",
+      "munsell": "4.0RP 7.9/11",
+      "estimated": true,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosa violaceo",
+        "en": "Purplish pink"
+      },
+      "qualifier": {
+        "it": "Brillante",
+        "en": "Brilliant"
+      },
+      "lab_d65": [
+        79.4070096472,
+        46.8395325598,
+        -6.6426849268
+      ]
+    },
+    {
+      "id": 247,
+      "name_en": "strong purplish pink",
+      "munsell_source": "4.0RP 7-/14.5*",
+      "munsell": "4.0RP 7/14.5",
+      "estimated": true,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosa violaceo",
+        "en": "Purplish pink"
+      },
+      "qualifier": {
+        "it": "Intenso",
+        "en": "Strong"
+      },
+      "lab_d65": [
+        70.6463439425,
+        60.5859225644,
+        -10.0620104285
+      ]
+    },
+    {
+      "id": 248,
+      "name_en": "deep purplish pink",
+      "munsell_source": "4.0RP 6.0/12.0",
+      "munsell": "4.0RP 6.0/12.0",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosa violaceo",
+        "en": "Purplish pink"
+      },
+      "qualifier": {
+        "it": "Profondo",
+        "en": "Deep"
+      },
+      "lab_d65": [
+        60.8737438134,
+        49.0966474241,
+        -8.6042440833
+      ]
+    },
+    {
+      "id": 249,
+      "name_en": "light purplish pink",
+      "munsell_source": "4.0RP 8.3/7.1*",
+      "munsell": "4.0RP 8.3/7.1",
+      "estimated": true,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosa violaceo",
+        "en": "Purplish pink"
+      },
+      "qualifier": {
+        "it": "Chiaro",
+        "en": "Light"
+      },
+      "lab_d65": [
+        83.3238116182,
+        29.4148045084,
+        -3.667354073
+      ]
+    },
+    {
+      "id": 250,
+      "name_en": "moderate purplish pink",
+      "munsell_source": "4.0RP 7.0/7.1",
+      "munsell": "4.0RP 7.0/7.1",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosa violaceo",
+        "en": "Purplish pink"
+      },
+      "qualifier": {
+        "it": "Moderato",
+        "en": "Moderate"
+      },
+      "lab_d65": [
+        70.7681806635,
+        28.6616402635,
+        -4.1207915552
+      ]
+    },
+    {
+      "id": 251,
+      "name_en": "dark purplish pink",
+      "munsell_source": "6.0RP 6.0/7.2",
+      "munsell": "6.0RP 6.0/7.2",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosa violaceo",
+        "en": "Purplish pink"
+      },
+      "qualifier": {
+        "it": "Scuro",
+        "en": "Dark"
+      },
+      "lab_d65": [
+        60.9561478121,
+        30.0355124858,
+        -0.5932028146
+      ]
+    },
+    {
+      "id": 252,
+      "name_en": "pale purplish pink",
+      "munsell_source": "4.0RP 8.5/3.5*",
+      "munsell": "4.0RP 8.5/3.5",
+      "estimated": true,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosa violaceo",
+        "en": "Purplish pink"
+      },
+      "qualifier": {
+        "it": "Pallido",
+        "en": "Pale"
+      },
+      "lab_d65": [
+        85.3079195721,
+        12.3484562806,
+        -1.3698605048
+      ]
+    },
+    {
+      "id": 253,
+      "name_en": "grayish purplish pink",
+      "munsell_source": "4.0RP 7.0/3.5",
+      "munsell": "4.0RP 7.0/3.5",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosa violaceo",
+        "en": "Purplish pink"
+      },
+      "qualifier": {
+        "it": "Grigiastro",
+        "en": "Grayish"
+      },
+      "lab_d65": [
+        70.8217149871,
+        12.697416992,
+        -1.6560328885
+      ]
+    },
+    {
+      "id": 254,
+      "name_en": "vivid purplish red",
+      "munsell_source": "7.0RP 4+/17+*",
+      "munsell": "7.0RP 4/17",
+      "estimated": true,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosso violaceo",
+        "en": "Purplish red"
+      },
+      "qualifier": {
+        "it": "Vivido",
+        "en": "Vivid"
+      },
+      "lab_d65": [
+        40.4549946133,
+        75.0888047465,
+        -4.3714230417
+      ]
+    },
+    {
+      "id": 255,
+      "name_en": "strong purplish red",
+      "munsell_source": "7.0RP 4.5/11.9",
+      "munsell": "7.0RP 4.5/11.9",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosso violaceo",
+        "en": "Purplish red"
+      },
+      "qualifier": {
+        "it": "Intenso",
+        "en": "Strong"
+      },
+      "lab_d65": [
+        45.7142914111,
+        53.7610710428,
+        -1.0559671816
+      ]
+    },
+    {
+      "id": 256,
+      "name_en": "deep purplish red",
+      "munsell_source": "7.0RP 2.8/11.0",
+      "munsell": "7.0RP 2.8/11.0",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosso violaceo",
+        "en": "Purplish red"
+      },
+      "qualifier": {
+        "it": "Profondo",
+        "en": "Deep"
+      },
+      "lab_d65": [
+        28.12092319,
+        52.4975086428,
+        -6.6012212049
+      ]
+    },
+    {
+      "id": 257,
+      "name_en": "very deep purplish red",
+      "munsell_source": "7.0RP 1.3/9.0*",
+      "munsell": "7.0RP 1.3/9.0",
+      "estimated": true,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosso violaceo",
+        "en": "Purplish red"
+      },
+      "qualifier": {
+        "it": "Molto profondo",
+        "en": "Very deep"
+      },
+      "lab_d65": [
+        13.194244184,
+        42.0388144828,
+        -13.335147435
+      ]
+    },
+    {
+      "id": 258,
+      "name_en": "moderate purplish red",
+      "munsell_source": "7.0RP 4.5/9.0",
+      "munsell": "7.0RP 4.5/9.0",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosso violaceo",
+        "en": "Purplish red"
+      },
+      "qualifier": {
+        "it": "Moderato",
+        "en": "Moderate"
+      },
+      "lab_d65": [
+        45.7636785343,
+        41.0584913425,
+        -0.2444318561
+      ]
+    },
+    {
+      "id": 259,
+      "name_en": "dark purplish red",
+      "munsell_source": "7.0RP 2.7/6.3",
+      "munsell": "7.0RP 2.7/6.3",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosso violaceo",
+        "en": "Purplish red"
+      },
+      "qualifier": {
+        "it": "Scuro",
+        "en": "Dark"
+      },
+      "lab_d65": [
+        27.189715279,
+        30.9302311886,
+        -3.4246617111
+      ]
+    },
+    {
+      "id": 260,
+      "name_en": "very dark purplish red",
+      "munsell_source": "7.0RP 1.2/4.9*",
+      "munsell": "7.0RP 1.2/4.9",
+      "estimated": true,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosso violaceo",
+        "en": "Purplish red"
+      },
+      "qualifier": {
+        "it": "Molto scuro",
+        "en": "Very dark"
+      },
+      "lab_d65": [
+        12.3052299147,
+        24.7081391804,
+        -7.6698241157
+      ]
+    },
+    {
+      "id": 261,
+      "name_en": "light grayish purplish red",
+      "munsell_source": "7.0RP 6.0/4.0",
+      "munsell": "7.0RP 6.0/4.0",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosso violaceo",
+        "en": "Purplish red"
+      },
+      "qualifier": {
+        "it": "Chiaro e grigiastro",
+        "en": "Light grayish"
+      },
+      "lab_d65": [
+        61.0023398278,
+        16.0849017104,
+        0.8133587207
+      ]
+    },
+    {
+      "id": 262,
+      "name_en": "grayish purplish red",
+      "munsell_source": "7.0RP 4.5/5.2",
+      "munsell": "7.0RP 4.5/5.2",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Rosso violaceo",
+        "en": "Purplish red"
+      },
+      "qualifier": {
+        "it": "Grigiastro",
+        "en": "Grayish"
+      },
+      "lab_d65": [
+        45.8226326591,
+        24.0931856819,
+        0.2666237906
+      ]
+    },
+    {
+      "id": 263,
+      "name_en": "white",
+      "munsell_source": "3.0Y 9.25/0.06",
+      "munsell": "3.0Y 9.25/0.06",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Bianco",
+        "en": "White"
+      },
+      "qualifier": {
+        "it": "",
+        "en": ""
+      },
+      "lab_d65": [
+        92.6139186312,
+        -0.0177869474,
+        0.3770070622
+      ]
+    },
+    {
+      "id": 264,
+      "name_en": "light gray",
+      "munsell_source": "3.0Y 7.5/0.06",
+      "munsell": "3.0Y 7.5/0.06",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Grigio",
+        "en": "Gray"
+      },
+      "qualifier": {
+        "it": "Chiaro",
+        "en": "Light"
+      },
+      "lab_d65": [
+        75.7058926371,
+        -0.008932639,
+        0.4497732262
+      ]
+    },
+    {
+      "id": 265,
+      "name_en": "medium gray",
+      "munsell_source": "3.0Y 5.5/0.06",
+      "munsell": "3.0Y 5.5/0.06",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Grigio",
+        "en": "Gray"
+      },
+      "qualifier": {
+        "it": "Medio",
+        "en": "Medium"
+      },
+      "lab_d65": [
+        56.0566493755,
+        0.0188207326,
+        0.4265602347
+      ]
+    },
+    {
+      "id": 266,
+      "name_en": "dark gray",
+      "munsell_source": "N 3.5/",
+      "munsell": "N3.5",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Grigio",
+        "en": "Gray"
+      },
+      "qualifier": {
+        "it": "Scuro",
+        "en": "Dark"
+      },
+      "lab_d65": [
+        35.5538069039,
+        0.0,
+        -0.0
+      ]
+    },
+    {
+      "id": 267,
+      "name_en": "black",
+      "munsell_source": "N 1.25/",
+      "munsell": "N1.25",
+      "estimated": false,
+      "source_page": 430,
+      "extrapolated_below_value_one": false,
+      "hue": {
+        "it": "Nero",
+        "en": "Black"
+      },
+      "qualifier": {
+        "it": "",
+        "en": ""
+      },
+      "lab_d65": [
+        12.896040944,
+        0.0,
+        -0.0
+      ]
+    }
+  ]
+}
