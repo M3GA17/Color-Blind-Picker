@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="630" height="28" viewBox="0 0 630 28" role="img" aria-label="Windows desktop. Rust and Tauri. React and TypeScript. Italian and English.">
+  <g fill="#202326" stroke="#454b51">
+    <rect x=".5" y=".5" width="143" height="27" rx="6"/>
+    <rect x="154.5" y=".5" width="133" height="27" rx="6"/>
+    <rect x="298.5" y=".5" width="177" height="27" rx="6"/>
+    <rect x="486.5" y=".5" width="143" height="27" rx="6"/>
+  </g>
+  <g fill="#f5f6f7" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle">
+    <text x="72" y="18">Windows desktop</text>
+    <text x="221" y="18">Rust + Tauri</text>
+    <text x="387" y="18">React + TypeScript</text>
+    <text x="558" y="18">Italiano / English</text>
+  </g>
+</svg>

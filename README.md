@@ -1,81 +1,193 @@
-# Color Blind Picker
+<p align="center">
+  <img src="public/icon.svg" width="88" height="88" alt="Color Blind Picker logo">
+</p>
 
-A small floating Windows utility that describes the color under your pointer in words. Rewritten from WPF in **Rust + Tauri 2**, with a **React / TypeScript** interface based on the Graphite design system.
+<h1 align="center">Color Blind Picker</h1>
 
-## Use
+<p align="center">
+  <strong>Give every color a name.</strong><br>
+  A small floating Windows app that identifies screen colors in words.
+</p>
 
-Move the pointer outside the picker to identify a screen color continuously. The current color stays unchanged while you interact with the picker itself.
+<p align="center">
+  <img src="docs/assets/badges.svg" width="630" alt="Windows desktop · Rust and Tauri · React and TypeScript · Italian and English">
+</p>
 
-- **Pick a color:** the picker hides and a transparent capture surface covers the desktop. Click to save and copy a color, or press **Esc** to cancel. The click is intercepted, so it does not activate the application underneath.
-- **History:** expand the saved colors, copy a value, or open a row's actions to delete it. Deletion can be undone for 10 seconds.
-- **Pin:** keep the picker above other windows.
-- **Settings:** choose Italian or English and HEX or RGB clipboard output.
-- Drag the title bar to move the picker. The red X closes it.
+<p align="center">
+  <a href="#why-color-blind-picker">Why it exists</a> ·
+  <a href="#screenshots">Screenshots</a> ·
+  <a href="#get-started">Get started</a> ·
+  <a href="docs/DEVELOPMENT.md">Development</a>
+</p>
 
-The UI uses compact 10 px insets, neutral surfaces, descriptive names, labeled actions and visible keyboard focus. Live pointer changes are not announced repeatedly to screen readers; explicit action results are.
+<p align="center">
+  <img src="docs/assets/hero.png" width="1200" alt="Color Blind Picker: a compact floating window and expanded saved-color history in the Graphite dark interface">
+</p>
 
-Screen sampling currently supports **Windows only**, including virtual-desktop coordinates for multiple monitors. The color naming algorithm retains the original WPF hue checkpoints, with separate lightness and saturation descriptions. It reads 8-bit desktop RGB values through Windows GDI; it is not an HDR or color-calibration tool.
+## Why Color Blind Picker?
 
-## Develop
+A HEX code tells you a value. Sometimes you need the **name of the color**.
 
-Install [Rust stable with the MSVC toolchain](https://www.rust-lang.org/tools/install), Node.js 24, Microsoft C++ Build Tools and WebView2. See the [Tauri Windows prerequisites](https://v2.tauri.app/start/prerequisites/).
+Color Blind Picker was originally built in WPF for a friend with color blindness. The new Rust edition keeps that simple purpose: move the pointer over anything on screen and get a readable description, a color sample and a value you can copy.
+
+It stays small, can remain above other windows and keeps saved colors close at hand, whether you're choosing a palette, checking an interface or identifying something on your desktop.
+
+| Identify | Capture | Keep |
+| --- | --- | --- |
+| Read the color under your pointer in real time. | Pick a pixel and copy its HEX or RGB value. | Save colors to history and revisit them later. |
+
+## Screenshots
+
+The screenshots below come from the Windows app using an isolated example palette. The interface is available in **English and Italian**.
+
+### Live identification
+
+A color name, a plain-language qualifier and a copyable value. Move the pointer outside the picker to identify another color.
+
+<p align="center">
+  <img src="docs/assets/compact.png" width="380" alt="Compact picker identifying Bright red, Slightly faded, HEX #EB4064">
+</p>
+
+### Saved color history
+
+Keep the colors you pick, see their names and copy a value again. History expands only when you need it.
+
+<p align="center">
+  <img src="docs/assets/history.png" width="380" alt="Expanded history showing four saved colors with descriptive names, HEX codes and row actions">
+</p>
+
+### Pick anywhere on your screen
+
+Click **Pick a color** and the main window steps aside. A transparent capture surface lets you choose a pixel without activating the application underneath. The tooltip follows the pointer; **Esc** cancels and brings the picker back.
+
+<p align="center">
+  <img src="docs/assets/capture.png" width="1100" alt="Actual capture overlay over an example palette, with a Cyan #41DBD9 tooltip and the Click to pick / Esc to cancel hint">
+</p>
+
+*Capture overlay shown over an example palette for documentation.*
+
+### Your language, your format
+
+Choose English or Italian and switch the copy format between HEX and RGB. The app remembers your settings.
+
+<p align="center">
+  <img src="docs/assets/settings.png" width="380" alt="Settings panel with English selected and RGB chosen as the copy format">
+</p>
+
+### Always within reach
+
+Pin the picker above other windows, then drag its title bar wherever it is most useful.
+
+<p align="center">
+  <img src="docs/assets/pinned.png" width="380" alt="Picker with the pin button active and confirmation that Always on top is enabled">
+</p>
+
+<details>
+  <summary><strong>A closer look: copying, color actions and undo</strong></summary>
+  <br>
+  <p>Explicit feedback confirms each action. Saved colors can be deleted from their row menu, with a short window to undo the deletion.</p>
+  <h4>Copy HEX or RGB</h4>
+  <p align="center">
+    <img src="docs/assets/copy-rgb.png" width="380" alt="RGB value rgb(235, 64, 100) with a Copied confirmation">
+  </p>
+  <h4>Color actions</h4>
+  <p align="center">
+    <img src="docs/assets/history-actions.png" width="380" alt="Saved color row with its Delete color action expanded">
+  </p>
+  <h4>Delete, then undo</h4>
+  <p align="center">
+    <img src="docs/assets/undo.png" width="380" alt="Color deleted confirmation with an Undo button below the remaining saved colors">
+  </p>
+</details>
+
+## Designed for clarity
+
+- **Words alongside color.** Every live or saved sample has a descriptive name; recognition does not depend on the swatch alone.
+- **A quiet interface.** Neutral Graphite surfaces keep attention on the sampled color.
+- **Clear controls.** Labeled primary actions, tooltips, keyboard focus and a visible pressed state for the pin button.
+- **Useful feedback.** Copy, save and delete actions have explicit confirmations. Deletion can be undone for up to 10 seconds.
+- **Less screen-reader noise.** Explicit action results are announced; continuous pointer changes are not repeatedly announced.
+- **Local history.** The latest 1,000 saved colors and your preferences persist between sessions. Identification and history work locally, without an account or a server.
+
+The color names are HSL-based descriptions, using the original project's hue checkpoints. Screen sampling currently supports **Windows** and virtual-desktop coordinates for multiple monitors. It reads 8-bit desktop RGB; it is not a color-calibration or HDR tool.
+
+## Get started
+
+> [!NOTE]
+> This README presents the **new Rust / Tauri edition**, currently available by building from source. The existing [v1.1.0 release](https://github.com/M3GA17/Color-Blind-Picker/releases/tag/v1.1.0) contains the previous **WPF application**.
+
+### Run the desktop app
+
+You need **Windows**, **Node.js 24**, **Rust stable with the MSVC toolchain**, Microsoft C++ Build Tools and WebView2. Follow the [Tauri Windows prerequisites](https://v2.tauri.app/start/prerequisites/) if those native tools are not installed.
 
 ```sh
+git clone https://github.com/M3GA17/Color-Blind-Picker.git
+cd Color-Blind-Picker
 npm ci
 npm run desktop
 ```
 
-For a browser-only layout preview:
-
-```sh
-npm run dev
-```
-
-Browser preview explicitly disables desktop actions. The real app uses native Rust commands for sampling, capture, clipboard, settings and history; it does not simulate screen colors.
-
-## Build
+### Create an installer
 
 ```sh
 npm run bundle
 ```
 
-This builds the optimized executable in `src-tauri/target/release/` and the Windows installer in `src-tauri/target/release/bundle/nsis/`. Windows uses the system WebView2 runtime rather than a bundled browser. React renders the interface inside Tauri; React Native is not required. Frontend integration follows the [official Tauri + Vite configuration](https://v2.tauri.app/start/frontend/vite/).
+The build produces:
 
-## Verify
+| File | Location |
+| --- | --- |
+| Windows executable | `src-tauri/target/release/color-blind-picker.exe` |
+| Windows installer | `src-tauri/target/release/bundle/nsis/` |
 
-```sh
-npm run build
-npm test
-npm run test:rust
-cargo clippy --manifest-path src-tauri/Cargo.toml --all-targets -- -D warnings
+For a browser-only layout preview, use `npm run dev`. Screen sampling and other native actions require the desktop app.
+
+## Everyday controls
+
+| Control | What it does |
+| --- | --- |
+| **Move the pointer** | Identify a color outside the picker window. The current value stays unchanged while you interact with the picker. |
+| **Pick a color** | Choose a screen pixel, save it to history and copy it in the selected format. |
+| **Esc during capture** | Cancel without saving a color. |
+| **Click the current value** | Copy the current HEX or RGB value. |
+| **History** | Expand or collapse saved colors. |
+| **Copy in a history row** | Copy a saved color in the selected format. |
+| **More actions → Delete color** | Remove a saved entry; use **Undo** to restore it. |
+| **Pin** | Toggle always-on-top behavior. |
+| **Settings** | Change the language and copy format. |
+| **Drag the title bar / red X** | Move or close the window. |
+
+## Saved data & WPF migration
+
+Your settings and color history are stored locally at:
+
+```text
+%APPDATA%\io.github.m3ga17.colorblindpicker\state.json
 ```
 
-The Rust tests cover screenshot colors, neutral colors, hue wraparound, invalid input, WPF history migration and persistent settings/deletion/undo. Browser integration tests exercise the actual React interface against a native-command test bridge, including failures, keyboard controls and the capture tooltip.
+Writes use a temporary file and atomic replacement. Launching the app again focuses the existing instance, keeping one owner of the history file.
 
-For an additional **real Windows desktop** smoke test:
+**Coming from the WPF version?** Before the first launch, place its `colorList.txt` beside the new executable or in the working directory. The app imports that JSON array, keeps the original file and displays the newest colors first. Existing new-format data takes precedence. Invalid saved data is preserved rather than silently overwritten.
 
-```sh
-npm run tauri -- build --debug --no-bundle
-npm run test:native
-```
+## Under the hood
 
-This launches the debug app with an isolated data directory, drives WebView2 through its local debugging interface, verifies a known pixel through Windows GDI and checks the real RGB clipboard, capture cancellation, settings, history and undo. It briefly opens a capture surface and writes a sample color to the clipboard. Reports and screenshots are saved under `test-results/native/`. The debug-only `CBP_TEST_DATA_DIR` override is absent from release builds.
+| Layer | Built with | Role |
+| --- | --- | --- |
+| Native core | **Rust** | Color descriptions, Windows screen access, clipboard and persistent data |
+| Desktop shell | **Tauri 2** | Floating window, capture overlay and single-instance behavior |
+| Interface | **React + TypeScript** | Readout, history, settings and action feedback |
+| Frontend tooling | **Vite + Lucide** | Development build and interface icons |
 
-## Saved data and migration
+The [Graphite design board](design/graphite-design-system.svg) and [design tokens](design/graphite.tokens.json) are included in the repository. The original C# / XAML implementation remains in Git history.
 
-Settings and the latest 1,000 saved colors are stored in `%APPDATA%/io.github.m3ga17.colorblindpicker/state.json`, using a temporary file and atomic replacement. Failed writes leave the previous in-memory state intact. One running instance owns the data file; launching again focuses the existing picker.
+## Development & contributions
 
-On the first launch, the app imports a WPF `colorList.txt` JSON array if found in the working directory or beside the executable. It preserves the original file, duplicates and color values and displays the newest entries first. To migrate an old installation, place its `colorList.txt` beside the new executable **before the first launch**. Existing new-format data takes precedence. Invalid data is preserved and reported instead of silently overwritten.
+The [development guide](docs/DEVELOPMENT.md) covers setup, packaging, architecture, automated checks, the native Windows smoke test and regenerating these screenshots.
 
-## Project layout
+Found a bug, an awkward color description or an accessibility issue? [Open an issue](https://github.com/M3GA17/Color-Blind-Picker/issues) with the steps to reproduce it. For color descriptions, include the HEX value and the selected language; for desktop issues, include your Windows version.
 
-- `src/`: React interface, localization, accessible controls and the typed native bridge.
-- `src-tauri/src/color.rs`: RGB/HSL conversion and Italian/English color descriptions.
-- `src-tauri/src/platform.rs`: Windows cursor, screen pixel, desktop bounds and clipboard access.
-- `src-tauri/src/store.rs`: persistent settings, color history and WPF migration.
-- `src-tauri/src/lib.rs`: Tauri commands and capture-window lifecycle.
-- `design/`: editable Graphite design board and design tokens/component specifications.
-- `tests/`: browser integration tests.
-- `scripts/smoke-desktop.mjs`: isolated native Windows smoke test.
+---
 
-The old C# / XAML application was removed from the working tree. Its implementation remains available in Git history.
+<p align="center">
+  Built for a friend. Rebuilt to keep color identification simple.
+</p>

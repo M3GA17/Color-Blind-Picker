@@ -13,6 +13,7 @@
     "test": "playwright test",
     "test:rust": "cargo test --manifest-path src-tauri/Cargo.toml",
     "test:native": "node scripts/smoke-desktop.mjs",
+    "docs:screenshots": "node scripts/capture-docs.mjs",
     "check": "tsc --noEmit"
   },
   "dependencies": {
