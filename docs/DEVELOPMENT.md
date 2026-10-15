@@ -24,9 +24,11 @@ npm run bundle
 | Output | Location |
 | --- | --- |
 | Optimized executable | `src-tauri/target/release/color-blind-picker.exe` |
-| Windows installer | `src-tauri/target/release/bundle/nsis/Color Blind Picker_1.0.0_x64-setup.exe` |
+| Windows installer | `src-tauri/target/release/bundle/nsis/Color Blind Picker_2.0.0_x64-setup.exe` |
 
 The NSIS installer supports Italian and English. Package names follow the version in `package.json`, `src-tauri/Cargo.toml` and `src-tauri/tauri.conf.json`; keep those versions aligned when releasing.
+
+See [RELEASING.md](RELEASING.md) for local builds, portable packaging, checksums, version/tag alignment and manual GitHub publication. There is no build/release Actions workflow in this repository.
 
 ## Run checks
 

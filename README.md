@@ -123,8 +123,17 @@ The [naming guide](docs/COLOR-NAMING.md) documents the standards choice, source 
 
 ## Get started
 
-> [!NOTE]
-> This README presents the **new Rust / Tauri edition**, currently available by building from source. The existing [v1.1.0 release](https://github.com/M3GA17/Color-Blind-Picker/releases/tag/v1.1.0) contains the previous **WPF application**.
+### Download for Windows
+
+**[Download Color Blind Picker 2.0.0](https://github.com/M3GA17/Color-Blind-Picker/releases/tag/v2.0.0)** — the new Rust / Tauri edition.
+
+| Package | Download |
+| --- | --- |
+| Windows x64 installer | [Install Color Blind Picker](https://github.com/M3GA17/Color-Blind-Picker/releases/download/v2.0.0/Color-Blind-Picker_2.0.0_windows-x64-setup.exe) |
+| Windows x64 portable archive | [Download the ZIP](https://github.com/M3GA17/Color-Blind-Picker/releases/download/v2.0.0/Color-Blind-Picker_2.0.0_windows-x64_portable.zip) |
+| SHA-256 checksums | [SHA256SUMS.txt](https://github.com/M3GA17/Color-Blind-Picker/releases/download/v2.0.0/SHA256SUMS.txt) |
+
+The portable version requires Microsoft Edge WebView2. Extract the whole archive before running the app. The installer downloads WebView2 if it is missing, which requires an internet connection. Both packages keep settings and history in your user profile. [Release notes](docs/releases/v2.0.0.md) cover the rewrite, new color names and migration. The previous [v1.1.0 release](https://github.com/M3GA17/Color-Blind-Picker/releases/tag/v1.1.0) remains available for the WPF application.
 
 ### Run the desktop app
 
@@ -192,7 +201,7 @@ The [Graphite design board](design/graphite-design-system.svg) and [design token
 
 ## Development & contributions
 
-The [development guide](docs/DEVELOPMENT.md) covers setup, packaging, architecture, automated checks, the native Windows smoke test and regenerating these screenshots.
+The [development guide](docs/DEVELOPMENT.md) covers setup, packaging, architecture, automated checks, the native Windows smoke test and regenerating these screenshots. Releases are built locally and published manually; the [release guide](docs/RELEASING.md) documents the process without GitHub Actions.
 
 Found a bug, an awkward color description or an accessibility issue? [Open an issue](https://github.com/M3GA17/Color-Blind-Picker/issues) with the steps to reproduce it. For color descriptions, include the HEX value and the selected language; for desktop issues, include your Windows version.
 
