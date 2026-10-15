@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/icon.svg" width="88" height="88" alt="Color Blind Picker logo">
+  <img src="public/icon.png" width="88" height="88" alt="Original Color Blind Picker logo: a color wheel with a white eyedropper">
 </p>
 
 <h1 align="center">Color Blind Picker</h1>

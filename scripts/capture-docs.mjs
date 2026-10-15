@@ -143,20 +143,20 @@ try {
   await overlay.keyboard.press('Escape');
   await main.getByRole('button', { name: 'Pick a color', exact: true }).waitFor();
 
-  const logo = await readFile(resolve('public/icon.svg'), 'utf8');
+  const logo = `data:image/png;base64,${(await readFile(resolve('public/icon.png'))).toString('base64')}`;
   const compact = `data:image/png;base64,${(await readFile(join(assets, 'compact.png'))).toString('base64')}`;
   const history = `data:image/png;base64,${(await readFile(join(assets, 'history.png'))).toString('base64')}`;
   showcase = await chromium.launch({ headless: true });
   const hero = await showcase.newPage({ viewport: { width: 1440, height: 820 }, deviceScaleFactor: 1 });
   await hero.setContent(`<!doctype html><html><head><style>
     *{box-sizing:border-box}body{margin:0;background:#111315;color:#f5f6f7;font-family:'Segoe UI',Arial,sans-serif;width:1440px;height:820px;overflow:hidden}
-    .brand{position:absolute;top:52px;left:64px;display:flex;align-items:center;gap:14px;font-size:18px;font-weight:600}.brand svg{width:44px;height:44px}
+    .brand{position:absolute;top:52px;left:64px;display:flex;align-items:center;gap:14px;font-size:18px;font-weight:600}.brand img{width:44px;height:44px}
     .intro{position:absolute;top:220px;left:64px;width:550px}.eyebrow{color:#b4bbc2;letter-spacing:2px;font-size:12px;font-weight:600}h1{font-size:68px;line-height:1.05;letter-spacing:-3px;font-weight:600;margin:22px 0 24px}p{font-size:20px;line-height:1.6;color:#b4bbc2;max-width:470px;margin:0}
     .details{position:absolute;left:64px;bottom:58px;font-size:13px;color:#b4bbc2;display:flex;gap:26px}.details span{padding-top:12px;border-top:1px solid #454b51}
     .stage{position:absolute;left:690px;top:90px;width:695px;height:660px;background:#181b1e;border:1px solid #2b2f33;border-radius:32px}
     .history{position:absolute;width:380px;left:955px;top:140px;filter:drop-shadow(0 16px 24px #0005)}.compact{position:absolute;width:380px;left:704px;top:550px;filter:drop-shadow(0 20px 28px #0007)}
     .swatches{position:absolute;top:122px;left:730px;display:flex;gap:8px}.swatches b{width:28px;height:28px;border-radius:8px}.caption{position:absolute;bottom:52px;right:64px;color:#949da6;font:11px Consolas,monospace;letter-spacing:1px}
-    </style></head><body><div class="brand">${logo}<span>Color Blind Picker</span></div><div class="intro"><div class="eyebrow">A SMALL TOOL. A CLEARER VIEW.</div><h1>Give every<br>color a name.</h1><p>Point anywhere on your screen.<br>Read the color. Save it. Keep creating.</p></div><div class="details"><span>Made for color accessibility</span><span>Windows desktop</span><span>Italiano / English</span></div><div class="stage"></div><div class="swatches"><b style="background:#eb4064"></b><b style="background:#0252a9"></b><b style="background:#fcc31d"></b><b style="background:#41dbd9"></b></div><img class="history" src="${history}" alt="Expanded color history"><img class="compact" src="${compact}" alt="Compact floating picker"><div class="caption">RUST + TAURI / GRAPHITE</div></body></html>`);
+    </style></head><body><div class="brand"><img src="${logo}" alt="Original Color Blind Picker logo"><span>Color Blind Picker</span></div><div class="intro"><div class="eyebrow">A SMALL TOOL. A CLEARER VIEW.</div><h1>Give every<br>color a name.</h1><p>Point anywhere on your screen.<br>Read the color. Save it. Keep creating.</p></div><div class="details"><span>Made for color accessibility</span><span>Windows desktop</span><span>Italiano / English</span></div><div class="stage"></div><div class="swatches"><b style="background:#eb4064"></b><b style="background:#0252a9"></b><b style="background:#fcc31d"></b><b style="background:#41dbd9"></b></div><img class="history" src="${history}" alt="Expanded color history"><img class="compact" src="${compact}" alt="Compact floating picker"><div class="caption">RUST + TAURI / GRAPHITE</div></body></html>`);
   await hero.locator('img').first().waitFor();
   await hero.evaluate(async () => { await Promise.all([...document.images].map(image => image.decode())); await document.fonts.ready; });
   await hero.screenshot({ path: join(assets, 'hero.png') });
