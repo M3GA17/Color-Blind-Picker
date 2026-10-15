@@ -1,0 +1,7 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "main",
+  "description": "Local picker window: resizing, dragging, closing and capture events.",
+  "windows": ["main"],
+  "permissions": ["core:event:default", "core:window:allow-set-size", "core:window:allow-start-dragging", "core:window:allow-close", "core:window:allow-show"]
+}

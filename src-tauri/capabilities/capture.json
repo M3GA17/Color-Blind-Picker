@@ -1,0 +1,7 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "capture",
+  "description": "Transparent capture overlay; access only to its local events and close action.",
+  "windows": ["capture"],
+  "permissions": ["core:event:default", "core:window:allow-close"]
+}

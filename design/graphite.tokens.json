@@ -1,0 +1,256 @@
+{
+  "name": "Color Blind Picker / Graphite",
+  "version": "0.1.1",
+  "status": "design proposal",
+  "reference": "Original WPF floating picker; design only, no Rust implementation.",
+  "color": {
+    "canvas": {
+      "value": "#151719",
+      "type": "color"
+    },
+    "panel": {
+      "value": "#202326",
+      "type": "color"
+    },
+    "raised": {
+      "value": "#2B2F33",
+      "type": "color"
+    },
+    "hover": {
+      "value": "#373C41",
+      "type": "color"
+    },
+    "border": {
+      "value": "#454B51",
+      "type": "color"
+    },
+    "text": {
+      "value": "#F5F6F7",
+      "type": "color"
+    },
+    "secondary": {
+      "value": "#B4BBC2",
+      "type": "color"
+    },
+    "quiet": {
+      "value": "#949DA6",
+      "type": "color"
+    },
+    "focus": {
+      "value": "#A9CEFF",
+      "type": "color"
+    },
+    "destructive": {
+      "value": "#FFB4B4",
+      "type": "color"
+    },
+    "close": {
+      "value": "#FF6B6B",
+      "type": "color"
+    }
+  },
+  "spacing": {
+    "4": {
+      "value": 4,
+      "type": "spacing"
+    },
+    "8": {
+      "value": 8,
+      "type": "spacing"
+    },
+    "12": {
+      "value": 12,
+      "type": "spacing"
+    },
+    "16": {
+      "value": 16,
+      "type": "spacing"
+    },
+    "24": {
+      "value": 24,
+      "type": "spacing"
+    },
+    "32": {
+      "value": 32,
+      "type": "spacing"
+    }
+  },
+  "radius": {
+    "window": {
+      "value": 16,
+      "type": "borderRadius"
+    },
+    "control": {
+      "value": 8,
+      "type": "borderRadius"
+    },
+    "swatch": {
+      "value": 12,
+      "type": "borderRadius"
+    }
+  },
+  "typography": {
+    "family": "Segoe UI",
+    "codeFamily": "Cascadia Code",
+    "fallback": "system-ui / monospace",
+    "name": {
+      "size": 24,
+      "lineHeight": 29,
+      "weight": 600
+    },
+    "body": {
+      "size": 14,
+      "lineHeight": 20,
+      "weight": 400
+    },
+    "control": {
+      "size": 12,
+      "lineHeight": 18,
+      "weight": 600
+    },
+    "caption": {
+      "size": 12,
+      "lineHeight": 18,
+      "weight": 400
+    },
+    "code": {
+      "size": 14,
+      "lineHeight": 20,
+      "weight": 400
+    }
+  },
+  "size": {
+    "windowInset": 10,
+    "compactWindowInset": 8,
+    "titlebarTopInset": 4,
+    "windowWidth": 380,
+    "barWidth": 520,
+    "desktopTarget": 36,
+    "touchTarget": 44,
+    "focusWidth": 2,
+    "focusOffset": 3
+  },
+  "components": {
+    "window": {
+      "variants": [
+        "essential",
+        "bar"
+      ],
+      "states": [
+        "live",
+        "capturing",
+        "unavailable",
+        "closed"
+      ],
+      "rule": "Allow text wrapping and increased window width with text scaling. Drag from titlebar; controls exclude drag region."
+    },
+    "close": {
+      "color": "#FF6B6B",
+      "hoverColor": "#FF9999",
+      "hoverSurface": "#48282C",
+      "rule": "Keep the close icon red in all window variants; preserve the accessible name and keyboard focus ring."
+    },
+    "readout": {
+      "order": [
+        "name",
+        "description",
+        "code"
+      ],
+      "swatch": {
+        "width": 72,
+        "height": 78
+      },
+      "rule": "Describe the color in text. Keep UI surfaces neutral; never use the sampled color as a UI accent."
+    },
+    "button": {
+      "variants": [
+        "primary",
+        "secondary",
+        "ghost",
+        "destructive"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "pressed",
+        "focus-visible",
+        "disabled"
+      ],
+      "rule": "Expose names to assistive technology; essential actions have visible labels."
+    },
+    "pin": {
+      "states": [
+        "off",
+        "on"
+      ],
+      "rule": "Use both a filled neutral background and programmatic pressed state; show tooltip on focus and hover."
+    },
+    "history": {
+      "states": [
+        "collapsed",
+        "expanded",
+        "empty"
+      ],
+      "rule": "Each row pairs a swatch with a name and HEX value. Show copy and more actions. Put delete behind more actions; offer undo."
+    },
+    "settings": {
+      "fields": [
+        "language: IT/EN",
+        "copy format: HEX/RGB"
+      ],
+      "rule": "Local panel; preserve access to the current color. English strings are pending, preview is Italian."
+    },
+    "feedback": {
+      "states": [
+        "saved and copied",
+        "copied",
+        "deleted with undo",
+        "capture unavailable"
+      ],
+      "rule": "Icon and plain text; announce results on explicit user action. Do not announce live color sampling on every cursor movement."
+    }
+  },
+  "interaction": {
+    "live": "Read color under cursor continuously. UI preview uses fixed demo samples.",
+    "capture": "Enter screen capture mode; select a point, save the color, copy the configured value, then return to live mode.",
+    "cancelCapture": "Escape returns to live mode without saving.",
+    "copy": "Copy displayed color using selected HEX or RGB format.",
+    "keyboard": "Native focus order, Enter/Space activate focused controls, Escape dismisses menus or cancels capture.",
+    "shortcuts": "Global shortcuts are not assigned in this proposal.",
+    "motion": "Respect reduced motion; no flashing or looping live indicators."
+  },
+  "accessibility": {
+    "textContrastTarget": 4.5,
+    "nonTextContrastTarget": 3,
+    "reference": "https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html",
+    "focus": "2 px external ring, 3 px offset",
+    "scaling": "Validate 200% text scale in the eventual native implementation.",
+    "status": "Measured neutral text pairs only; no full accessibility conformance claim.",
+    "measuredRatios": {
+      "text": 14.59,
+      "secondary": 8.14,
+      "quiet": 5.74,
+      "focus": 9.75,
+      "destructive": 9.35
+    }
+  },
+  "figma": {
+    "delivery": "SVG contains editable vector and text layers. Import does not create native variables, auto layout, or component sets. These require a connected Figma authoring capability.",
+    "pages": [
+      "Foundations",
+      "Components",
+      "Screens"
+    ],
+    "componentNames": [
+      "Window/Essential",
+      "Window/Bar",
+      "Readout/Color",
+      "Button/Primary",
+      "Button/Secondary",
+      "Button/Ghost",
+      "History/Row",
+      "Feedback/Toast",
+      "Settings/Panel"
+    ]
+  }
+}

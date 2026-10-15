@@ -1,0 +1,40 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Color Blind Picker",
+  "version": "1.0.0",
+  "identifier": "io.github.m3ga17.colorblindpicker",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://127.0.0.1:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [{
+      "label": "main",
+      "title": "Color Blind Picker",
+      "width": 380,
+      "height": 210,
+      "minWidth": 320,
+      "minHeight": 100,
+      "resizable": false,
+      "maximizable": false,
+      "decorations": false,
+      "transparent": true,
+      "shadow": false,
+      "visible": false,
+      "center": true
+    }],
+    "security": {
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src ipc: http://ipc.localhost; object-src 'none'; base-uri 'self'; frame-src 'none'"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis"],
+    "shortDescription": "Identify colors in words",
+    "category": "Utility",
+    "icon": ["icons/32x32.png", "icons/128x128.png", "icons/128x128@2x.png", "icons/icon.ico"],
+    "windows": { "nsis": { "languages": ["Italian", "English"], "displayLanguageSelector": true } }
+  }
+}

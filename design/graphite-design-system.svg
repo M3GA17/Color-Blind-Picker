@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1180" viewBox="0 0 1440 1180"><title>Color Blind Picker — Graphite design system</title><desc>Editable design board showing compact picker, expanded history, settings, foundations and component states.</desc>
+<rect x="0" y="0" width="1440" height="1180" rx="0" fill="#151719"/>
+<rect x="60" y="45" width="14" height="14" rx="3" fill="#F5F6F7"/>
+<rect x="78" y="45" width="14" height="14" rx="3" fill="#B4BBC2"/>
+<rect x="60" y="63" width="14" height="14" rx="3" fill="#B4BBC2"/>
+<rect x="78" y="63" width="14" height="14" rx="3" fill="#5C6269"/>
+<text x="110" y="64" fill="#F5F6F7" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="600">Color Blind Picker</text>
+<text x="110" y="88" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400">Graphite / Design system</text>
+<text x="1195" y="64" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400">DESIGN EXPLORATION</text>
+<text x="1290" y="88" fill="#B4BBC2" font-family="Cascadia Code, Consolas, monospace" font-size="12" font-weight="400">v0.1.1 / 2026</text>
+<path d="M60 111H1380" stroke="#454B51"/>
+<text x="60" y="146" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">ESSENZIALE / LIVE</text>
+<text x="520" y="146" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">CRONOLOGIA / ESPANSA</text>
+<text x="960" y="146" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">IMPOSTAZIONI / PANNELLO LOCALE</text>
+<g id="Window-Compact">
+<rect x="60" y="165" width="380" height="184" rx="16" fill="#202326" stroke="#454B51"/>
+<text x="70" y="188" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400">◎  In tempo reale</text>
+<text x="386" y="188" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400">⚙</text>
+<text x="414" y="188" fill="#FF6B6B" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">×</text>
+<rect x="70" y="209" width="72" height="78" rx="12" fill="#EB4064" stroke="#A88C93"/>
+<text x="154" y="232" fill="#F5F6F7" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600">Rosso vivo</text>
+<text x="154" y="255" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400">Leggermente attenuato</text>
+<text x="154" y="281" fill="#F5F6F7" font-family="Cascadia Code, Consolas, monospace" font-size="14" font-weight="400">#EB4064   ⧉</text>
+<rect x="70" y="301" width="176" height="36" rx="8" fill="#F5F6F7" stroke="#F5F6F7"/>
+<text x="82" y="324" fill="#151719" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">Cattura colore</text>
+<rect x="252" y="301" width="132" height="36" rx="8" fill="#2B2F33" stroke="#454B51"/>
+<text x="264" y="324" fill="#F5F6F7" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">Cronologia  ⌃</text>
+<rect x="390" y="301" width="40" height="36" rx="8" fill="#2B2F33" stroke="#454B51"/>
+<text x="402" y="324" fill="#F5F6F7" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">⌖</text>
+</g>
+<g id="Window-Expanded">
+<rect x="520" y="165" width="380" height="369" rx="16" fill="#202326" stroke="#454B51"/>
+<text x="530" y="188" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400">◎  In tempo reale</text>
+<text x="846" y="188" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400">⚙</text>
+<text x="874" y="188" fill="#FF6B6B" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">×</text>
+<rect x="530" y="209" width="72" height="78" rx="12" fill="#EB4064" stroke="#A88C93"/>
+<text x="614" y="232" fill="#F5F6F7" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600">Rosso vivo</text>
+<text x="614" y="255" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400">Leggermente attenuato</text>
+<text x="614" y="281" fill="#F5F6F7" font-family="Cascadia Code, Consolas, monospace" font-size="14" font-weight="400">#EB4064   ⧉</text>
+<rect x="530" y="301" width="176" height="36" rx="8" fill="#F5F6F7" stroke="#F5F6F7"/>
+<text x="542" y="324" fill="#151719" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">Cattura colore</text>
+<rect x="712" y="301" width="132" height="36" rx="8" fill="#2B2F33" stroke="#454B51"/>
+<text x="724" y="324" fill="#F5F6F7" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">Cronologia  ⌃</text>
+<rect x="850" y="301" width="40" height="36" rx="8" fill="#2B2F33" stroke="#454B51"/>
+<text x="862" y="324" fill="#F5F6F7" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">⌖</text>
+<path d="M520 349H900" stroke="#454B51"/>
+<text x="530" y="373" fill="#F5F6F7" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">Colori salvati</text>
+<text x="840" y="373" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400">3 colori</text>
+<rect x="530" y="385" width="30" height="34" rx="7" fill="#FCC31D" stroke="#8D9399"/>
+<text x="568" y="398" fill="#F5F6F7" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400">Arancio dorato</text>
+<text x="568" y="416" fill="#B4BBC2" font-family="Cascadia Code, Consolas, monospace" font-size="12" font-weight="400">#FCC31D</text>
+<text x="826" y="408" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">⧉</text>
+<text x="872" y="406" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">⋯</text>
+<rect x="530" y="433" width="30" height="34" rx="7" fill="#0252A9" stroke="#8D9399"/>
+<text x="568" y="446" fill="#F5F6F7" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400">Blu scuro</text>
+<text x="568" y="464" fill="#B4BBC2" font-family="Cascadia Code, Consolas, monospace" font-size="12" font-weight="400">#0252A9</text>
+<text x="826" y="456" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">⧉</text>
+<text x="872" y="454" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">⋯</text>
+<rect x="530" y="481" width="30" height="34" rx="7" fill="#41DBD9" stroke="#8D9399"/>
+<text x="568" y="494" fill="#F5F6F7" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400">Ciano</text>
+<text x="568" y="512" fill="#B4BBC2" font-family="Cascadia Code, Consolas, monospace" font-size="12" font-weight="400">#41DBD9</text>
+<text x="826" y="504" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">⧉</text>
+<text x="872" y="502" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">⋯</text>
+</g>
+<g id="Settings-Panel">
+<rect x="960" y="165" width="380" height="344" rx="16" fill="#202326" stroke="#454B51"/>
+<text x="970" y="188" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400">◎  In tempo reale</text>
+<text x="1286" y="188" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400">⚙</text>
+<text x="1314" y="188" fill="#FF6B6B" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">×</text>
+<rect x="970" y="209" width="72" height="78" rx="12" fill="#EB4064" stroke="#A88C93"/>
+<text x="1054" y="232" fill="#F5F6F7" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600">Rosso vivo</text>
+<text x="1054" y="255" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400">Leggermente attenuato</text>
+<text x="1054" y="281" fill="#F5F6F7" font-family="Cascadia Code, Consolas, monospace" font-size="14" font-weight="400">#EB4064   ⧉</text>
+<rect x="970" y="301" width="176" height="36" rx="8" fill="#F5F6F7" stroke="#F5F6F7"/>
+<text x="982" y="324" fill="#151719" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">Cattura colore</text>
+<rect x="1152" y="301" width="132" height="36" rx="8" fill="#2B2F33" stroke="#454B51"/>
+<text x="1164" y="324" fill="#F5F6F7" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">Cronologia  ⌃</text>
+<rect x="1290" y="301" width="40" height="36" rx="8" fill="#2B2F33" stroke="#454B51"/>
+<text x="1302" y="324" fill="#F5F6F7" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">⌖</text>
+<path d="M960 349H1340" stroke="#454B51"/>
+<text x="970" y="379" fill="#F5F6F7" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600">Impostazioni</text>
+<text x="970" y="416" fill="#F5F6F7" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400">Lingua</text>
+<rect x="1200" y="393" width="130" height="36" rx="8" fill="#2B2F33" stroke="#454B51"/>
+<text x="1212" y="416" fill="#F5F6F7" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">Italiano   ⌄</text>
+<text x="970" y="470" fill="#F5F6F7" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400">Formato copia</text>
+<rect x="1200" y="447" width="130" height="36" rx="8" fill="#2B2F33" stroke="#454B51"/>
+<text x="1212" y="470" fill="#F5F6F7" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">HEX       ⌄</text>
+</g>
+<text x="60" y="427" fill="#F5F6F7" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600">Il colore viene prima descritto.</text>
+<text x="60" y="453" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="400">Poi mostrato. Poi copiato.</text>
+<text x="60" y="491" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400">Nome → descrizione → codice → azione</text>
+<text x="60" y="518" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400">Superfici neutre, campioni fedeli.</text>
+<text x="60" y="545" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400">La finestra resta piccola e discreta.</text>
+<rect x="520" y="635" width="380" height="40" rx="8" fill="#2B2F33"/>
+<text x="538" y="660" fill="#F5F6F7" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400">✓  Colore salvato · HEX copiato</text>
+<text x="960" y="616" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">STATI ESPLICITI</text>
+<text x="960" y="646" fill="#F5F6F7" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400">✓  Icona + testo + stato del controllo</text>
+<text x="960" y="671" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400">Nessun significato affidato al solo colore.</text>
+<path d="M60 714H1380" stroke="#454B51"/>
+<text x="60" y="751" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">01 / FONDAMENTA</text>
+<text x="520" y="751" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">02 / TIPOGRAFIA</text>
+<text x="960" y="751" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">03 / GEOMETRIA</text>
+<rect x="60" y="776" width="86" height="42" rx="7" fill="#151719" stroke="#6E767E"/>
+<text x="60" y="839" fill="#F5F6F7" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400">canvas</text>
+<text x="60" y="857" fill="#B4BBC2" font-family="Cascadia Code, Consolas, monospace" font-size="11" font-weight="400">#151719</text>
+<rect x="162" y="776" width="86" height="42" rx="7" fill="#202326" stroke="#6E767E"/>
+<text x="162" y="839" fill="#F5F6F7" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400">panel</text>
+<text x="162" y="857" fill="#B4BBC2" font-family="Cascadia Code, Consolas, monospace" font-size="11" font-weight="400">#202326</text>
+<rect x="264" y="776" width="86" height="42" rx="7" fill="#2B2F33" stroke="#6E767E"/>
+<text x="264" y="839" fill="#F5F6F7" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400">raised</text>
+<text x="264" y="857" fill="#B4BBC2" font-family="Cascadia Code, Consolas, monospace" font-size="11" font-weight="400">#2B2F33</text>
+<rect x="366" y="776" width="86" height="42" rx="7" fill="#373C41" stroke="#6E767E"/>
+<text x="366" y="839" fill="#F5F6F7" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400">hover</text>
+<text x="366" y="857" fill="#B4BBC2" font-family="Cascadia Code, Consolas, monospace" font-size="11" font-weight="400">#373C41</text>
+<rect x="60" y="873" width="86" height="42" rx="7" fill="#454B51" stroke="#6E767E"/>
+<text x="60" y="936" fill="#F5F6F7" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400">border</text>
+<text x="60" y="954" fill="#B4BBC2" font-family="Cascadia Code, Consolas, monospace" font-size="11" font-weight="400">#454B51</text>
+<rect x="162" y="873" width="86" height="42" rx="7" fill="#F5F6F7" stroke="#6E767E"/>
+<text x="162" y="936" fill="#F5F6F7" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400">text</text>
+<text x="162" y="954" fill="#B4BBC2" font-family="Cascadia Code, Consolas, monospace" font-size="11" font-weight="400">#F5F6F7</text>
+<rect x="264" y="873" width="86" height="42" rx="7" fill="#B4BBC2" stroke="#6E767E"/>
+<text x="264" y="936" fill="#F5F6F7" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400">secondary</text>
+<text x="264" y="954" fill="#B4BBC2" font-family="Cascadia Code, Consolas, monospace" font-size="11" font-weight="400">#B4BBC2</text>
+<text x="520" y="803" fill="#F5F6F7" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600">Rosso vivo</text>
+<text x="520" y="829" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400">Segoe UI Semibold · 24 / 29</text>
+<text x="520" y="870" fill="#F5F6F7" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400">Leggermente attenuato</text>
+<text x="520" y="893" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400">Segoe UI Regular · 14 / 20</text>
+<text x="520" y="933" fill="#F5F6F7" font-family="Cascadia Code, Consolas, monospace" font-size="14" font-weight="400">#EB4064</text>
+<text x="520" y="956" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400">Cascadia Code · 14 / 20</text>
+<text x="960" y="801" fill="#F5F6F7" font-family="Cascadia Code, Consolas, monospace" font-size="16" font-weight="400">4  ·  8  ·  12  ·  16  ·  24  ·  32</text>
+<text x="960" y="837" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400">Raggio finestra / controlli</text>
+<text x="1260" y="837" fill="#F5F6F7" font-family="Cascadia Code, Consolas, monospace" font-size="14" font-weight="400">16 / 8</text>
+<text x="960" y="873" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400">Target desktop / touch</text>
+<text x="1260" y="873" fill="#F5F6F7" font-family="Cascadia Code, Consolas, monospace" font-size="14" font-weight="400">36 / 44</text>
+<text x="960" y="909" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400">Focus esterno</text>
+<text x="1260" y="909" fill="#F5F6F7" font-family="Cascadia Code, Consolas, monospace" font-size="14" font-weight="400">2 + 3 px</text>
+<text x="960" y="945" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400">Testo principale / pannello</text>
+<text x="1260" y="945" fill="#F5F6F7" font-family="Cascadia Code, Consolas, monospace" font-size="14" font-weight="400">14.59:1</text>
+<path d="M60 994H1380" stroke="#454B51"/>
+<text x="60" y="1028" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">04 / CONTROLLI</text>
+<rect x="60" y="1050" width="160" height="36" rx="8" fill="#F5F6F7" stroke="#F5F6F7"/>
+<text x="72" y="1073" fill="#151719" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">Cattura colore</text>
+<rect x="240" y="1050" width="140" height="36" rx="8" fill="#2B2F33" stroke="#454B51"/>
+<text x="252" y="1073" fill="#F5F6F7" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">Cronologia</text>
+<rect x="400" y="1050" width="115" height="36" rx="8" fill="#F5F6F7" stroke="#F5F6F7"/>
+<text x="412" y="1073" fill="#151719" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">✓  Fissata</text>
+<rect x="535" y="1050" width="100" height="36" rx="8" fill="#2B2F33" stroke="#454B51"/>
+<rect x="531" y="1046" width="108" height="44" rx="11" fill="none" stroke="#A9CEFF"/>
+<text x="547" y="1073" fill="#F5F6F7" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">Copia</text>
+<rect x="655" y="1050" width="100" height="36" rx="8" fill="#2B2F33" stroke="#454B51"/>
+<text x="667" y="1073" fill="#7E858C" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">Copia</text>
+<text x="60" y="1110" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400">Primaria</text>
+<text x="240" y="1110" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400">Secondaria</text>
+<text x="400" y="1110" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400">Attiva</text>
+<text x="535" y="1110" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400">Focus</text>
+<text x="655" y="1110" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400">Disabilitata</text>
+<text x="960" y="1068" fill="#F5F6F7" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400">IT / EN · testo a capo · focus visibile</text>
+<text x="960" y="1095" fill="#B4BBC2" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400">Campionamento live silenzioso per screen reader.</text>
+<text x="60" y="1153" fill="#949DA6" font-family="Cascadia Code, Consolas, monospace" font-size="11" font-weight="400">DESIGN ONLY · Editable SVG layers / tokens in graphite.tokens.json</text>
+</svg>
